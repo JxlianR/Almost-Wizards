@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    private Animator animator;
+
     public CharacterController characterController;
 
     public Camera cam;
@@ -34,7 +36,12 @@ public class PlayerController : MonoBehaviour
 
     public Transform spawnPoint; // Position of ElementSpawner (Gameobject) where the element will be spawned
 
-    void Update()
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
+    void FixedUpdate()
     {
         // Movement
         Vector3 movement = new Vector3(movementInput.x, 0, movementInput.y);
@@ -79,6 +86,7 @@ public class PlayerController : MonoBehaviour
     public void Movement(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();
+        animator.SetTrigger("Movement");
     }
 
     public void Rotation(InputAction.CallbackContext context)
