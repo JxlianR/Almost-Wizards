@@ -4832,6 +4832,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7949b0fe9f0f3b14784bf5e0f6bb7d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
   combinedElement1: {fileID: 0}
   combinedElement1Tag: Firenado
   combinedElement2: {fileID: 861593036068897619, guid: 1929fc772b206524d86ab946e9374294,
@@ -4840,6 +4843,7 @@ MonoBehaviour:
   elementArea: {fileID: 7181864319564709364, guid: 65f81ce4f3742714ca09d0326b9c1a04,
     type: 3}
   speed: 5
+  elementTag: Fire
   cancellingElementTag: Water
   combiningElement1Tag: Air
   combiningElement2Tag: Earth

@@ -18,5 +18,6 @@ public class LookAtAimingPoint : MonoBehaviour
         // Rotating the player to the position of target GameObject
         Vector3 positionToRotate = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z);
         transform.LookAt(positionToRotate);
+        transform.Rotate(0, 90, 0);
     }
 }

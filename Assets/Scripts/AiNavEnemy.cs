@@ -53,7 +53,7 @@ public class AiNavEnemy : MonoBehaviour
         if (other.tag == weakness || other.tag == combinedWeaknessElement1 || other.tag == combinedWeaknessElement2) // Checks if the tag of the object the enemy collides with is equals the weakness or a combined element of it
         {
             healthPoints -= ElementBehavior.damage; // Substracts the damage the element is doing from the HP
-            Debug.Log("Healtpoints = " + healthPoints + " - " + ElementBehavior.damage);
+            //Debug.Log("Healtpoints = " + healthPoints + " - " + ElementBehavior.damage);
         }
     }
 

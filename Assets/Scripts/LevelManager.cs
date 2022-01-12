@@ -34,7 +34,7 @@ public class LevelManager : MonoBehaviour
 
         if (AllEnemiesDead() && enemySpawner.enemyCount == enemySpawner.enemyAmount) // Checks if all enemies are dead and the number of enemies that should spawn did spawn
         {
-            if (waveNumber < 10)
+            if (waveNumber < 2)
             {
                 spawnPlayer = true;
 
@@ -59,7 +59,7 @@ public class LevelManager : MonoBehaviour
             GameOver();
         }
 
-        if (waveNumber == 4)
+        if (waveNumber == 3)
         {
             Win();
         }

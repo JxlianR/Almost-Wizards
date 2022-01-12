@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     public float movementSpeed; // Speed of movement
     public float rotationSpeed; // Speed of rotation
+    public float waitTime;
 
     public int lives; // Number of lives each player has
 
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
 
     private bool playerDead;
     private bool isMovingPressed;
+    private bool playDieAnimation;
 
     public Transform spawnPoint; // Position of ElementSpawner (Gameobject) where the element will be spawned
 
@@ -80,8 +82,10 @@ public class PlayerController : MonoBehaviour
         // Checking if the player lost all lives and if so destroying it
         if (lives == 0)
         {
-            gameObject.SetActive(false);
-            playerDead = true;
+            //gameObject.SetActive(false);
+            //playerDead = true;
+            //playDieAnimation = true;
+            Destroy(gameObject);
         }
 
         if (LevelManager.spawnPlayer == true && playerDead)

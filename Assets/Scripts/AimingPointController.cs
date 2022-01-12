@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(CharacterController))]
 public class AimingPointController : MonoBehaviour
 {
+    public NavMeshAgent Agent;
+
     public float movementSpeed;
 
     private Vector2 movementInput = Vector2.zero;
