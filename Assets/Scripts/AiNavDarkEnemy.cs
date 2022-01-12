@@ -8,6 +8,7 @@ public class AiNavDarkEnemy : MonoBehaviour
     public NavMeshAgent Agent;
 
     public int healthPoints;
+    public float timeTillDeath = 0.5f;
 
     private GameObject[] Players; // Array with all Players
 
@@ -31,7 +32,8 @@ public class AiNavDarkEnemy : MonoBehaviour
         // Destroy the enemy when the HP is 0
         if (healthPoints <= 0)
         {
-            Destroy(gameObject);
+            StartCoroutine(Die());
+            //Destroy(gameObject);
         }
     }
 
@@ -65,6 +67,7 @@ public class AiNavDarkEnemy : MonoBehaviour
     {
         // Rotating the enemy to the position of target GameObject
         transform.LookAt(closestPlayer);
+        transform.Rotate(0, 90, 0);
     }
 
     public Transform getClosestPlayer()
@@ -90,5 +93,11 @@ public class AiNavDarkEnemy : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         gotDamage = false; // Enemy can get damage again
+    }
+
+    IEnumerator Die()
+    {
+        yield return new WaitForSeconds(timeTillDeath);
+        Destroy(gameObject);
     }
 }

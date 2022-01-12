@@ -36,10 +36,10 @@ public class ElementMouseRight : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.mousePositionRight.x, 0.25f, PlayerController.mousePositionRight.z), speed * Time.deltaTime);
 
         // Destroys the element when it is outside of the map
-        if (transform.position.x >= 32 || transform.position.x <= -32 || transform.position.z >= 32 || transform.position.z <= -32)
+        /*if (transform.position.x >= 32 || transform.position.x <= -32 || transform.position.z >= 32 || transform.position.z <= -32)
         {
             Destroy(gameObject);
-        }
+        }*/
     }
 
     /*private void OnCollisionEnter(Collision collision)
@@ -75,7 +75,7 @@ public class ElementMouseRight : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(combinedElement1Tag).Length == 0) // Checks if there already is a gameObject with the tag of the first combined element
             {
-                Instantiate(combinedElement1, new Vector3(other.transform.position.x, 0, other.transform.position.z), transform.rotation); // Spawns the first combined element
+                Instantiate(combinedElement1, new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z), transform.rotation); // Spawns the first combined element
             }
         }
         else if (other.tag == combiningElement2Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
@@ -84,15 +84,17 @@ public class ElementMouseRight : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(combinedElement2Tag).Length == 0) // Checks if there already is a gameObject with the tag of the second combined element
             {
-                Instantiate(combinedElement2, new Vector3(other.transform.position.x, 0, other.transform.position.z), transform.rotation); // Spawns the second combined element
+                Instantiate(combinedElement2, new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z), transform.rotation); // Spawns the second combined element
             }
         }
         else if (other.tag == "Enemy" || other.tag == "Ground") // Checks if the element collides with an enemy
         {
-            Instantiate(elementArea, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the element area of this element
+            Instantiate(elementArea, new Vector3(transform.position.x, other.transform.position.y, transform.position.z), transform.rotation); // Spawns the element area of this element
             Destroy(gameObject);
         }
-
-        //Destroy(gameObject);
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

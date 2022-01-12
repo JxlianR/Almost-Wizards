@@ -13,6 +13,8 @@ public class AiNavEnemy : MonoBehaviour
 
     public int healthPoints;
 
+    public float timeTillDeath = 0.5f;
+
     public string weakness;
     public string combinedWeaknessElement1; // Tag of the first element that can be created when combing the weakness with another element
     public string combinedWeaknessElement2; // Tag of the first element that can be created when combing the weakness with another element
@@ -33,7 +35,7 @@ public class AiNavEnemy : MonoBehaviour
         // Destroy the enemy when the HP is 0
         if (healthPoints <= 0)
         {
-            Destroy(gameObject);
+            StartCoroutine(Die());
         }
     }
 
@@ -65,6 +67,7 @@ public class AiNavEnemy : MonoBehaviour
     {
         // Rotating the enemy to the position of target GameObject
         transform.LookAt(closestPlayer);
+        transform.Rotate(0, 90, 0);
     }
 
     public Transform getClosestPlayer()
@@ -84,5 +87,11 @@ public class AiNavEnemy : MonoBehaviour
             }
         }
         return playerPosition;
+    }
+
+    IEnumerator Die()
+    {
+        yield return new WaitForSeconds(timeTillDeath);
+        Destroy(gameObject);
     }
 }

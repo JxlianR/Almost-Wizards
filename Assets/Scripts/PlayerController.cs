@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     public static Vector3 aimPositionTwo;
 
     private bool playerDead;
+    private bool isMovingPressed;
 
     public Transform spawnPoint; // Position of ElementSpawner (Gameobject) where the element will be spawned
 
@@ -43,6 +44,10 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        isMovingPressed = movementInput.x != 0 || movementInput.y != 0; //isMovingPressed is true when the player is pressing WASD
+
+        HandleAnimations();
+
         // Movement
         Vector3 movement = new Vector3(movementInput.x, 0, movementInput.y);
         movement.Normalize();
@@ -67,7 +72,9 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 rotationPoint = ray.GetPoint(rayLength);
             Quaternion rotation = Quaternion.LookRotation(rotationPoint - transform.position);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime); // Character rotates from own rotation towards the position of the mouse with a set speed
+            transform.rotation = rotation * Quaternion.Euler(0, 90, 0);
+            //transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime); // Character rotates from own rotation towards the position of the mouse with a set speed
+            //transform.LookAt(new Vector3(rotationPoint.x, transform.position.y, rotationPoint.z));
         }
 
         // Checking if the player lost all lives and if so destroying it
@@ -83,10 +90,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void HandleAnimations()
+    {
+        bool isMoving = animator.GetBool("IsMoving"); // Getting access to the bool
+
+        if (isMovingPressed && !isMoving) // Checking if player presses WASD and the character is not moving
+        {
+            animator.SetBool("IsMoving", true); // Setting bool to true and trigger moving animation
+        }
+        else if (!isMovingPressed && isMoving) // Checking if player is not pressing WASD and the character is moving
+        {
+            animator.SetBool("IsMoving", false); // Setting bool to false and stop animation
+        }
+    }
+
     public void Movement(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();
-        animator.SetTrigger("Movement");
     }
 
     public void Rotation(InputAction.CallbackContext context)
@@ -144,7 +164,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameObject.Instantiate(firstElement, spawnPoint.position, spawnPoint.rotation); // Spawning the element
 
-                aimPositionOne = GameObject.Find("Aiming Point Controller").transform.position; // Setting the position of the aiming point to the variable aimPositionOne
+                aimPositionOne = GameObject.Find("AimingPoint").transform.position; // Setting the position of the aiming point to the variable aimPositionOne
             }
         }
     }
@@ -157,7 +177,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameObject.Instantiate(secondElement, spawnPoint.position, spawnPoint.rotation); // Spawning the element
 
-                aimPositionTwo = GameObject.Find("Aiming Point Controller").transform.position; // Setting the position of the aiming point to the variable aimPositionTwo
+                aimPositionTwo = GameObject.Find("AimingPoint").transform.position; // Setting the position of the aiming point to the variable aimPositionTwo
             }
         }
     }

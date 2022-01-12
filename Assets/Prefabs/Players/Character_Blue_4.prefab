@@ -285,6 +285,36 @@ Transform:
   m_Father: {fileID: 8905313372639945690}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3255720770957413932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8738837295915885271}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8738837295915885271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3255720770957413932}
+  m_LocalRotation: {x: 0.04753992, y: -0.7055069, z: -0.04753992, w: -0.7055069}
+  m_LocalPosition: {x: -2.45, y: 1.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3755982220775099631}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3365397846053579223
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +600,7 @@ Transform:
   m_Children:
   - {fileID: 5237467275875867761}
   - {fileID: 6895901046236080214}
+  - {fileID: 8738837295915885271}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -583,7 +614,7 @@ Animator:
   m_GameObject: {fileID: 4563339678682175061}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 40806519c56725746a8f086fb0827705, type: 2}
+  m_Controller: {fileID: 22100000, guid: 74de984fa840d8a488549603b4c61e90, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -670,7 +701,7 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7479a08a-69db-4849-a3de-fbacee27fcec
     m_ActionName: Player/Rotation
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
@@ -689,14 +720,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 3716970059225349987}
   cam: {fileID: 0}
-  firstElement: {fileID: 0}
-  secondElement: {fileID: 0}
-  movementSpeed: 6
+  firstElement: {fileID: 6598765557666017829, guid: 977cb01c8d5f55b47a95fb5b854ca165,
+    type: 3}
+  secondElement: {fileID: 5054210761142208637, guid: 86053630448bc404081bacf4fa909aa1,
+    type: 3}
+  movementSpeed: 7
   rotationSpeed: 15
   lives: 3
   firstElementTag: Water
   secondElementTag: Earth
-  spawnPoint: {fileID: 0}
+  spawnPoint: {fileID: 8738837295915885271}
 --- !u!143 &3716970059225349987
 CharacterController:
   m_ObjectHideFlags: 0
@@ -727,7 +760,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
