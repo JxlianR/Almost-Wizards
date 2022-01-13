@@ -385,7 +385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &67130491
 Transform:
   m_ObjectHideFlags: 0
@@ -8083,7 +8083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Agent: {fileID: 1344289774}
-  movementSpeed: 1
+  movementSpeed: 15
 --- !u!143 &1344289776
 CharacterController:
   m_ObjectHideFlags: 0
@@ -10062,16 +10062,6 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 963194227}
-    - target: {fileID: 1275080724481816577, guid: 0a3952d99528c4f4db2d3c8a9dc87922,
-        type: 3}
-      propertyPath: lives
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1275080724481816577, guid: 0a3952d99528c4f4db2d3c8a9dc87922,
-        type: 3}
-      propertyPath: waitTime
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1601951421969044840, guid: 0a3952d99528c4f4db2d3c8a9dc87922,
         type: 3}
       propertyPath: m_RootOrder

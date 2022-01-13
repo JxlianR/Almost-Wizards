@@ -230,7 +230,8 @@ MonoBehaviour:
     type: 3}
   combinedElement2Tag: Magma
   elementArea: {fileID: 0}
-  speed: -9
+  speed: 5
+  elementTag: Earth
   cancellingElementTag: Air
   combiningElement1Tag: Water
   combiningElement2Tag: Fire

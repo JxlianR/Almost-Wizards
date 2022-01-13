@@ -34,7 +34,7 @@ public class ElementControllerOne : MonoBehaviour
     {
         //transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.aimPositionOne.x, 0.25f, PlayerController.aimPositionOne.z), speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.aimPositionOne.x, PlayerController.aimPositionOne.y, PlayerController.aimPositionOne.z), speed * Time.deltaTime);
 
         // Destroys the element when it is outside of the map
         /*if (transform.position.x >= 32 || transform.position.x <= -32 || transform.position.z >= 32 || transform.position.z <= -32)

@@ -34,7 +34,7 @@ public class ElementControllerRight : MonoBehaviour
     {
         //transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.aimPositionTwo.x, 0.25f, PlayerController.aimPositionTwo.z), speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.aimPositionTwo.x, PlayerController.aimPositionOne.y, PlayerController.aimPositionTwo.z), speed * Time.deltaTime);
 
         // Destroys the element when it is outside of the map
         /*if (transform.position.x >= 32 || transform.position.x <= -32 || transform.position.z >= 32 || transform.position.z <= -32)
@@ -76,7 +76,7 @@ public class ElementControllerRight : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(combinedElement1Tag).Length == 0) // Checks if there already is a gameObject with the tag of the first combined element
             {
-                Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z), combinedElement1.transform.rotation); // Spawns the first combined element
+                Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.7f, 0), combinedElement1.transform.rotation); // Spawns the first combined element
             }
         }
         else if (other.tag == combiningElement2Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
@@ -85,7 +85,7 @@ public class ElementControllerRight : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(combinedElement2Tag).Length == 0) // Checks if there already is a gameObject with the tag of the second combined element
             {
-                Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z), combinedElement2.transform.rotation); // Spawns the second combined element
+                Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.7f, 0), combinedElement2.transform.rotation); // Spawns the second combined element
             }
         }
         else if (other.tag == "Enemy") // Checks if the element collides with an enemy or the ground

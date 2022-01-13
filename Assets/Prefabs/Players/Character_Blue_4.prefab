@@ -726,6 +726,7 @@ MonoBehaviour:
     type: 3}
   movementSpeed: 7
   rotationSpeed: 15
+  waitTime: 0
   lives: 3
   firstElementTag: Water
   secondElementTag: Earth

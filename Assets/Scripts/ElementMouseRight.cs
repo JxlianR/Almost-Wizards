@@ -34,7 +34,7 @@ public class ElementMouseRight : MonoBehaviour
     {
         //transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.mousePositionRight.x, 0.25f, PlayerController.mousePositionRight.z), speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.mousePositionLeft.x, 0.8f, PlayerController.mousePositionLeft.z), speed * Time.deltaTime);
 
         // Destroys the element when it is outside of the map
         /*if (transform.position.x >= 32 || transform.position.x <= -32 || transform.position.z >= 32 || transform.position.z <= -32)

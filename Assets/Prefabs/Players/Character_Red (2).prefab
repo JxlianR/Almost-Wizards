@@ -390,6 +390,7 @@ MonoBehaviour:
   secondElement: {fileID: 0}
   movementSpeed: 7
   rotationSpeed: 15
+  waitTime: 0
   lives: 3
   firstElementTag: Fire
   secondElementTag: Air

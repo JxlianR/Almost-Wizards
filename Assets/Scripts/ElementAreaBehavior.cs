@@ -73,19 +73,19 @@ public class ElementAreaBehavior : MonoBehaviour
         {
             StartCoroutine(Destroy());
 
-            if (GameObject.FindGameObjectsWithTag(combinedElement1Tag).Length == 0) // Checks if there already is a gameObject with the tag of the first combined element
+            /*if (GameObject.FindGameObjectsWithTag(combinedElement1Tag).Length == 0) // Checks if there already is a gameObject with the tag of the first combined element
             {
                 Instantiate(combinedElement1, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the first combined element
-            }
+            }*/
         }
         else if (other.tag == combiningElement2Tag)
         {
             StartCoroutine(Destroy());
 
-            if (GameObject.FindGameObjectsWithTag(combinedElement2Tag).Length == 0) // Checks if there already is a gameObject with the tag of the second combined element
+            /*if (GameObject.FindGameObjectsWithTag(combinedElement2Tag).Length == 0) // Checks if there already is a gameObject with the tag of the second combined element
             {
                 Instantiate(combinedElement2, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the second combined element
-            }
+            }*/
         }
 
         //Destroy(gameObject);
