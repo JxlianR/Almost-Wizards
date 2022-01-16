@@ -32,7 +32,6 @@ public class ElementBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(Vector3.forward * speed * Time.deltaTime);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.mousePositionLeft.x, 0.8f, PlayerController.mousePositionLeft.z), speed * Time.deltaTime);
 
         // Destroys the element when it is outside of the map
@@ -93,7 +92,7 @@ public class ElementBehavior : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(elementTag).Length <= 1)
             {
-                Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.15f, 0), elementArea.transform.rotation); // Spawns the element area of this element
+                Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.55f, 0), elementArea.transform.rotation); // Spawns the element area of this element
             }
         }
         else if (other.tag == "Ground")
@@ -102,7 +101,7 @@ public class ElementBehavior : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(elementTag).Length <= 1)
             {
-                Instantiate(elementArea, DetectGroundHeight(PlayerController.mousePositionLeft.x, PlayerController.mousePositionLeft.z) - new Vector3(0, 0.8f, 0), elementArea.transform.rotation); // Spawns the element area of this element
+                Instantiate(elementArea, DetectGroundHeight(PlayerController.mousePositionLeft.x, PlayerController.mousePositionLeft.z) /*- new Vector3(0, 0.8f, 0)*/, elementArea.transform.rotation); // Spawns the element area of this element
             }
         }
         else if (other.tag == "Platform")
@@ -111,7 +110,7 @@ public class ElementBehavior : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(elementTag).Length <= 1)
             {
-                Instantiate(elementArea, DetectGroundHeight(PlayerController.mousePositionLeft.x, PlayerController.mousePositionLeft.z) - new Vector3(0, 0.15f, 0), elementArea.transform.rotation); // Spawns the element area of this element
+                Instantiate(elementArea, DetectGroundHeight(PlayerController.mousePositionLeft.x, PlayerController.mousePositionLeft.z) /*- new Vector3(0, 0.15f, 0)*/, elementArea.transform.rotation); // Spawns the element area of this element
             }
         }
         else

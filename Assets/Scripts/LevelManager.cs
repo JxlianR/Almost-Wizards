@@ -32,8 +32,9 @@ public class LevelManager : MonoBehaviour
     {
         Enemies = GameObject.FindGameObjectsWithTag("Enemy"); // Find all enemies and put them in the array
 
-        if (AllEnemiesDead() && enemySpawner.enemyCount == enemySpawner.enemyAmount) // Checks if all enemies are dead and the number of enemies that should spawn did spawn
+        if (AllEnemiesDead() && enemySpawner.enemyCount == enemySpawner.enemyAmount) // Checks if all enemies are dead and the number of enemies that should spawn did
         {
+            // Spawns two waves of enemies
             if (waveNumber < 2)
             {
                 spawnPlayer = true;

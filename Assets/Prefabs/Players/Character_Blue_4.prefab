@@ -574,9 +574,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3755982220775099631}
+  - component: {fileID: 3716970059225349986}
   - component: {fileID: 3716970059225349918}
   - component: {fileID: 3716970059225349985}
-  - component: {fileID: 3716970059225349986}
   - component: {fileID: 3716970059225349987}
   - component: {fileID: 3716970059225349916}
   - component: {fileID: 3716970059225349917}
@@ -604,6 +604,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3716970059225349986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4563339678682175061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b460608f3253a409a88bb96fbde8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterController: {fileID: 3716970059225349987}
+  cam: {fileID: 0}
+  firstElement: {fileID: 6598765557666017829, guid: 977cb01c8d5f55b47a95fb5b854ca165,
+    type: 3}
+  secondElement: {fileID: 5054210761142208637, guid: 86053630448bc404081bacf4fa909aa1,
+    type: 3}
+  movementSpeed: 7
+  rotationSpeed: 15
+  waitTime: 0
+  lives: 3
+  firstElementTag: Water
+  secondElementTag: Earth
+  spawnPoint: {fileID: 8738837295915885271}
 --- !u!95 &3716970059225349918
 Animator:
   serializedVersion: 3
@@ -706,31 +731,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &3716970059225349986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4563339678682175061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b460608f3253a409a88bb96fbde8a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterController: {fileID: 3716970059225349987}
-  cam: {fileID: 0}
-  firstElement: {fileID: 6598765557666017829, guid: 977cb01c8d5f55b47a95fb5b854ca165,
-    type: 3}
-  secondElement: {fileID: 5054210761142208637, guid: 86053630448bc404081bacf4fa909aa1,
-    type: 3}
-  movementSpeed: 7
-  rotationSpeed: 15
-  waitTime: 0
-  lives: 3
-  firstElementTag: Water
-  secondElementTag: Earth
-  spawnPoint: {fileID: 8738837295915885271}
 --- !u!143 &3716970059225349987
 CharacterController:
   m_ObjectHideFlags: 0

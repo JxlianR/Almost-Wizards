@@ -76,7 +76,8 @@ public class ElementControllerRight : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(combinedElement1Tag).Length == 0) // Checks if there already is a gameObject with the tag of the first combined element
             {
-                Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.7f, 0), combinedElement1.transform.rotation); // Spawns the first combined element
+                // Spawns the first combined element at the position I get from DetectGroundHeigh minus the Vector3
+                Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.7f, 0), combinedElement1.transform.rotation);
             }
         }
         else if (other.tag == combiningElement2Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
@@ -85,7 +86,8 @@ public class ElementControllerRight : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(combinedElement2Tag).Length == 0) // Checks if there already is a gameObject with the tag of the second combined element
             {
-                Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.7f, 0), combinedElement2.transform.rotation); // Spawns the second combined element
+                // Spawns the second combined element at the position I get from DetectGroundHeigh minus the Vector3
+                Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.7f, 0), combinedElement2.transform.rotation);
             }
         }
         else if (other.tag == "Enemy") // Checks if the element collides with an enemy or the ground
@@ -94,7 +96,8 @@ public class ElementControllerRight : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(elementTag).Length <= 1)
             {
-                Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.15f, 0), elementArea.transform.rotation); // Spawns the element area of this element
+                // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
+                Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.15f, 0), elementArea.transform.rotation);
             }
         }
         else if (other.tag == "Ground")
@@ -103,7 +106,8 @@ public class ElementControllerRight : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(elementTag).Length <= 1)
             {
-                Instantiate(elementArea, DetectGroundHeight(PlayerController.mousePositionLeft.x, PlayerController.mousePositionLeft.z) - new Vector3(0, 0.8f, 0), elementArea.transform.rotation); // Spawns the element area of this element
+                // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
+                Instantiate(elementArea, DetectGroundHeight(PlayerController.mousePositionLeft.x, PlayerController.mousePositionLeft.z) - new Vector3(0, 0.8f, 0), elementArea.transform.rotation);
             }
         }
         else if (other.tag == "Platform")
@@ -112,7 +116,8 @@ public class ElementControllerRight : MonoBehaviour
 
             if (GameObject.FindGameObjectsWithTag(elementTag).Length <= 1)
             {
-                Instantiate(elementArea, DetectGroundHeight(PlayerController.mousePositionLeft.x, PlayerController.mousePositionLeft.z) - new Vector3(0, 0.15f, 0), elementArea.transform.rotation); // Spawns the element area of this element
+                // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
+                Instantiate(elementArea, DetectGroundHeight(PlayerController.mousePositionLeft.x, PlayerController.mousePositionLeft.z) - new Vector3(0, 0.15f, 0), elementArea.transform.rotation);
             }
         }
         else
@@ -121,12 +126,12 @@ public class ElementControllerRight : MonoBehaviour
         }
     }
 
-    public Vector3 DetectGroundHeight(float x, float y)
+    public Vector3 DetectGroundHeight(float x, float z)
     {
         RaycastHit hit;
-        Vector3 origin = new Vector3(x, 100, y);
-        Physics.Raycast(origin, Vector3.down, out hit, Mathf.Infinity);
-        Debug.Log("Terrain location found at" + hit.point);
-        return hit.point;
+        Vector3 origin = new Vector3(x, 100, z); // setting a high number to the v value
+        Physics.Raycast(origin, Vector3.down, out hit, Mathf.Infinity); // Send the raycast
+        //Debug.Log("Terrain location found at" + hit.point);
+        return hit.point; // returning the position of the ground
     }
 }

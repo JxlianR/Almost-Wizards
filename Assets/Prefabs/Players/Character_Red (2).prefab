@@ -194,11 +194,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1601951421969044840}
+  - component: {fileID: 1275080724481816577}
   - component: {fileID: 1275080724481816580}
   - component: {fileID: 1275080724481816579}
   - component: {fileID: 1275080724481816581}
   - component: {fileID: 1275080724481816578}
-  - component: {fileID: 1275080724481816577}
   m_Layer: 0
   m_Name: Character_Red (2)
   m_TagString: Player
@@ -223,6 +223,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1275080724481816577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121361417315930066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b460608f3253a409a88bb96fbde8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterController: {fileID: 1275080724481816579}
+  cam: {fileID: 0}
+  firstElement: {fileID: 3366471625154378247, guid: 1c8c4f7c21052cc4aa341d48ea0bb7a9,
+    type: 3}
+  secondElement: {fileID: 0}
+  movementSpeed: 7
+  rotationSpeed: 15
+  waitTime: 0
+  lives: 3
+  firstElementTag: Fire
+  secondElementTag: Air
+  spawnPoint: {fileID: 21542384}
 --- !u!54 &1275080724481816580
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -371,30 +395,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1275080724481816577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121361417315930066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b460608f3253a409a88bb96fbde8a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterController: {fileID: 1275080724481816579}
-  cam: {fileID: 0}
-  firstElement: {fileID: 3366471625154378247, guid: 1c8c4f7c21052cc4aa341d48ea0bb7a9,
-    type: 3}
-  secondElement: {fileID: 0}
-  movementSpeed: 7
-  rotationSpeed: 15
-  waitTime: 0
-  lives: 3
-  firstElementTag: Fire
-  secondElementTag: Air
-  spawnPoint: {fileID: 21542384}
 --- !u!1 &2192019149430636741
 GameObject:
   m_ObjectHideFlags: 0

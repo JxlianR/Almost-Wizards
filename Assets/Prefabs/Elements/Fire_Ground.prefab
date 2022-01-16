@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7557263516013733710}
+  - component: {fileID: 1455277758651721880}
   - component: {fileID: 6867726330432825579}
   - component: {fileID: 8695298575591758881}
-  - component: {fileID: 1455277758651721880}
   - component: {fileID: 4994194040143641373}
   - component: {fileID: 7200774045968785306}
   m_Layer: 12
@@ -35,6 +35,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
+--- !u!114 &1455277758651721880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7181864319564709364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b2d29051afd764f8488051d04b26d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combinedElement1: {fileID: 0}
+  combinedElement1Tag: Firenado
+  combinedElement2: {fileID: 861593036068897619, guid: 1929fc772b206524d86ab946e9374294,
+    type: 3}
+  combinedElement2Tag: Magma
+  duration: 5
+  combiningElement1Tag: Air
+  combiningElement2Tag: Earth
 --- !u!33 &6867726330432825579
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -84,26 +104,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1455277758651721880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7181864319564709364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80b2d29051afd764f8488051d04b26d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combinedElement1: {fileID: 0}
-  combinedElement1Tag: Firenado
-  combinedElement2: {fileID: 861593036068897619, guid: 1929fc772b206524d86ab946e9374294,
-    type: 3}
-  combinedElement2Tag: Magma
-  duration: 5
-  combiningElement1Tag: Air
-  combiningElement2Tag: Earth
 --- !u!135 &4994194040143641373
 SphereCollider:
   m_ObjectHideFlags: 0

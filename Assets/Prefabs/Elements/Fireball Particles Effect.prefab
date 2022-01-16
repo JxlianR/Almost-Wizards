@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3366471625154378244}
+  - component: {fileID: 1430525130233269778}
   - component: {fileID: 3366471625154378245}
   - component: {fileID: 3366471625154378246}
-  - component: {fileID: 1430525130233269778}
   - component: {fileID: -761070163768136565}
   - component: {fileID: 1443400723713157959}
   m_Layer: 11
@@ -36,6 +36,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: -90, z: 0}
+--- !u!114 &1430525130233269778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3366471625154378247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7949b0fe9f0f3b14784bf5e0f6bb7d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combinedElement1: {fileID: 0}
+  combinedElement1Tag: Firenado
+  combinedElement2: {fileID: 861593036068897619, guid: 1929fc772b206524d86ab946e9374294,
+    type: 3}
+  combinedElement2Tag: Magma
+  elementArea: {fileID: 7181864319564709364, guid: 65f81ce4f3742714ca09d0326b9c1a04,
+    type: 3}
+  speed: 5
+  elementTag: Fire
+  cancellingElementTag: Water
+  combiningElement1Tag: Air
+  combiningElement2Tag: Earth
 --- !u!198 &3366471625154378245
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4820,30 +4844,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &1430525130233269778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3366471625154378247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7949b0fe9f0f3b14784bf5e0f6bb7d6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combinedElement1: {fileID: 0}
-  combinedElement1Tag: Firenado
-  combinedElement2: {fileID: 861593036068897619, guid: 1929fc772b206524d86ab946e9374294,
-    type: 3}
-  combinedElement2Tag: Magma
-  elementArea: {fileID: 7181864319564709364, guid: 65f81ce4f3742714ca09d0326b9c1a04,
-    type: 3}
-  speed: 5
-  elementTag: Fire
-  cancellingElementTag: Water
-  combiningElement1Tag: Air
-  combiningElement2Tag: Earth
 --- !u!54 &-761070163768136565
 Rigidbody:
   m_ObjectHideFlags: 0
