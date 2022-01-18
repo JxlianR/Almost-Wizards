@@ -618,14 +618,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 3716970059225349987}
   cam: {fileID: 0}
-  firstElement: {fileID: 6598765557666017829, guid: 977cb01c8d5f55b47a95fb5b854ca165,
+  firstElement: {fileID: 3727498663742397429, guid: 80c355331b2caf6489e2289aa87889ed,
     type: 3}
   secondElement: {fileID: 5054210761142208637, guid: 86053630448bc404081bacf4fa909aa1,
+    type: 3}
+  oppositePlayer: {fileID: 2121361417315930066, guid: 0a3952d99528c4f4db2d3c8a9dc87922,
     type: 3}
   movementSpeed: 7
   rotationSpeed: 15
   waitTime: 0
-  lives: 3
+  lives: 1
   firstElementTag: Water
   secondElementTag: Earth
   spawnPoint: {fileID: 8738837295915885271}
@@ -777,7 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4acc2d23ac3eb44197f6a4078ffc0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 4565927284688749803, guid: b8fa154f1af9c0c43978773c32b08115, type: 3}
 --- !u!1 &4651790068628940791
 GameObject:
   m_ObjectHideFlags: 0

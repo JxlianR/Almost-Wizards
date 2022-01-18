@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject firstElement; // First projectile character can shoot
     public GameObject secondElement; // Second projectile character can shoot
+    public GameObject oppositePlayer; // GameObject of the other player -> will spawn this gameObject if the other player is dead ans the next wave starts
 
     public float movementSpeed; // Speed of movement
     public float rotationSpeed; // Speed of rotation
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        cam = FindObjectOfType<Camera>();
         animator = GetComponent<Animator>();
     }
 
@@ -88,10 +90,15 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (LevelManager.spawnPlayer == true && playerDead)
+        if (LevelManager.playerCanSpawn == true)
+        {
+            Respawn();
+        }
+
+        /*if (LevelManager.spawnPlayer == true && playerDead)
         {
             gameObject.SetActive(true);
-        }
+        }*/
     }
 
     private void HandleAnimations()
@@ -192,6 +199,21 @@ public class PlayerController : MonoBehaviour
         {
             lives -= 1; // Subtracting 1 life
             Destroy(other.gameObject); // Destroys the enemy
+        }
+    }
+
+    private void Respawn()
+    {
+        if (GameObject.FindGameObjectsWithTag("Player").Length == 1)
+        {
+            Debug.Log("Reactivating the Player");
+            Instantiate(oppositePlayer, new Vector3(0, 5, 0), Quaternion.identity);
+            oppositePlayer.GetComponent<PlayerController>().lives = 1;
+            LevelManager.playerCanSpawn = false;
+        }
+        else
+        {
+            LevelManager.playerCanSpawn = false;
         }
     }
 }

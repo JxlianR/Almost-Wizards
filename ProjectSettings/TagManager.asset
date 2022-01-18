@@ -16,6 +16,8 @@ TagManager:
   - Obstacle
   - Ground
   - Platform
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
@@ -30,7 +32,7 @@ TagManager:
   - Postprocessing
   - Element
   - ElementArea
-  - 
+  - AimingPoint
   - 
   - 
   - 

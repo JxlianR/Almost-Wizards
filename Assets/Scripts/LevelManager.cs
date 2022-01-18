@@ -17,13 +17,11 @@ public class LevelManager : MonoBehaviour
 
     private int waveNumber = 1;
 
-    public static bool spawnPlayer;
+    public static bool playerCanSpawn;
 
     // Start is called before the first frame update
     void OnEnable()
     {
-        Players = GameObject.FindGameObjectsWithTag("Player"); // Find all players and put them in the array
-
         enemySpawner = GameObject.Find("EnemySpawner").GetComponent<EnemySpawner>();
     }
 
@@ -31,13 +29,14 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
         Enemies = GameObject.FindGameObjectsWithTag("Enemy"); // Find all enemies and put them in the array
+        Players = GameObject.FindGameObjectsWithTag("Player"); // Find all players and put them in the array
 
         if (AllEnemiesDead() && enemySpawner.enemyCount == enemySpawner.enemyAmount) // Checks if all enemies are dead and the number of enemies that should spawn did
         {
             // Spawns two waves of enemies
-            if (waveNumber < 2)
+            if (waveNumber < 6)
             {
-                spawnPlayer = true;
+                playerCanSpawn = true;
 
                 /*GameObject.Find("Player 1 (Keyboard)").SetActive(true); // Spawns Player1
                 GameObject.Find("Player 1 (Keyboard)").GetComponent<PlayerController>().lives = 1;
@@ -51,6 +50,7 @@ public class LevelManager : MonoBehaviour
 
                 waveNumber++;
                 Debug.Log("Wave " + waveNumber + " starts now!");
+                //playerCanSpawn = false;
             }
         }
 
