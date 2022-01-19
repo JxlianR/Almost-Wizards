@@ -50,7 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combinedElement1: {fileID: 0}
   combinedElement1Tag: Mud
-  combinedElement2: {fileID: 0}
+  combinedElement2: {fileID: 6719881455960174995, guid: 66fa74ae51f54d742a59115445062f08,
+    type: 3}
   combinedElement2Tag: Ice
   elementArea: {fileID: 0}
   speed: 5
@@ -4896,13 +4897,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8520680839835474927}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.052866418, y: 0.052866418, z: 0.052866418}
   m_Children: []
   m_Father: {fileID: 788103055302369447}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &7796014946956351539
 ParticleSystem:
   m_ObjectHideFlags: 0

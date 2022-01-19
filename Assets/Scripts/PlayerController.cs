@@ -87,7 +87,8 @@ public class PlayerController : MonoBehaviour
             //gameObject.SetActive(false);
             //playerDead = true;
             //playDieAnimation = true;
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            StartCoroutine(Dying());
         }
 
         if (LevelManager.playerCanSpawn == true)
@@ -200,6 +201,15 @@ public class PlayerController : MonoBehaviour
             lives -= 1; // Subtracting 1 life
             Destroy(other.gameObject); // Destroys the enemy
         }
+        else if (other.tag == "Heart")
+        {
+            if (lives < 3)
+            {
+                lives++;
+            }
+
+            Destroy(other.gameObject);
+        }
     }
 
     private void Respawn()
@@ -215,5 +225,13 @@ public class PlayerController : MonoBehaviour
         {
             LevelManager.playerCanSpawn = false;
         }
+    }
+
+    IEnumerator Dying()
+    {
+        animator.SetBool("PlayerDies", true);
+        gameObject.GetComponent<PlayerInput>().enabled = false;
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
     }
 }

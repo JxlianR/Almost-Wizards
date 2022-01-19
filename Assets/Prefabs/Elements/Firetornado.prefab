@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 657521352286821334}
   - component: {fileID: 6608357842370055291}
   - component: {fileID: 6093572870753057780}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tornado 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4815,7 +4815,7 @@ GameObject:
   - component: {fileID: 8561456673114290920}
   - component: {fileID: 6157937923836387080}
   - component: {fileID: 6595614704740289509}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tornado Dust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9622,7 +9622,7 @@ GameObject:
   - component: {fileID: 3847728677914726412}
   - component: {fileID: -8696026550007356369}
   - component: {fileID: 8699413133261837380}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Firetornado
   m_TagString: Untagged
   m_Icon: {fileID: 0}

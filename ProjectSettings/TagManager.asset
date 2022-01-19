@@ -16,8 +16,7 @@ TagManager:
   - Obstacle
   - Ground
   - Platform
-  - Player1
-  - Player2
+  - Heart
   layers:
   - Default
   - TransparentFX

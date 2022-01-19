@@ -6,7 +6,9 @@ public class MiddlePoint : MonoBehaviour
 {
     public Transform player1;
     public Transform player2;
+
     float distPlayers;
+
     Vector3 dirVec;
 
     // Start is called before the first frame update
@@ -18,6 +20,7 @@ public class MiddlePoint : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
         distPlayers = Vector3.Distance(player1.position, player2.position);
 
         dirVec = player1.position - player2.position;

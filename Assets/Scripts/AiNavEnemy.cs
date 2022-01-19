@@ -11,6 +11,8 @@ public class AiNavEnemy : MonoBehaviour
 
     private Transform closestPlayer;
 
+    public GameObject heart;
+
     public int healthPoints;
 
     public float timeTillDeath = 0.5f;
@@ -70,6 +72,18 @@ public class AiNavEnemy : MonoBehaviour
         transform.Rotate(0, 90, 0);
     }
 
+    // Dropping a heart to gain life for the player
+    private void Drop()
+    {
+        int dropChance = 5; // 5% chance of dropping a heart
+        int randomChance = Random.Range(0, 101); // Getting a random number between 0 and 100 (101 is exclusive)
+
+        if (dropChance >= randomChance)
+        {
+            Instantiate(heart, transform.position + new Vector3(0, 0.6f, 0), Quaternion.identity); // Spawning the heart
+        }
+    }
+
     public Transform getClosestPlayer()
     {
         Players = GameObject.FindGameObjectsWithTag("Player");
@@ -93,5 +107,6 @@ public class AiNavEnemy : MonoBehaviour
     {
         yield return new WaitForSeconds(timeTillDeath);
         Destroy(gameObject);
+        Drop();
     }
 }
