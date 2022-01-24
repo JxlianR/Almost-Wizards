@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public float rotationSpeed; // Speed of rotation
     public float waitTime;
 
+    private float controllerDeadzone = 0.1f;
+
     public string firstElementTag; // Tag of the first element the player can shoot
     public string secondElementTag; // Tag of the second element the player can shoot
 
@@ -113,8 +115,21 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(Dying());
         }
 
+
+
         // Rotation with controller
-        transform.Rotate(Vector3.up * controllerRotationInput * .2f);
+        if (Mathf.Abs(controllerRotationInput.x) > controllerDeadzone || Mathf.Abs(controllerRotationInput.y) > controllerDeadzone)
+        {
+            Vector3 playerDirection = Vector3.right * controllerRotationInput.x + Vector3.forward * controllerRotationInput.y;
+
+            if (playerDirection.sqrMagnitude > 0.0f)
+            {
+                Quaternion newRotation = Quaternion.LookRotation(playerDirection, Vector3.up);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, rotationSpeed * Time.deltaTime);
+            }
+        }
+
+
 
         if (LevelManager.playerCanSpawn == true) // If this bool is true it means that the wave is over and the dead character can spawn again
         {

@@ -478,13 +478,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 2.69
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 1.1, z: 0}
+  m_Center: {x: 0, y: 1.32, z: 0}
 --- !u!95 &4405211614917034846
 Animator:
   serializedVersion: 3
@@ -618,9 +618,6 @@ MonoBehaviour:
     type: 3}
   oppositePlayer: {fileID: 44450882550630578, guid: 0a863d7901204324e9cc8b6f1e923cb0,
     type: 3}
-  heart1: {fileID: 0}
-  heart2: {fileID: 0}
-  heart3: {fileID: 0}
   movementSpeed: 7
   rotationSpeed: 15
   waitTime: 0
