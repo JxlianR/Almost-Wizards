@@ -7,8 +7,7 @@ public class AiNavDarkEnemy : MonoBehaviour
 {
     public NavMeshAgent Agent;
 
-    public int healthPoints;
-    public float timeTillDeath = 0.5f;
+    private Animator animator;
 
     private GameObject[] Players; // Array with all Players
 
@@ -16,12 +15,17 @@ public class AiNavDarkEnemy : MonoBehaviour
 
     public GameObject heart;
 
+    public int healthPoints;
+
+    public float timeTillDeath = 0.5f;
+
     private bool gotDamage;
 
     // Start is called before the first frame update
     void Start()
     {
         closestPlayer = null;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -52,8 +56,8 @@ public class AiNavDarkEnemy : MonoBehaviour
     {
         if (other.tag != "Player" && gotDamage == false)
         {
-            healthPoints -= ElementBehavior.damage; // Substracts the damage the element is doing from the HP
-            Debug.Log("Healtpoints = " + healthPoints + " - " + ElementBehavior.damage);
+            healthPoints -= ElementMouseLeft.damage; // Substracts the damage the element is doing from the HP
+            Debug.Log("Healtpoints = " + healthPoints + " - " + ElementMouseLeft.damage);
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }
@@ -69,7 +73,6 @@ public class AiNavDarkEnemy : MonoBehaviour
     {
         // Rotating the enemy to the position of target GameObject
         transform.LookAt(closestPlayer);
-        transform.Rotate(0, 90, 0);
     }
 
     // Dropping a heart to gain life for the player
@@ -111,6 +114,8 @@ public class AiNavDarkEnemy : MonoBehaviour
 
     IEnumerator Die()
     {
+        animator.SetBool("Dying", true);
+        GetComponent<NavMeshAgent>().enabled = false;
         yield return new WaitForSeconds(timeTillDeath);
         Destroy(gameObject);
         Drop();

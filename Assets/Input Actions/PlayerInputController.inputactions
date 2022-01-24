@@ -1,5 +1,5 @@
 {
-    "name": "PlayerControlsController",
+    "name": "PlayerInputController",
     "maps": [
         {
             "name": "Player",
@@ -57,7 +57,7 @@
                 {
                     "name": "",
                     "id": "120d34a1-5928-4a45-9175-34662443bc18",
-                    "path": "<Gamepad>/leftShoulder",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Controller",
@@ -79,7 +79,7 @@
                 {
                     "name": "",
                     "id": "64949276-52f5-4b60-8969-a87f131ef2fe",
-                    "path": "<Gamepad>/rightShoulder",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Controller",

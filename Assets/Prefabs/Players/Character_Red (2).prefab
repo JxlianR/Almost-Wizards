@@ -236,16 +236,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 1275080724481816579}
-  cam: {fileID: 0}
   firstElement: {fileID: 2949451573356798529, guid: 9a66f3b46b2bb89488fff20f8736c8f1,
     type: 3}
-  secondElement: {fileID: 0}
+  secondElement: {fileID: 4232483969897211094, guid: 4542ae5374dbec74d83df2f7757ad06f,
+    type: 3}
   oppositePlayer: {fileID: 4563339678682175061, guid: 78956fc5f0846aa4cbdf76b91ce83d50,
     type: 3}
   movementSpeed: 7
   rotationSpeed: 15
   waitTime: 0
-  lives: 10
+  lives: 3
   firstElementTag: Fire
   secondElementTag: Air
   spawnPoint: {fileID: 21542384}

@@ -20,6 +20,8 @@ public class ElementControllerRight : MonoBehaviour
     public string cancellingElementTag; // Tag of the element that cancels this element
     public string combiningElement1Tag; // Tag of the first element this element can be combined with
     public string combiningElement2Tag; // Tag of the second element this element can be combined with
+    public string combiningArea1Tag; // Tag of the first area this elemant ca be combined with
+    public string combiningArea2Tag; // Tag of the secon area this elemant ca be combined with
 
     //public static bool elementAlive;
 
@@ -33,44 +35,14 @@ public class ElementControllerRight : MonoBehaviour
     void Update()
     {
         //transform.Translate(Vector3.forward * speed * Time.deltaTime);
-
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.aimPositionTwo.x, PlayerController.aimPositionOne.y, PlayerController.aimPositionTwo.z), speed * Time.deltaTime);
-
-        // Destroys the element when it is outside of the map
-        /*if (transform.position.x >= 32 || transform.position.x <= -32 || transform.position.z >= 32 || transform.position.z <= -32)
-        {
-            Destroy(gameObject);
-        }*/
+        //transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.aimPositionTwo.x, PlayerController.aimPositionOne.y, PlayerController.aimPositionTwo.z), speed * Time.deltaTime);
+        transform.Translate(new Vector3(0, 0.4f, 1) * speed * Time.deltaTime);
     }
-
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag == combiningElement1Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the first element this element can be combined with
-        {
-            if (GameObject.FindGameObjectsWithTag(combinedElement1Tag).Length == 0) // Checks if there already is a gameObject with the tag of the first combined element
-            {
-                Instantiate(combinedElement1, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the first combined element
-            }
-        }
-        else if (collision.collider.tag == combiningElement2Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
-        {
-            if (GameObject.FindGameObjectsWithTag(combinedElement2Tag).Length == 0) // Checks if there already is a gameObject with the tag of the second combined element
-            {
-                Instantiate(combinedElement2, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the second combined element
-            }
-        }
-        else if (collision.collider.tag == "Enemy") // Checks if the element collides with an enemy
-        {
-            Instantiate(elementArea, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the element area of this element
-        }
-
-        Destroy(gameObject);
-    }*/
 
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.tag == combiningElement1Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the first element this element can be combined with
+        if (other.tag == combiningElement1Tag || other.tag == combiningArea1Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the first element this element can be combined with
         {
             Destroy(gameObject);
 
@@ -80,7 +52,7 @@ public class ElementControllerRight : MonoBehaviour
                 Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.7f, 0), combinedElement1.transform.rotation);
             }
         }
-        else if (other.tag == combiningElement2Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
+        else if (other.tag == combiningElement2Tag || other.tag == combiningArea2Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
         {
             Destroy(gameObject);
 
@@ -107,7 +79,7 @@ public class ElementControllerRight : MonoBehaviour
             if (GameObject.FindGameObjectsWithTag(elementTag).Length <= 1)
             {
                 // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
-                Instantiate(elementArea, DetectGroundHeight(PlayerController.mousePositionLeft.x, PlayerController.mousePositionLeft.z) - new Vector3(0, 0.8f, 0), elementArea.transform.rotation);
+                Instantiate(elementArea, DetectGroundHeight(PlayerController.aimPositionTwo.x, PlayerController.aimPositionTwo.z) /*- new Vector3(0, 0.8f, 0)*/, elementArea.transform.rotation);
             }
         }
         else if (other.tag == "Platform")
@@ -117,7 +89,7 @@ public class ElementControllerRight : MonoBehaviour
             if (GameObject.FindGameObjectsWithTag(elementTag).Length <= 1)
             {
                 // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
-                Instantiate(elementArea, DetectGroundHeight(PlayerController.mousePositionLeft.x, PlayerController.mousePositionLeft.z) - new Vector3(0, 0.15f, 0), elementArea.transform.rotation);
+                Instantiate(elementArea, DetectGroundHeight(PlayerController.aimPositionTwo.x, PlayerController.aimPositionTwo.z) /*- new Vector3(0, 0.15f, 0)*/, elementArea.transform.rotation);
             }
         }
         else

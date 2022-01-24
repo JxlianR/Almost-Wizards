@@ -309,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3255720770957413932}
   m_LocalRotation: {x: 0.04753992, y: -0.7055069, z: -0.04753992, w: -0.7055069}
-  m_LocalPosition: {x: -2.34, y: 1.91, z: -0}
+  m_LocalPosition: {x: -2, y: 1.61, z: -0.132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3755982220775099631}
@@ -617,17 +617,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 3716970059225349987}
-  cam: {fileID: 0}
   firstElement: {fileID: 3727498663742397429, guid: 80c355331b2caf6489e2289aa87889ed,
     type: 3}
-  secondElement: {fileID: 5054210761142208637, guid: 86053630448bc404081bacf4fa909aa1,
+  secondElement: {fileID: 5096162627908967976, guid: 5adcf1f2c55317e48aa33600c5b24dc0,
     type: 3}
   oppositePlayer: {fileID: 2121361417315930066, guid: 0a3952d99528c4f4db2d3c8a9dc87922,
     type: 3}
   movementSpeed: 7
   rotationSpeed: 15
   waitTime: 0
-  lives: 1
+  lives: 3
   firstElementTag: Water
   secondElementTag: Earth
   spawnPoint: {fileID: 8738837295915885271}
@@ -779,7 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4acc2d23ac3eb44197f6a4078ffc0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 4565927284688749803, guid: b8fa154f1af9c0c43978773c32b08115, type: 3}
+  target: {fileID: 0}
 --- !u!1 &4651790068628940791
 GameObject:
   m_ObjectHideFlags: 0

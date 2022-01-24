@@ -7,6 +7,8 @@ public class AiNavEnemy : MonoBehaviour
 {
     public NavMeshAgent Agent;
 
+    private Animator animator;
+
     private GameObject[] Players; // Array with all Players
 
     private Transform closestPlayer;
@@ -25,6 +27,7 @@ public class AiNavEnemy : MonoBehaviour
     void Start()
     {
         closestPlayer = null;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -54,7 +57,7 @@ public class AiNavEnemy : MonoBehaviour
     {
         if (other.tag == weakness || other.tag == combinedWeaknessElement1 || other.tag == combinedWeaknessElement2) // Checks if the tag of the object the enemy collides with is equals the weakness or a combined element of it
         {
-            healthPoints -= ElementBehavior.damage; // Substracts the damage the element is doing from the HP
+            healthPoints -= ElementMouseLeft.damage; // Substracts the damage the element is doing from the HP
             //Debug.Log("Healtpoints = " + healthPoints + " - " + ElementBehavior.damage);
         }
     }
@@ -69,7 +72,6 @@ public class AiNavEnemy : MonoBehaviour
     {
         // Rotating the enemy to the position of target GameObject
         transform.LookAt(closestPlayer);
-        transform.Rotate(0, 90, 0);
     }
 
     // Dropping a heart to gain life for the player
@@ -105,6 +107,8 @@ public class AiNavEnemy : MonoBehaviour
 
     IEnumerator Die()
     {
+        animator.SetBool("Dying", true);
+        GetComponent<NavMeshAgent>().enabled = false;
         yield return new WaitForSeconds(timeTillDeath);
         Destroy(gameObject);
         Drop();

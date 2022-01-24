@@ -9,9 +9,15 @@ AnimatorOverrideController:
   m_Name: PlayerBlue
   m_Controller: {fileID: 9100000, guid: bbf9ef3d1a6c20f45982659b4a518b8b, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: b050b51b7cf29c047a3fd713e5c6cd85, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 9f6a2b3e161ec5847ad4cc3a385c4163, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: aa1db331c917e6b43a6ea34989199ae2, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: a13f14fb2a025a24ba146f7acafb4afa, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: d076a8ea23145f041bf3a26f0f929bed, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: af080adb553bd2847a93ae2dfbbd9155, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f069a7b7e18a3444996d741688a54b6d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 567496f024b7bf2489a7df25093e3163, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4ad1e6526fc92d743accf77b27f3deb2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: eabfb4679815dd64f88ac7aa78d0851b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 00df26469e2311745bd8191f89e9bbd4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e6929c1674e479841ad9d42fc9fe95c1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3268bec3af611a840a1b8495d6ca3c46, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e3e73b2700d8026448a4a41a06ed5424, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d8bf795b8aff75f46bb703c9e37a5d67, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d99b725ba4dda524abcfe36265f2c85a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fc752400cbe69394eaf634b404868868, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1fdb148a810da274eb69853914e6eb34, type: 2}

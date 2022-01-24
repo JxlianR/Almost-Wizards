@@ -8,9 +8,6 @@ public class LevelManager : MonoBehaviour
     private GameObject[] Players; // Array with all players
     private GameObject[] Enemies; // Array with all enemies
 
-    public GameObject Player1;
-    public GameObject Player2;
-
     private EnemySpawner enemySpawner;
 
     public int enemyMultiplicator; // Multiplicator for the number of enemies in the next wave
@@ -33,16 +30,10 @@ public class LevelManager : MonoBehaviour
 
         if (AllEnemiesDead() && enemySpawner.enemyCount == enemySpawner.enemyAmount) // Checks if all enemies are dead and the number of enemies that should spawn did
         {
-            // Spawns two waves of enemies
+            // Spawns six waves of enemies;
             if (waveNumber < 6)
             {
                 playerCanSpawn = true;
-
-                /*GameObject.Find("Player 1 (Keyboard)").SetActive(true); // Spawns Player1
-                GameObject.Find("Player 1 (Keyboard)").GetComponent<PlayerController>().lives = 1;
-
-                GameObject.Find("Player 2 (Controller)").SetActive(true); // Spawns Player2
-                GameObject.Find("Player 2 (Controller)").GetComponent<PlayerController>().lives = 1;*/
 
                 enemySpawner.enemyCount = 0;
                 enemySpawner.enemyAmount *= enemyMultiplicator; // multiplies the amount of enemies that should spawn with an int
@@ -50,7 +41,6 @@ public class LevelManager : MonoBehaviour
 
                 waveNumber++;
                 Debug.Log("Wave " + waveNumber + " starts now!");
-                //playerCanSpawn = false;
             }
         }
 

@@ -17,6 +17,10 @@ TagManager:
   - Ground
   - Platform
   - Heart
+  - AirArea
+  - EarthArea
+  - FireArea
+  - WaterArea
   layers:
   - Default
   - TransparentFX

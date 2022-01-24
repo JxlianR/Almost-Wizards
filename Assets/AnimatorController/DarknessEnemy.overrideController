@@ -7,7 +7,9 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DarknessEnemy
-  m_Controller: {fileID: 9100000, guid: fe0e137d050ce0b4c949269db464b0ee, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0c2a09332771f8f44b05496d43d0ccbd, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: fe12b61d327e7bf43890c286fb4f9439, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: a79915c28a1249640b8eb0ab0c826e9b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 47ed87ea63f88754594c81f8be62fe3e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fa150a1a06fa77f4f986142bb6147a41, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ab5d68a270b450a40955ba4f0a085908, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 517b6c7872a53224eb8555a789399a9f, type: 2}
