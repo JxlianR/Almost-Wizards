@@ -97,13 +97,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80b2d29051afd764f8488051d04b26d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combinedElement1: {fileID: 0}
+  combinedElement1: {fileID: 8968268646960005625, guid: 17857905af09ae642ac48828ae07dba1,
+    type: 3}
   combinedElement1Tag: Mud
-  combinedElement2: {fileID: 0}
+  combinedElement2: {fileID: 3559739376177716093, guid: f42d66fa207369c4dbfad6490e0144a2,
+    type: 3}
   combinedElement2Tag: Ice
-  duration: 5
+  cancellingElementTag: Fire
+  cancellingAreaTag: FireArea
   combiningElement1Tag: Earth
   combiningElement2Tag: Air
+  combiningArea1Tag: EarthArea
+  combiningArea2Tag: AirArea
+  duration: 5
 --- !u!135 &13134109151950397
 SphereCollider:
   m_ObjectHideFlags: 0

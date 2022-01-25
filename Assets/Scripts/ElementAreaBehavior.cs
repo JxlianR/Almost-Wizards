@@ -10,12 +10,15 @@ public class ElementAreaBehavior : MonoBehaviour
     public GameObject combinedElement2;
     public string combinedElement2Tag;
 
-    //public int damage;
-
-    public float duration; // Duration of the area, after this duration it gets destroyed
+    public string cancellingElementTag; // Tag of the element that cancels this area
+    public string cancellingAreaTag; // Tag of the area that cancels this area
 
     public string combiningElement1Tag; // Tag of the first element this element can be combined with
     public string combiningElement2Tag; // Tag of the second element this element can be combined with
+    public string combiningArea1Tag; // Tag of the first area this area ca be combined with
+    public string combiningArea2Tag; // Tag of the secon area this are ca be combined with
+
+    public float duration; // Duration of the area, after this duration it gets destroyed
 
     // Start is called before the first frame update
     void Start()
@@ -42,50 +45,21 @@ public class ElementAreaBehavior : MonoBehaviour
         Destroy(gameObject);
     }
 
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag != "Enemy" && collision.collider.tag != "Player")
-        {
-            if (collision.gameObject.tag == combiningElement1Tag)
-            {
-                if (GameObject.FindGameObjectsWithTag(combinedElement1Tag).Length == 0)
-                {
-                    Instantiate(combinedElement1, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation);
-                    Destroy(gameObject);
-                }
-            }
-            else if (collision.gameObject.tag == combiningElement2Tag)
-            {
-                if (GameObject.FindGameObjectsWithTag(combinedElement2Tag).Length == 0)
-                {
-                    Instantiate(combinedElement2, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation);
-                    Destroy(gameObject);
-                }
-            }
-
-            //Destroy(gameObject);
-        }
-    }*/
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == combiningElement1Tag) // Checks if the other gameobject is an element this element can combine with
+        if (other.tag == combiningElement1Tag || other.tag == combiningArea1Tag) // Checks if the other gameobject is an element this element can combine with
         {
             StartCoroutine(Destroy());
-
-            /*if (GameObject.FindGameObjectsWithTag(combinedElement1Tag).Length == 0) // Checks if there already is a gameObject with the tag of the first combined element
-            {
-                Instantiate(combinedElement1, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the first combined element
-            }*/
+            Instantiate(combinedElement1, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the first combined element
         }
-        else if (other.tag == combiningElement2Tag)
+        else if (other.tag == combiningElement2Tag || other.tag == combiningArea2Tag)
         {
             StartCoroutine(Destroy());
-
-            /*if (GameObject.FindGameObjectsWithTag(combinedElement2Tag).Length == 0) // Checks if there already is a gameObject with the tag of the second combined element
-            {
-                Instantiate(combinedElement2, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the second combined element
-            }*/
+            Instantiate(combinedElement2, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the second combined element
+        }
+        else if (other.tag == cancellingElementTag || other.tag == cancellingAreaTag)
+        {
+            Destroy(gameObject);
         }
 
         //Destroy(gameObject);

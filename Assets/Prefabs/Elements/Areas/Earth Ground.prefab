@@ -49,13 +49,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80b2d29051afd764f8488051d04b26d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combinedElement1: {fileID: 0}
+  combinedElement1: {fileID: 8968268646960005625, guid: 17857905af09ae642ac48828ae07dba1,
+    type: 3}
   combinedElement1Tag: Mud
-  combinedElement2: {fileID: 0}
+  combinedElement2: {fileID: 4300136056160293240, guid: 682a1336aa50f174e860d86eb0f2c6ad,
+    type: 3}
   combinedElement2Tag: Magma
-  duration: 5
+  cancellingElementTag: Air
+  cancellingAreaTag: AirArea
   combiningElement1Tag: Water
   combiningElement2Tag: Fire
+  combiningArea1Tag: WaterArea
+  combiningArea2Tag: FireArea
+  duration: 5
 --- !u!33 &3025516942780318964
 MeshFilter:
   m_ObjectHideFlags: 0

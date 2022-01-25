@@ -50,11 +50,16 @@ MonoBehaviour:
   combinedElement1: {fileID: 5520595216458583611, guid: bd6cbc4c1a26b054daa7853854142a80,
     type: 3}
   combinedElement1Tag: Firenado
-  combinedElement2: {fileID: 0}
+  combinedElement2: {fileID: 4300136056160293240, guid: 682a1336aa50f174e860d86eb0f2c6ad,
+    type: 3}
   combinedElement2Tag: Magma
-  duration: 100
+  cancellingElementTag: Water
+  cancellingAreaTag: WaterArea
   combiningElement1Tag: Air
   combiningElement2Tag: Earth
+  combiningArea1Tag: AirArea
+  combiningArea2Tag: EarthArea
+  duration: 5
 --- !u!198 &6632860600325154541
 ParticleSystem:
   m_ObjectHideFlags: 0

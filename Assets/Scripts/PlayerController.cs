@@ -288,7 +288,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.started)
         {
-            if (mouseCanShoot == true && GameObject.FindGameObjectsWithTag(firstElementTag).Length == 0) // Checks if the player can shoot
+            if (mouseCanShoot == true) // Checks if the player can shoot
             {
                 GameObject.Instantiate(firstElement, spawnPoint.position, spawnPoint.rotation); // Spawning the element
 
@@ -311,7 +311,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.started)
         {
-            if (mouseCanShoot == true && GameObject.FindGameObjectsWithTag(secondElementTag).Length == 0) // Checks if the player can shoot
+            if (mouseCanShoot == true) // Checks if the player can shoot
             {
                 GameObject.Instantiate(secondElement, spawnPoint.position, spawnPoint.rotation ); // Spawning the element
 
@@ -334,7 +334,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.started)
         {
-            if (controllerCanShoot == true && GameObject.FindGameObjectsWithTag(firstElementTag).Length == 0) // Checks if the player can shoot
+            if (controllerCanShoot == true) // Checks if the player can shoot
             {
                 GameObject.Instantiate(firstElement, spawnPoint.position, transform.rotation); // Spawning the element
 
@@ -348,7 +348,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.started)
         {
-            if (controllerCanShoot == true && GameObject.FindGameObjectsWithTag(secondElementTag).Length == 0) // Checks if the player can shoot
+            if (controllerCanShoot == true) // Checks if the player can shoot
             {
                 GameObject.Instantiate(secondElement, spawnPoint.position, spawnPoint.rotation); // Spawning the element
 

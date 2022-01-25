@@ -4822,11 +4822,16 @@ MonoBehaviour:
   combinedElement1: {fileID: 5520595216458583611, guid: bd6cbc4c1a26b054daa7853854142a80,
     type: 3}
   combinedElement1Tag: Firenado
-  combinedElement2: {fileID: 0}
+  combinedElement2: {fileID: 3559739376177716093, guid: f42d66fa207369c4dbfad6490e0144a2,
+    type: 3}
   combinedElement2Tag: Ice
-  duration: 5
+  cancellingElementTag: Earth
+  cancellingAreaTag: EarthArea
   combiningElement1Tag: Fire
   combiningElement2Tag: Water
+  combiningArea1Tag: FireArea
+  combiningArea2Tag: WaterArea
+  duration: 5
 --- !u!54 &3050560556891624780
 Rigidbody:
   m_ObjectHideFlags: 0
