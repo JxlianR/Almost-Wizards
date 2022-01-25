@@ -70,7 +70,7 @@ public class ElementMouseLeft : MonoBehaviour
         }
         else
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
