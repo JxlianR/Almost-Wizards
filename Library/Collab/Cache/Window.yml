@@ -14,18 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Prefabs/Players/Blue Character.prefab
-    - Assets/Prefabs/Players/Red Character.prefab
-    - Assets/Scenes/SampleScene.unity
-    - Assets/Scripts/AiNavEnemy.cs
-    - Assets/Scripts/Health.cs
-    - Assets/Scripts/Health.cs.meta
-    - Assets/Scripts/LevelManager.cs
-    - Assets/Scripts/Lives.cs
-    - Assets/Scripts/Lives.cs.meta
+    - Assets/Animations/DamageBluePlayer.anim
+    - Assets/Animations/DamageBluePlayer.anim.meta
+    - Assets/Animations/DamageRedPlayer.anim
+    - Assets/Animations/DamageRedPlayer.anim.meta
+    - Assets/Animations/RevivingBluePlayer.anim
+    - Assets/Animations/RevivingBluePlayer.anim.meta
+    - Assets/Animations/RevivingPlayerRed.anim
+    - Assets/Animations/RevivingPlayerRed.anim.meta
+    - Assets/Prefabs/Players/Blu Animations.fbx
+    - Assets/Prefabs/Players/Blu Animations.fbx.meta
+    - Assets/Prefabs/Players/Red Animations.fbx
+    - Assets/Prefabs/Players/Red Animations.fbx.meta
     - Assets/Scripts/PlayerController.cs
     - 
-    m_Values: 0000000000000000000000
+    m_Values: 0101010101010101010101010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
