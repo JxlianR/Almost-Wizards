@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 8891391787595311142}
   - component: {fileID: 6827684250909836674}
   m_Layer: 0
-  m_Name: heart
-  m_TagString: Untagged
+  m_Name: Heart
+  m_TagString: Earth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,8 +9,6 @@ public class PlayerController : MonoBehaviour
 
     private Lives health;
 
-    private Animation animation;
-
     public CharacterController characterController;
 
     private Camera cam;
@@ -62,7 +60,6 @@ public class PlayerController : MonoBehaviour
         cam = FindObjectOfType<Camera>();
         animator = GetComponent<Animator>();
         health = gameObject.GetComponent<Lives>();
-        animation = gameObject.GetComponent<Animation>();
 
         mouseCanShoot = true;
         controllerCanShoot = true;
@@ -366,12 +363,7 @@ public class PlayerController : MonoBehaviour
         if (other.tag == "Enemy") // Checks if the gameObject the player is colliding with is an enemy
         {
             health.lives -= 1; // Subtracting 1 life
-
-            if (health.lives > 0)
-            {
-                StartCoroutine(Damage());
-            }
-
+           
             Destroy(other.gameObject); // Destroys the enemy
         }
         else if (other.tag == "Heart")
@@ -386,11 +378,6 @@ public class PlayerController : MonoBehaviour
         else if (other.tag == "Fire" || other.tag == "Air" || other.tag == "Water" || other.tag == "Earth" || other.tag == "FireArea" || other.tag == "AirArea" || other.tag == "WaterArea" || other.tag == "EarthArea")
         {
             health.lives -= 1;
-
-            if (health.lives > 0)
-            {
-                StartCoroutine(Damage());
-            }
         }
     }
 
@@ -410,20 +397,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator Damage()
-    {
-        animator.SetBool("Damage", true); // Starts the animation
-        gameObject.GetComponent<PlayerInput>().enabled = false; // Unable the PlayerInput to make the player unable to move or rotate the character
-        yield return new WaitForSeconds(0.2f); // Wait for 0.2 seconds
-        animator.SetBool("Damage", false); // Ends the animation
-        gameObject.GetComponent<PlayerInput>().enabled = true; // Enables the PlayerInput to make the player able to move or rotate the character
-    }
-
     IEnumerator Dying()
     {
         animator.SetBool("PlayerDies", true); // Starts the animation
         gameObject.GetComponent<PlayerInput>().enabled = false; // Enables the PlayerInput to make the player unable to move or rotate the character
-        yield return new WaitForSeconds(2); // Waits for 2 seconds
+        yield return new WaitForSeconds(1.2f); // Waits for 1.2 seconds
         Destroy(gameObject); // Destroys the dead player
     }
 

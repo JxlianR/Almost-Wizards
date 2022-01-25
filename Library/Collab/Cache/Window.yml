@@ -14,22 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Animations/DamageBluePlayer.anim
-    - Assets/Animations/DamageBluePlayer.anim.meta
-    - Assets/Animations/DamageRedPlayer.anim
-    - Assets/Animations/DamageRedPlayer.anim.meta
-    - Assets/Animations/RevivingBluePlayer.anim
-    - Assets/Animations/RevivingBluePlayer.anim.meta
-    - Assets/Animations/RevivingPlayerRed.anim
-    - Assets/Animations/RevivingPlayerRed.anim.meta
-    - Assets/Prefabs/Players/Blu Animations.fbx
-    - Assets/Prefabs/Players/Blu Animations.fbx.meta
-    - Assets/Prefabs/Players/Red Animations.fbx
-    - Assets/Prefabs/Players/Red Animations.fbx.meta
-    - Assets/Scripts/PlayerController.cs
     - 
-    m_Values: 0101010101010101010101010101
-  RevisionSummary: 
+    m_Values: 01
+  RevisionSummary: Cam
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Lives : MonoBehaviour
 {
-    public GameObject heart1; // First heart to show lives of the player
-    public GameObject heart2; // Second heart to show lives of the player
-    public GameObject heart3; // Third heart to show lives of the player
+    private GameObject heart1; // First heart to show lives of the player
+    private GameObject heart2; // Second heart to show lives of the player
+    private GameObject heart3; // Third heart to show lives of the player
 
     public int lives = 3;
 
