@@ -110,7 +110,7 @@ MonoBehaviour:
   combiningArea1Tag: 
   combiningArea2Tag: 
   duration: 6
-  Damage: 2
+  Damage: 4
 --- !u!135 &1036091384294779772
 SphereCollider:
   m_ObjectHideFlags: 0

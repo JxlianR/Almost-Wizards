@@ -1126,7 +1126,7 @@ MonoBehaviour:
   combiningArea1Tag: 
   combiningArea2Tag: 
   duration: 6
-  Damage: 2
+  Damage: 4
 --- !u!95 &5854577138462432111
 Animator:
   serializedVersion: 3

@@ -14,11 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scripts/AiNavDarkEnemy.cs
-    - Assets/Scripts/AiNavEnemy.cs
-    - Assets/Scripts/ElementAreaBehavior.cs
+    - Assets/AnimatorController/Smoke.controller
+    - Assets/AnimatorController/Smoke.controller.meta
+    - Assets/Assets/Assets For Wizards/Smoke Failure.meta
+    - Assets/Assets/Assets For Wizards/Smoke Failure/Double Sided Smoke Grey.png
+    - Assets/Assets/Assets For Wizards/Smoke Failure/Double Sided Smoke Grey.png.meta
+    - Assets/Assets/Assets For Wizards/Smoke Failure/Double Sided Smoke.png
+    - Assets/Assets/Assets For Wizards/Smoke Failure/Double Sided Smoke.png.meta
+    - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Core.prefab
+    - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Core.prefab.meta
+    - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Mat.mat
+    - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Mat.mat.meta
     - 
-    m_Values: 01010101
+    m_Values: 010101010101010101010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

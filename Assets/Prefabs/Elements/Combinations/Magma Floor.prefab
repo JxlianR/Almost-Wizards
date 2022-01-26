@@ -450,7 +450,7 @@ MonoBehaviour:
   combiningArea1Tag: 
   combiningArea2Tag: 
   duration: 6
-  Damage: 2
+  Damage: 4
 --- !u!1 &4666759499604441585
 GameObject:
   m_ObjectHideFlags: 0

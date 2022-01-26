@@ -16,12 +16,17 @@ public class AiNavEnemy : MonoBehaviour
     public GameObject heart;
 
     public int healthPoints;
+    public int maxHealthPoints;
 
     public float timeTillDeath = 0.5f;
 
     public string weakness;
+    public string weaknessArea;
     public string combinedWeaknessElement1; // Tag of the first element that can be created when combing the weakness with another element
     public string combinedWeaknessElement2; // Tag of the first element that can be created when combing the weakness with another element
+    public string ownElement;
+    public string ownElementCombined1;
+    public string ownElementCombined2;
 
     private bool gotDamage;
 
@@ -57,15 +62,28 @@ public class AiNavEnemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if ((other.tag == weakness || other.tag == combinedWeaknessElement1 || other.tag == combinedWeaknessElement2) && gotDamage == false) // Checks if the tag of the object the enemy collides with is equals the weakness or a combined element of it
+        if ((other.tag == weakness || other.tag == weaknessArea) && gotDamage == false) // Checks if the tag of the object the enemy collides with is equals the weakness or a combined element of it
         {
-            healthPoints -= ElementMouseLeft.damage; // Substracts the damage the element is doing from the HP
+            healthPoints -= ElementControllerLeft.damage * 2; ; // Substracts the damage the element is doing from the HP
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }
-        else if ((other.tag == "Firenado" || other.tag == "Magma" || other.tag == "Ice" || other.tag == "Mud") && gotDamage == false)
+        else if ((other.tag == combinedWeaknessElement1 || other.tag == combinedWeaknessElement2) && gotDamage == false)
         {
             healthPoints -= other.gameObject.GetComponent<ElementAreaBehavior>().Damage;
+            gotDamage = true; // true means the enemy got damage a short time ago
+            StartCoroutine(CanGetDamage());
+        }
+        else if ((other.tag == ownElement || other.tag == ownElementCombined1 || other.tag == ownElementCombined2))
+        {
+            if (healthPoints < maxHealthPoints)
+            {
+                healthPoints++;
+            }
+        }
+        else if (gotDamage == false)
+        {
+            healthPoints -= ElementControllerLeft.damage;
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }

@@ -9668,7 +9668,7 @@ MonoBehaviour:
   combiningArea1Tag: 
   combiningArea2Tag: 
   duration: 6
-  Damage: 2
+  Damage: 4
 --- !u!198 &4146474813821781605
 ParticleSystem:
   m_ObjectHideFlags: 0
