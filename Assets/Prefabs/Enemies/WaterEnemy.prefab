@@ -356,7 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Agent: {fileID: 8220533786141009486}
   heart: {fileID: 5042171221396763297, guid: 57a7eab43c58149498559c0748d688ba, type: 3}
-  healthPoints: 1
+  healthPoints: 2
   timeTillDeath: 1.5
   weakness: Fire
   combinedWeaknessElement1: Firenado

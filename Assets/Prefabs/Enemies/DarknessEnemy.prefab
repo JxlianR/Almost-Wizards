@@ -261,7 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Agent: {fileID: 9192862461379736056}
   heart: {fileID: 5042171221396763297, guid: 57a7eab43c58149498559c0748d688ba, type: 3}
-  healthPoints: 2
+  healthPoints: 4
   timeTillDeath: 1.5
 --- !u!95 &5143005602254523836
 Animator:

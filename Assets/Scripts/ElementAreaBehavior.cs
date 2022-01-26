@@ -20,6 +20,8 @@ public class ElementAreaBehavior : MonoBehaviour
 
     public float duration; // Duration of the area, after this duration it gets destroyed
 
+    public int Damage;
+
     // Start is called before the first frame update
     void Start()
     {

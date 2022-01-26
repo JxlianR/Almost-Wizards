@@ -59,7 +59,8 @@ MonoBehaviour:
   combiningElement2Tag: Earth
   combiningArea1Tag: AirArea
   combiningArea2Tag: EarthArea
-  duration: 5
+  duration: 4
+  Damage: 1
 --- !u!198 &6632860600325154541
 ParticleSystem:
   m_ObjectHideFlags: 0

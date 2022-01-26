@@ -9661,9 +9661,14 @@ MonoBehaviour:
   combinedElement1Tag: 
   combinedElement2: {fileID: 0}
   combinedElement2Tag: 
-  duration: 3
+  cancellingElementTag: 
+  cancellingAreaTag: 
   combiningElement1Tag: 
   combiningElement2Tag: 
+  combiningArea1Tag: 
+  combiningArea2Tag: 
+  duration: 6
+  Damage: 2
 --- !u!198 &4146474813821781605
 ParticleSystem:
   m_ObjectHideFlags: 0

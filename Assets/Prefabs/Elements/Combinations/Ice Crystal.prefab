@@ -103,9 +103,14 @@ MonoBehaviour:
   combinedElement1Tag: 
   combinedElement2: {fileID: 0}
   combinedElement2Tag: 
-  duration: 3
+  cancellingElementTag: 
+  cancellingAreaTag: 
   combiningElement1Tag: 
   combiningElement2Tag: 
+  combiningArea1Tag: 
+  combiningArea2Tag: 
+  duration: 6
+  Damage: 2
 --- !u!135 &1036091384294779772
 SphereCollider:
   m_ObjectHideFlags: 0

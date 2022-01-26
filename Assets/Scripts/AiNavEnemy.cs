@@ -23,6 +23,8 @@ public class AiNavEnemy : MonoBehaviour
     public string combinedWeaknessElement1; // Tag of the first element that can be created when combing the weakness with another element
     public string combinedWeaknessElement2; // Tag of the first element that can be created when combing the weakness with another element
 
+    private bool gotDamage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,10 +57,17 @@ public class AiNavEnemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == weakness || other.tag == combinedWeaknessElement1 || other.tag == combinedWeaknessElement2) // Checks if the tag of the object the enemy collides with is equals the weakness or a combined element of it
+        if ((other.tag == weakness || other.tag == combinedWeaknessElement1 || other.tag == combinedWeaknessElement2) && gotDamage == false) // Checks if the tag of the object the enemy collides with is equals the weakness or a combined element of it
         {
             healthPoints -= ElementMouseLeft.damage; // Substracts the damage the element is doing from the HP
-            //Debug.Log("Healtpoints = " + healthPoints + " - " + ElementBehavior.damage);
+            gotDamage = true; // true means the enemy got damage a short time ago
+            StartCoroutine(CanGetDamage());
+        }
+        else if ((other.tag == "Firenado" || other.tag == "Magma" || other.tag == "Ice" || other.tag == "Mud") && gotDamage == false)
+        {
+            healthPoints -= other.gameObject.GetComponent<ElementAreaBehavior>().Damage;
+            gotDamage = true; // true means the enemy got damage a short time ago
+            StartCoroutine(CanGetDamage());
         }
     }
 
@@ -103,6 +112,12 @@ public class AiNavEnemy : MonoBehaviour
             }
         }
         return playerPosition;
+    }
+
+    IEnumerator CanGetDamage()
+    {
+        yield return new WaitForSeconds(0.5f);
+        gotDamage = false; // Enemy can get damage again
     }
 
     IEnumerator Die()

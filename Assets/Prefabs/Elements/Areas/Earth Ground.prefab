@@ -61,7 +61,8 @@ MonoBehaviour:
   combiningElement2Tag: Fire
   combiningArea1Tag: WaterArea
   combiningArea2Tag: FireArea
-  duration: 5
+  duration: 4
+  Damage: 1
 --- !u!33 &3025516942780318964
 MeshFilter:
   m_ObjectHideFlags: 0

@@ -54,7 +54,13 @@ public class AiNavDarkEnemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Player" && gotDamage == false)
+        if ((other.tag == "Firenado" || other.tag == "Magma" || other.tag == "Ice" || other.tag == "Mud") && gotDamage == false)
+        {
+            healthPoints -= other.gameObject.GetComponent<ElementAreaBehavior>().Damage; // Substracts the damage the element is doing from the HP
+            gotDamage = true; // true means the enemy got damage a short time ago
+            StartCoroutine(CanGetDamage());
+        }
+        else if (other.tag != "Player" && gotDamage == false)
         {
             healthPoints -= ElementMouseLeft.damage; // Substracts the damage the element is doing from the HP
             Debug.Log("Healtpoints = " + healthPoints + " - " + ElementMouseLeft.damage);

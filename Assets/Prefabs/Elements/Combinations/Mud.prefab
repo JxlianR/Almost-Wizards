@@ -1119,9 +1119,14 @@ MonoBehaviour:
   combinedElement1Tag: 
   combinedElement2: {fileID: 0}
   combinedElement2Tag: 
-  duration: 3
+  cancellingElementTag: 
+  cancellingAreaTag: 
   combiningElement1Tag: 
   combiningElement2Tag: 
+  combiningArea1Tag: 
+  combiningArea2Tag: 
+  duration: 6
+  Damage: 2
 --- !u!95 &5854577138462432111
 Animator:
   serializedVersion: 3

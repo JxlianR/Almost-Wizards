@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scenes/Julian.meta
-    - Assets/Scenes/Julian/NavMesh.asset
-    - Assets/Scenes/Julian/NavMesh.asset.meta
+    - Assets/Scripts/AiNavDarkEnemy.cs
+    - Assets/Scripts/AiNavEnemy.cs
+    - Assets/Scripts/ElementAreaBehavior.cs
     - 
     m_Values: 01010101
-  RevisionSummary: Made a new Scene to test everything in final arena
+  RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

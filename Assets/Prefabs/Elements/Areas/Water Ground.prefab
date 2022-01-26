@@ -109,7 +109,8 @@ MonoBehaviour:
   combiningElement2Tag: Air
   combiningArea1Tag: EarthArea
   combiningArea2Tag: AirArea
-  duration: 5
+  duration: 4
+  Damage: 1
 --- !u!135 &13134109151950397
 SphereCollider:
   m_ObjectHideFlags: 0
