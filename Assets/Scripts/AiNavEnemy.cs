@@ -104,7 +104,7 @@ public class AiNavEnemy : MonoBehaviour
     // Dropping a heart to gain life for the player
     private void Drop()
     {
-        int dropChance = 100; // 5% chance of dropping a heart
+        int dropChance = 5; // 5% chance of dropping a heart
         int randomChance = Random.Range(0, 101); // Getting a random number between 0 and 100 (101 is exclusive)
 
         if (dropChance >= randomChance)

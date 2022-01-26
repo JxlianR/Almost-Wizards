@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class MultipleTargetCamera : MonoBehaviour
 {
-    public List<Transform> targets;
+    public GameObject[] players;
     public float smoothTime = 0.5f;
 
     public float minZoom = 40f;
@@ -25,7 +25,9 @@ public class MultipleTargetCamera : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (targets.Count == 0)
+        players = GameObject.FindGameObjectsWithTag("Player");
+
+        if (players.Length == 0)
             return;
 
         Move();
@@ -49,10 +51,10 @@ public class MultipleTargetCamera : MonoBehaviour
 
     float GetGreatestDistance()
     {
-        var bounds = new Bounds(targets[0].position, Vector3.zero);
-        for (int i = 0; i < targets.Count; i++)
+        var bounds = new Bounds(players[0].transform.position, Vector3.zero);
+        for (int i = 0; i < players.Length; i++)
         {
-            bounds.Encapsulate(targets[i].position);
+            bounds.Encapsulate(players[i].transform.position);
         }
 
         return bounds.size.x;
@@ -61,15 +63,15 @@ public class MultipleTargetCamera : MonoBehaviour
 
     Vector3 GetCenterPoint()
     {
-        if (targets.Count == 1)
+        if (players.Length == 1)
         {
-            return targets[0].position;
+            return players[0].transform.position;
         }
 
-        var bounds = new Bounds(targets[0].position, Vector3.zero);
-        for (int i =0; i < targets.Count; i++)
+        var bounds = new Bounds(players[0].transform.position, Vector3.zero);
+        for (int i =0; i < players.Length; i++)
         {
-            bounds.Encapsulate(targets[i].position);
+            bounds.Encapsulate(players[i].transform.position);
         }
 
         return bounds.center;
