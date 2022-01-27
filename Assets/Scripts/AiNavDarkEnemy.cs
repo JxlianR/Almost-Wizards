@@ -41,6 +41,12 @@ public class AiNavDarkEnemy : MonoBehaviour
             StartCoroutine(Die());
             //Destroy(gameObject);
         }
+
+        if (LevelManager.playerCanSpawn == true)
+        {
+            gameObject.GetComponent<AiNavDarkEnemy>().Agent.speed += 0.5f;
+            LevelManager.playerCanSpawn = false;
+        }
     }
 
     /*private void OnCollisionEnter(Collision collision)

@@ -49,6 +49,12 @@ public class AiNavEnemy : MonoBehaviour
         {
             StartCoroutine(Die());
         }
+
+        if (LevelManager.playerCanSpawn == true)
+        {
+            gameObject.GetComponent<AiNavEnemy>().Agent.speed += 0.5f;
+            LevelManager.playerCanSpawn = false;
+        }
     }
 
     /*private void OnCollisionEnter(Collision collision)

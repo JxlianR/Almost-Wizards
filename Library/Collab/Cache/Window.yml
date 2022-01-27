@@ -25,8 +25,18 @@ MonoBehaviour:
     - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Core.prefab.meta
     - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Mat.mat
     - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Mat.mat.meta
+    - Assets/Prefabs/Elements/Combinations/Firetornado.prefab
+    - Assets/Prefabs/Elements/Combinations/Ice Crystal.prefab
+    - Assets/Prefabs/Elements/Combinations/Magma Floor.prefab
+    - Assets/Prefabs/Elements/Combinations/Mud.prefab
+    - Assets/Prefabs/Enemies/AirEnemy.prefab
+    - Assets/Prefabs/Enemies/EarthEnemy.prefab
+    - Assets/Prefabs/Enemies/WaterEnemy.prefab
+    - Assets/Scenes/Julian.unity
+    - Assets/Scripts/AiNavEnemy.cs
+    - Assets/Scripts/MultipleTargetCamera.cs
     - 
-    m_Values: 010101010101010101010101
+    m_Values: 00000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
