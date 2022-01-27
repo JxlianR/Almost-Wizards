@@ -68,28 +68,28 @@ public class AiNavEnemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if ((other.tag == weakness || other.tag == weaknessArea) && gotDamage == false) // Checks if the tag of the object the enemy collides with is equals the weakness or a combined element of it
+        if ((other.tag == weakness || other.tag == weaknessArea) && gotDamage == false) // Checks if the object is the weakness and if it is able to take damage
         {
-            healthPoints -= ElementControllerLeft.damage * 2; ; // Substracts the damage the element is doing from the HP
+            healthPoints -= ElementControllerLeft.damage * 2; ; // Substracts the damage the element is doing from the HP multiplied with 2
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }
-        else if ((other.tag == combinedWeaknessElement1 || other.tag == combinedWeaknessElement2) && gotDamage == false)
+        else if ((other.tag == combinedWeaknessElement1 || other.tag == combinedWeaknessElement2) && gotDamage == false) // Checks if the object a combined element of the weakness and if it is able to take damage
         {
-            healthPoints -= other.gameObject.GetComponent<ElementAreaBehavior>().Damage;
+            healthPoints -= other.gameObject.GetComponent<ElementAreaBehavior>().Damage; // Substracts the damage the element is doing from the HP
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }
-        else if ((other.tag == ownElement || other.tag == ownElementCombined1 || other.tag == ownElementCombined2))
+        else if ((other.tag == ownElement || other.tag == ownElementCombined1 || other.tag == ownElementCombined2)) // Checks if the object is its own element or a combined element of it
         {
-            if (healthPoints < maxHealthPoints)
+            if (healthPoints < maxHealthPoints) // Checks if HP are less than the maximal HP the enemy can have
             {
-                healthPoints++;
+                healthPoints++; // Adds 1 hP
             }
         }
         else if (gotDamage == false)
         {
-            healthPoints -= ElementControllerLeft.damage;
+            healthPoints -= ElementControllerLeft.damage; // Substracts the damage the element is doing from the HP
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }

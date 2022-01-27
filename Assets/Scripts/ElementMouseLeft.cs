@@ -34,8 +34,6 @@ public class ElementMouseLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.mousePositionLeft.x, 0.8f, PlayerController.mousePositionLeft.z), speed * Time.deltaTime);
-        //transform.Translate(new Vector3 (1, 0, 0) * speed * Time.deltaTime);
         transform.Translate(new Vector3(0, 0.3f, 1) * speed * Time.deltaTime);
     }
 

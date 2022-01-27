@@ -14,29 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/AnimatorController/Smoke.controller
-    - Assets/AnimatorController/Smoke.controller.meta
-    - Assets/Assets/Assets For Wizards/Smoke Failure.meta
-    - Assets/Assets/Assets For Wizards/Smoke Failure/Double Sided Smoke Grey.png
-    - Assets/Assets/Assets For Wizards/Smoke Failure/Double Sided Smoke Grey.png.meta
-    - Assets/Assets/Assets For Wizards/Smoke Failure/Double Sided Smoke.png
-    - Assets/Assets/Assets For Wizards/Smoke Failure/Double Sided Smoke.png.meta
-    - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Core.prefab
-    - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Core.prefab.meta
-    - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Mat.mat
-    - Assets/Assets/Assets For Wizards/Smoke Failure/Smoke Mat.mat.meta
-    - Assets/Prefabs/Elements/Combinations/Firetornado.prefab
-    - Assets/Prefabs/Elements/Combinations/Ice Crystal.prefab
-    - Assets/Prefabs/Elements/Combinations/Magma Floor.prefab
-    - Assets/Prefabs/Elements/Combinations/Mud.prefab
-    - Assets/Prefabs/Enemies/AirEnemy.prefab
-    - Assets/Prefabs/Enemies/EarthEnemy.prefab
-    - Assets/Prefabs/Enemies/WaterEnemy.prefab
     - Assets/Scenes/Julian.unity
-    - Assets/Scripts/AiNavEnemy.cs
-    - Assets/Scripts/MultipleTargetCamera.cs
+    - Assets/UI.meta
+    - Assets/UI/health.png
+    - Assets/UI/health.png.meta
+    - Assets/UI/ui_frame.png
+    - Assets/UI/ui_frame.png.meta
     - 
-    m_Values: 00000000000000000000000000000000000000000000
+    m_Values: 00000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

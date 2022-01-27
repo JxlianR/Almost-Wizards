@@ -49,15 +49,6 @@ public class AiNavDarkEnemy : MonoBehaviour
         }
     }
 
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag == weakness || collision.collider.tag == combinedWeaknessElement1 || collision.collider.tag == combinedWeaknessElement2) // Checks if the tag of the object the enemy collides with is equals the weakness or a combined element of it
-        {
-            healthPoints -= ElementBehaviour.damage; // Substracts the damage the element is doing from the HP
-            Debug.Log("Healtpoints = " + healthPoints + " - " + ElementBehaviour.damage);
-        }
-    }*/
-
     private void OnTriggerEnter(Collider other)
     {
         if ((other.tag == "Firenado" || other.tag == "Magma" || other.tag == "Ice" || other.tag == "Mud") && gotDamage == false)

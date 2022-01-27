@@ -73,11 +73,10 @@ public class PlayerController : MonoBehaviour
         isSPressed = movementInput.y >= -1 && movementInput.y < -0.7;
         isDPressed = movementInput.x > 0.7 && movementInput.x <= 1;
 
-        rotationMinus45To45 = transform.rotation.y > -0.35 && transform.rotation.y < 0.35;
-        rotation45To135 = transform.rotation.y > 0.35 && transform.rotation.y < 0.92;
-        rotation135ToMinus135 = transform.rotation.y > 0.92 || transform.rotation.y < -0.92;
-        rotationMinus135ToMinus45 = transform.rotation.y > -0.92 && transform.rotation.y < -0.35;
-        //Debug.Log(movementInput);
+        rotationMinus45To45 = transform.rotation.y > -0.35 && transform.rotation.y < 0.35; // rotationMinus45To45 is true when the players y rotation is between -0.35 and 0.35
+        rotation45To135 = transform.rotation.y > 0.35 && transform.rotation.y < 0.92; // rotation45To135 is true when the players y rotation is between 0.35 and 0.92
+        rotation135ToMinus135 = transform.rotation.y > 0.92 || transform.rotation.y < -0.92; // rotation135ToMinus135 is true when the players y rotation is over 0.92 and under -0.92
+        rotationMinus135ToMinus45 = transform.rotation.y > -0.92 && transform.rotation.y < -0.35; // rotationMinus135ToMinus45 is true when the players y rotation is between -0.92 and -0.35
 
         HandleAnimations();
 
@@ -118,14 +117,14 @@ public class PlayerController : MonoBehaviour
 
 
         // Rotation with controller
-        if (Mathf.Abs(controllerRotationInput.x) > controllerDeadzone || Mathf.Abs(controllerRotationInput.y) > controllerDeadzone)
+        if (Mathf.Abs(controllerRotationInput.x) > controllerDeadzone || Mathf.Abs(controllerRotationInput.y) > controllerDeadzone) // Checks if the rotation input is bigger than the Deadzone (0.1f)
         {
-            Vector3 playerDirection = Vector3.right * controllerRotationInput.x + Vector3.forward * controllerRotationInput.y;
+            Vector3 playerDirection = Vector3.right * controllerRotationInput.x + Vector3.forward * controllerRotationInput.y; // Gets the rotation input and setd it to a Vector3
 
             if (playerDirection.sqrMagnitude > 0.0f)
             {
-                Quaternion newRotation = Quaternion.LookRotation(playerDirection, Vector3.up);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, rotationSpeed * Time.deltaTime);
+                Quaternion newRotation = Quaternion.LookRotation(playerDirection, Vector3.up); // newRotation is the position the character should rotate to
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, rotationSpeed * Time.deltaTime); // Rotates the character towards newRotation
             }
         }
 
@@ -140,10 +139,6 @@ public class PlayerController : MonoBehaviour
     private void HandleAnimations()
     {
         bool isMoving = animator.GetBool("IsMoving"); // Getting access to the bool
-        bool walkForward = animator.GetBool("WalkForward");
-        bool walkBackward = animator.GetBool("WalkBackward");
-        bool walkLeft = animator.GetBool("WalkLeft");
-        bool walkRight = animator.GetBool("WalkRight");
 
         if (isMovingPressed && !isMoving) // Checking if player presses WASD and the character is not moving
         {

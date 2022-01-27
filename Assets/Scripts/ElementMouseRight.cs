@@ -34,9 +34,7 @@ public class ElementMouseRight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        //transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.mousePositionRight.x, 0.8f, PlayerController.mousePositionRight.z), speed * Time.deltaTime);
-        transform.Translate(new Vector3(0, 0.4f, 1) * speed * Time.deltaTime);
+        transform.Translate(new Vector3(0, 0.4f, 1) * speed * Time.deltaTime); // Movement of the element (forward and down)
     }
 
     private void OnTriggerEnter(Collider other)
