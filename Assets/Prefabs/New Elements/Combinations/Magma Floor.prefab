@@ -633,7 +633,7 @@ MonoBehaviour:
   combiningElement2Tag: 
   combiningArea1Tag: 
   combiningArea2Tag: 
-  duration: 100
+  duration: 6
   Damage: 4
 --- !u!1 &9179620867607301542
 GameObject:

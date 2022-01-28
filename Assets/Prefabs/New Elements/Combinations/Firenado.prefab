@@ -4832,7 +4832,7 @@ MonoBehaviour:
   combiningElement2Tag: 
   combiningArea1Tag: 
   combiningArea2Tag: 
-  duration: 100
+  duration: 6
   Damage: 4
 --- !u!54 &7869109063219638304
 Rigidbody:

@@ -157,7 +157,7 @@ MonoBehaviour:
   combiningElement2Tag: 
   combiningArea1Tag: 
   combiningArea2Tag: 
-  duration: 100
+  duration: 6
   Damage: 4
 --- !u!1001 &5720151109276724588
 PrefabInstance:
