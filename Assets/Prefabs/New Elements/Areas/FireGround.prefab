@@ -4845,7 +4845,7 @@ MonoBehaviour:
   combiningElement2Tag: Earth
   combiningArea1Tag: AirArea
   combiningArea2Tag: EarthArea
-  duration: 100
+  duration: 4
   Damage: 1
 --- !u!54 &5453974939919169096
 Rigidbody:

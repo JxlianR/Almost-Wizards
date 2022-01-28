@@ -15,12 +15,12 @@ C:/Users/kingj/OneDrive/Documents/GitHub/Almost-Wizards
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49243
+52866
 Successfully changed project path to: C:/Users/kingj/OneDrive/Documents/GitHub/Almost-Wizards
 C:/Users/kingj/OneDrive/Documents/GitHub/Almost-Wizards
 Using Asset Import Pipeline V2.
 Default GameObject BitMask: Ground already registered
-Refreshing native plugins compatible for Editor in 139.63 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 130.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.24f1 (79c78de19888)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -28,101 +28,101 @@ Initialize engine version: 2020.3.24f1 (79c78de19888)
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon(TM) Graphics (ID=0x1638)
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
     Vendor:   
-    VRAM:     7094 MB
-    Driver:   30.0.13002.7003
+    VRAM:     3993 MB
+    Driver:   30.0.14.7151
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004734 seconds.
+Registered in 0.005300 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 128.96 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 122.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.063 seconds
+- Completed reload, in  1.034 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1064ms)
-		BeginReloadAssembly (104ms)
+	ReloadAssembly (1034ms)
+		BeginReloadAssembly (99ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (809ms)
-			LoadAssemblies (102ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (811ms)
+			LoadAssemblies (94ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (229ms)
+			SetupTypeCache (230ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (347ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (356ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (129ms)
-				BeforeProcessingInitializeOnLoad (28ms)
-				ProcessInitializeOnLoadAttributes (136ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				RefreshPlugins (123ms)
+				BeforeProcessingInitializeOnLoad (27ms)
+				ProcessInitializeOnLoadAttributes (146ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013769 seconds.
+Registered in 0.013064 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 129.92 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 125.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.176 seconds
+- Completed reload, in  2.124 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2180ms)
-		BeginReloadAssembly (239ms)
+	ReloadAssembly (2126ms)
+		BeginReloadAssembly (242ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (1827ms)
-			LoadAssemblies (191ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (1775ms)
+			LoadAssemblies (181ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (544ms)
+			SetupTypeCache (531ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (81ms)
-			SetupLoadedEditorAssemblies (802ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (784ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (130ms)
-				BeforeProcessingInitializeOnLoad (177ms)
+				RefreshPlugins (126ms)
+				BeforeProcessingInitializeOnLoad (179ms)
 				ProcessInitializeOnLoadAttributes (435ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (1ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Default GameObject BitMask: Ground already registered
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 1.24 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3408 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 230.0 MB.
-System memory in use after: 230.2 MB.
+System memory in use before: 230.2 MB.
+System memory in use after: 230.4 MB.
 
 Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 3860.
-Total: 7.930900 ms (FindLiveObjects: 1.484600 ms CreateObjectMapping: 0.235200 ms MarkObjects: 6.014400 ms  DeleteObjects: 0.162800 ms)
+Total: 6.095200 ms (FindLiveObjects: 0.472100 ms CreateObjectMapping: 0.199400 ms MarkObjects: 5.279200 ms  DeleteObjects: 0.142900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -137,9 +137,164 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/AnimatorController/PlayerRed.controller
-  artifactKey: Guid(bbf9ef3d1a6c20f45982659b4a518b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimatorController/PlayerRed.controller using Guid(bbf9ef3d1a6c20f45982659b4a518b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4bf7dd3c758fc8c3d0e5e5ae144f565') in 0.195870 seconds 
-  Import took 0.215239 seconds .
+  path: Assets/AnimatorController/Magma Stone 1.overrideController
+  artifactKey: Guid(3a2e45265dc42284191ae8e3a18f82fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AnimatorController/Magma Stone 1.overrideController using Guid(3a2e45265dc42284191ae8e3a18f82fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21858a5bb7b06dc22cc3eb6579d81175') in 0.110155 seconds 
+  Import took 0.123845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/AnimatorController/Magma Stone 2.overrideController
+  artifactKey: Guid(4cffff1d9039a344393641beb1ba691e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AnimatorController/Magma Stone 2.overrideController using Guid(4cffff1d9039a344393641beb1ba691e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc1c28e6df36d81912dfaf40cdf304e8') in 0.071917 seconds 
+  Import took 0.086655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/AnimatorController/Magma Stone 3.overrideController
+  artifactKey: Guid(656e3129fd6d178408375e431cefaaa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AnimatorController/Magma Stone 3.overrideController using Guid(656e3129fd6d178408375e431cefaaa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd501a71e00484a4f04afa9766d0a6d7e') in 0.060904 seconds 
+  Import took 0.081539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.560803 seconds.
+  path: Assets/Scenes/Boss Fight.unity
+  artifactKey: Guid(59d12a62dbde74442b61735f89603982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Boss Fight.unity using Guid(59d12a62dbde74442b61735f89603982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5636b27aed75888d31b086deec2e2ebb') in 0.059545 seconds 
+  Import took 0.078162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.627428 seconds.
+  path: Assets/Scenes/Julian.unity
+  artifactKey: Guid(06fe87996724be244aac1487eda6e0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Julian.unity using Guid(06fe87996724be244aac1487eda6e0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70d8ad6dbaf1b412e5b0368c10057bfa') in 0.056474 seconds 
+  Import took 0.072146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.826543 seconds.
+  path: Assets/Scenes/Julian 1.unity
+  artifactKey: Guid(9e0617c903ccc414cb48ba661d454abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Julian 1.unity using Guid(9e0617c903ccc414cb48ba661d454abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aed9f16c00eb6dccabd7426021d721a') in 0.073343 seconds 
+  Import took 0.094312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.036096 seconds.
+  path: Assets/Scenes/Boss Fight.unity
+  artifactKey: Guid(9e0617c903ccc414cb48ba661d454abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Boss Fight.unity using Guid(9e0617c903ccc414cb48ba661d454abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b9c6f517c47cc72fd6a9fb0b2573ae') in 0.062716 seconds 
+  Import took 0.078989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.106912 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(163adec682b5ccd4c8dbb7766c20f3fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main.unity using Guid(163adec682b5ccd4c8dbb7766c20f3fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a8efd73a52543659675cf4ab1376624') in 0.052360 seconds 
+  Import took 0.072653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.897175 seconds.
+  path: Assets/Scenes/Julian
+  artifactKey: Guid(74f05a5add15d754fabc22e34f29bfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Julian using Guid(74f05a5add15d754fabc22e34f29bfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000bbc930041651d88bd29dab727782c') in 0.056052 seconds 
+  Import took 0.072038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.363385 seconds.
+  path: Assets/Scenes/SampleScene/NavMesh.asset
+  artifactKey: Guid(eab7f444361173f4385940dd47f27bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene/NavMesh.asset using Guid(eab7f444361173f4385940dd47f27bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98ca92c2524dd0e002c48a2bd6c2c97d') in 0.056846 seconds 
+  Import took 0.071639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.998882 seconds.
+  path: Assets/Scenes/Boss Fight.unity
+  artifactKey: Guid(9e0617c903ccc414cb48ba661d454abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Boss Fight.unity using Guid(9e0617c903ccc414cb48ba661d454abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64493b84c543ee2d007754bf45cc82bd') in 0.051906 seconds 
+  Import took 0.068720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.756800 seconds.
+  path: Assets/Scenes/Boss Fight.unity
+  artifactKey: Guid(9e0617c903ccc414cb48ba661d454abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Boss Fight.unity using Guid(9e0617c903ccc414cb48ba661d454abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60c290a1b008de4290255852b458415e') in 0.048986 seconds 
+  Import took 0.064561 seconds .
+
+========================================================================
+Received Prepare
+Default GameObject BitMask: Ground already registered
+Registering precompiled user dll's ...
+Registered in 0.016931 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.414 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2415ms)
+		BeginReloadAssembly (475ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (68ms)
+		EndReloadAssembly (1819ms)
+			LoadAssemblies (430ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (599ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (101ms)
+			SetupLoadedEditorAssemblies (732ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (201ms)
+				ProcessInitializeOnLoadAttributes (483ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3256 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.0 MB.
+System memory in use after: 219.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3862.
+Total: 9.628700 ms (FindLiveObjects: 0.714100 ms CreateObjectMapping: 0.244200 ms MarkObjects: 8.613300 ms  DeleteObjects: 0.052800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 89.447421 seconds.
+  path: Assets/Scenes/Boss Fight.unity
+  artifactKey: Guid(9e0617c903ccc414cb48ba661d454abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Boss Fight.unity using Guid(9e0617c903ccc414cb48ba661d454abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c20533dcb424d1e911c2e58aced680') in 0.108675 seconds 
+  Import took 0.126321 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

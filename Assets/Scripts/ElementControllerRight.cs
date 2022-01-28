@@ -36,7 +36,7 @@ public class ElementControllerRight : MonoBehaviour
     {
         //transform.Translate(Vector3.forward * speed * Time.deltaTime);
         //transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.aimPositionTwo.x, PlayerController.aimPositionOne.y, PlayerController.aimPositionTwo.z), speed * Time.deltaTime);
-        transform.Translate(new Vector3(0, 0.4f, 1) * speed * Time.deltaTime);
+        transform.Translate(new Vector3(0, -0.4f, -1) * speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)

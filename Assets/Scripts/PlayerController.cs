@@ -361,6 +361,10 @@ public class PlayerController : MonoBehaviour
            
             Destroy(other.gameObject); // Destroys the enemy
         }
+        else if (other.tag == "Element")
+        {
+            health.lives -= 1;
+        }
         else if (other.tag == "Heart")
         {
             if (health.lives < 3)

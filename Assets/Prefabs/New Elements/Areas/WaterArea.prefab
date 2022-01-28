@@ -4860,5 +4860,5 @@ MonoBehaviour:
   combiningElement2Tag: Air
   combiningArea1Tag: EarthArea
   combiningArea2Tag: AirArea
-  duration: 100
+  duration: 4
   Damage: 1

@@ -21,6 +21,7 @@ TagManager:
   - EarthArea
   - FireArea
   - WaterArea
+  - Element
   layers:
   - Default
   - TransparentFX
