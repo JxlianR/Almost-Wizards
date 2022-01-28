@@ -109,7 +109,7 @@ MonoBehaviour:
   combiningElement2Tag: Fire
   combiningArea1Tag: WaterArea
   combiningArea2Tag: FireArea
-  duration: 4
+  duration: 100
   Damage: 1
 --- !u!54 &1496579935188945449
 Rigidbody:

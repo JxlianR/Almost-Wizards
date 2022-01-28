@@ -46,31 +46,31 @@ public class ElementControllerRight : MonoBehaviour
         {
             Destroy(gameObject);
             // Spawns the first combined element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.7f, 0), combinedElement1.transform.rotation);
+            Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.44f, 0), combinedElement1.transform.rotation);
         }
         else if (other.tag == combiningElement2Tag || other.tag == combiningArea2Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
         {
             Destroy(gameObject);
             // Spawns the second combined element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.7f, 0), combinedElement2.transform.rotation);
+            Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.56f, 0), combinedElement2.transform.rotation);
         }
         else if (other.tag == "Enemy") // Checks if the element collides with an enemy or the ground
         {
             Destroy(gameObject);
             // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.15f, 0), elementArea.transform.rotation);
+            Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.27f, 0), elementArea.transform.rotation);
         }
         else if (other.tag == "Ground")
         {
             Destroy(gameObject);
             // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(elementArea, transform.position /*DetectGroundHeight(PlayerController.aimPositionTwo.x, PlayerController.aimPositionTwo.z) - new Vector3(0, 0.8f, 0)*/, elementArea.transform.rotation);
+            Instantiate(elementArea, transform.position - new Vector3(0, 0.28f, 0) /*DetectGroundHeight(PlayerController.aimPositionTwo.x, PlayerController.aimPositionTwo.z) - new Vector3(0, 0.8f, 0)*/, elementArea.transform.rotation);
         }
         else if (other.tag == "Platform")
         {
             Destroy(gameObject);
             // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(elementArea, transform.position /*DetectGroundHeight(PlayerController.aimPositionTwo.x, PlayerController.aimPositionTwo.z) - new Vector3(0, 0.15f, 0)*/, elementArea.transform.rotation);
+            Instantiate(elementArea, transform.position - new Vector3(0, 0.22f,0) /*DetectGroundHeight(PlayerController.aimPositionTwo.x, PlayerController.aimPositionTwo.z) - new Vector3(0, 0.15f, 0)*/, elementArea.transform.rotation);
         }
         else
         {

@@ -11,7 +11,10 @@ public class GrandmasterBehavior : MonoBehaviour
     private  GameObject[] Players;
 
     public Transform[] EnemySpawnPoints;
+    public Transform[] SpawnPoints;
     public Transform spawnPoint;
+
+    private Animator animator;
 
     public static Vector3 playerPosition;
 
@@ -20,13 +23,17 @@ public class GrandmasterBehavior : MonoBehaviour
 
     public static int randomPlayer;
     public int HP;
+    public int timeBetweenSpell;
+    public int timeBetweenArea;
+    public int timeBetweenEnemy;
 
-    public bool gotDamage;
+    private bool gotDamage;
 
     // Start is called before the first frame update
     void Start()
     {
         Players = GameObject.FindGameObjectsWithTag("Player");
+        animator = GetComponent<Animator>();
 
         StartCoroutine(Grandmaster());
         StartCoroutine(CombinedAreas());
@@ -37,6 +44,7 @@ public class GrandmasterBehavior : MonoBehaviour
     void Update()
     {
         playerPosition = Players[randomPlayer].transform.position;
+        HandleAnimation();
 
         transform.LookAt(playerPosition);
 
@@ -46,20 +54,31 @@ public class GrandmasterBehavior : MonoBehaviour
         }
     }
 
+    void HandleAnimation()
+    {
+
+    }
+
     IEnumerator Grandmaster()
     {
-        float xPosition = Random.Range(maxX, -maxX);
-        float zPosition = Random.Range(maxZ, -maxZ);
-        transform.position = DetectGroundHeight(xPosition, zPosition) + new Vector3(0, 0.8f, 0);
+        //float xPosition = Random.Range(maxX, -maxX);
+        //float zPosition = Random.Range(maxZ, -maxZ);
+        //transform.position = DetectGroundHeight(xPosition, zPosition) + new Vector3(0, 0.8f, 0);
         //randomPlayer = Random.Range(0, Players.Length);
+
+        int randomSpawnPoint = Random.Range(0, SpawnPoints.Length);
+        transform.position = SpawnPoints[randomSpawnPoint].position;
 
         for (int i = 0; i < 4; i++)
         {
             randomPlayer = Random.Range(0, Players.Length);
 
             int randomElement = Random.Range(0, Elements.Length);
+            animator.SetBool("CastingSpell", true);
             Instantiate(Elements[randomElement], spawnPoint.position, spawnPoint.rotation);
-            yield return new WaitForSeconds(3f);
+            StartCoroutine(EndAnimation());
+
+            yield return new WaitForSeconds(timeBetweenSpell);
         }
 
         StartCoroutine(Grandmaster());
@@ -72,7 +91,7 @@ public class GrandmasterBehavior : MonoBehaviour
         int randomCombinedElement = Random.Range(0, CombinedElements.Length);
 
         Instantiate(CombinedElements[randomCombinedElement], DetectGroundHeight(randomX, randomZ), transform.rotation);
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(timeBetweenArea);
 
         StartCoroutine(CombinedAreas());
     }
@@ -84,9 +103,21 @@ public class GrandmasterBehavior : MonoBehaviour
 
         Instantiate(Enemies[randomEnemy], EnemySpawnPoints[randomSpawnPoint].position, transform.rotation);
 
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(timeBetweenEnemy);
 
         StartCoroutine(SpawnEnemies());
+    }
+
+    IEnumerator EndAnimation()
+    {
+        yield return new WaitForSeconds(1.5f);
+        animator.SetBool("CastingSpell", false);
+    }
+
+    IEnumerator CanGetDamage()
+    {
+        yield return new WaitForSeconds(4.3f);
+        gotDamage = false; // Enemy can get damage again
     }
 
     public Vector3 DetectGroundHeight(float x, float z)
@@ -100,17 +131,11 @@ public class GrandmasterBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (gotDamage == false)
+        if (gotDamage == false && (other.tag != "Player" || other.tag != "Enemy"))
         {
             HP -= 1;
             gotDamage = true;
             StartCoroutine(CanGetDamage());
         }
-    }
-
-    IEnumerator CanGetDamage()
-    {
-        yield return new WaitForSeconds(4.3f);
-        gotDamage = false; // Enemy can get damage again
     }
 }

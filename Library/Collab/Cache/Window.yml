@@ -14,35 +14,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/Animations/EarthArea.anim
+    - Assets/Animations/EarthArea.anim.meta
+    - Assets/Animations/GrandmasterCastingSpell.anim
+    - Assets/Animations/GrandmasterCastingSpell.anim.meta
+    - Assets/Animations/GrandmasterIdle.anim
+    - Assets/Animations/GrandmasterIdle.anim.meta
+    - Assets/Animations/IceCrystal.anim.meta
+    - Assets/Animations/Magma.anim
+    - Assets/Animations/Magma.anim.meta
+    - Assets/Animations/MagmaBall 1.anim
+    - Assets/Animations/MagmaBall 1.anim.meta
+    - Assets/Animations/MagmaBall 2.anim
+    - Assets/Animations/MagmaBall 2.anim.meta
+    - Assets/Animations/MagmaBall.anim
+    - Assets/Animations/MagmaBall.anim.meta
+    - Assets/Animations/MagmaStone1.anim
+    - Assets/Animations/MagmaStone1.anim.meta
+    - Assets/Animations/MagmaStone2.anim
+    - Assets/Animations/MagmaStone2.anim.meta
+    - Assets/Animations/MagmaStone3.anim
+    - Assets/Animations/MagmaStone3.anim.meta
+    - Assets/Animations/Mud.anim
+    - Assets/Animations/Mud.anim.meta
+    - Assets/Animations/MudBall 1.anim
+    - Assets/Animations/MudBall 1.anim.meta
+    - Assets/Animations/MudBall 2.anim
+    - Assets/Animations/MudBall 2.anim.meta
+    - Assets/Animations/MudBall.anim
+    - Assets/Animations/MudBall.anim.meta
+    - Assets/Animations/MudBall1.anim
+    - Assets/Animations/MudBall1.anim.meta
+    - Assets/Animations/MudBall2.anim
+    - Assets/Animations/MudBall2.anim.meta
+    - Assets/Animations/MudBall3.anim
+    - Assets/Animations/MudBall3.anim.meta
+    - Assets/AnimatorController/EarthArea.overrideController
+    - Assets/AnimatorController/EarthElement.controller
+    - Assets/AnimatorController/Grandmaster.controller
+    - Assets/AnimatorController/Grandmaster.controller.meta
+    - Assets/AnimatorController/IceCrystal.controller
+    - Assets/AnimatorController/Magma Stone 1.overrideController
+    - Assets/AnimatorController/Magma Stone 2.overrideController
+    - Assets/AnimatorController/Magma Stone 3.overrideController
+    - Assets/AnimatorController/Magma.overrideController
+    - Assets/AnimatorController/Mud.overrideController
+    - Assets/AnimatorController/MudBall 1.overrideController
+    - Assets/AnimatorController/MudBall 1.overrideController.meta
+    - Assets/AnimatorController/MudBall 2.overrideController
+    - Assets/AnimatorController/MudBall 2.overrideController.meta
+    - Assets/AnimatorController/MudBall.overrideController
+    - Assets/AnimatorController/MudBall3.overrideController
+    - Assets/AnimatorController/MudBall3.overrideController.meta
     - Assets/Assets/Assets For Wizards/Elements.meta
     - Assets/Assets/Assets For Wizards/Elements/Areas.meta
     - Assets/Assets/Assets For Wizards/Elements/Areas/AirArea.meta
     - Assets/Assets/Assets For Wizards/Elements/Areas/AirArea/Air Ground.prefab
     - Assets/Assets/Assets For Wizards/Elements/Areas/AirArea/Air Ground.prefab.meta
-    - Assets/Assets/Assets For Wizards/Elements/Areas/AirArea/Light Explosion Particle.png
-    - Assets/Assets/Assets For Wizards/Elements/Areas/AirArea/Light Explosion Particle.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Areas/AirArea/Stars.mat
-    - Assets/Assets/Assets For Wizards/Elements/Areas/AirArea/Stars.mat.meta
-    - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea.meta
-    - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Earth Ground.controller
-    - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Earth Ground.controller.meta
-    - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Earth Ground.fbx
-    - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Earth Ground.fbx.meta
     - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Earth Particle.png
     - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Earth Particle.png.meta
     - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Earth Particles Material.mat
     - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Earth Particles Material.mat.meta
     - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Earth Particles.prefab
     - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Earth Particles.prefab.meta
-    - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Palette Artur.png
-    - Assets/Assets/Assets For Wizards/Elements/Areas/EarthArea/Palette Artur.png.meta
     - Assets/Assets/Assets For Wizards/Elements/Areas/FireArea.meta
     - Assets/Assets/Assets For Wizards/Elements/Areas/FireArea/Magma Blast.prefab
     - Assets/Assets/Assets For Wizards/Elements/Areas/FireArea/Magma Blast.prefab.meta
-    - Assets/Assets/Assets For Wizards/Elements/Areas/FireArea/Magma Particle Material.mat
-    - Assets/Assets/Assets For Wizards/Elements/Areas/FireArea/Magma Particle Material.mat.meta
-    - Assets/Assets/Assets For Wizards/Elements/Areas/FireArea/Magma Particle.png
-    - Assets/Assets/Assets For Wizards/Elements/Areas/FireArea/Magma Particle.png.meta
     - Assets/Assets/Assets For Wizards/Elements/Areas/WaterArea.meta
     - Assets/Assets/Assets For Wizards/Elements/Areas/WaterArea/Palette Artur.png
     - Assets/Assets/Assets For Wizards/Elements/Areas/WaterArea/Palette Artur.png.meta
@@ -53,70 +90,23 @@ MonoBehaviour:
     - Assets/Assets/Assets For Wizards/Elements/Areas/WaterArea/Water Ground.fbx
     - Assets/Assets/Assets For Wizards/Elements/Areas/WaterArea/Water Ground.fbx.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Crystal
       Texture.png
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Crystal
       Texture.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Crystal.controller
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Crystal.controller.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Crystal.fbx
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Crystal.fbx.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Flake
-      Material.mat
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Flake
-      Material.mat.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Flake.png
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Flake.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Flake.prefab
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Flake.prefab.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Smoke
       Texture.png
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Smoke
       Texture.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Smoke.mat
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Smoke.mat.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Smoke.prefab
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Ice Smoke.prefab.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Ice Shard/Materials.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Lava .png
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Lava .png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Lava.mat
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Lava.mat.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Lava.prefab
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Lava.prefab.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Effect.prefab
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Effect.prefab.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Floor.controller
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Floor.controller.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Floor.fbx
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Floor.fbx.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Floor.prefab
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Floor.prefab.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock
       (1).controller
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock
       (1).controller.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock
-      2.controller
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock
-      2.controller.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock
-      2.fbx
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock
       2.fbx.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock
-      3.controller
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock
-      3.controller.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock
-      3.fbx
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock
       3.fbx.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock.controller
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock.controller.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock.fbx
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rock.fbx.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rocks.mat
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Rocks.mat.meta
@@ -126,46 +116,12 @@ MonoBehaviour:
       (1).controller
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Magma Stone
       (1).controller.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Plane.controller
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/Plane.controller.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/lava-texture-free-thumb17.png
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Magma Burst/lava-texture-free-thumb17.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud Ball 1.fbx
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud Ball 1.fbx.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud Ball 2.fbx
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud Ball 2.fbx.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud Ball 3.fbx
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud Ball 3.fbx.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud Particle.mat
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud Particle.mat.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud Particle.png
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud Particle.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud.fbx
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Mud.fbx.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Palette Artur.png
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Palette Artur.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Plane.controller
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Mud/Plane.controller.meta
     - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Circle Tornado
-      Alpha Blend 1.mat
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Circle Tornado
-      Alpha Blend 1.mat.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Circle Tornado
-      Material 1.mat
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Circle Tornado
-      Material 1.mat.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Circle Tornado.png
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Circle Tornado.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Dust Alpha Blend.mat
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Dust Alpha Blend.mat.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Dust.png
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Dust.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Tornado 1.prefab
-    - Assets/Assets/Assets For Wizards/Elements/Combinations/Tornado/Tornado 1.prefab.meta
     - Assets/Assets/Assets For Wizards/Elements/Smoke.meta
-    - Assets/Assets/Assets For Wizards/Elements/Smoke/Dust.png
     - Assets/Assets/Assets For Wizards/Elements/Smoke/Dust.png.meta
     - Assets/Assets/Assets For Wizards/Elements/Smoke/Smoke Particle Material.mat
     - Assets/Assets/Assets For Wizards/Elements/Smoke/Smoke Particle Material.mat.meta
@@ -185,19 +141,10 @@ MonoBehaviour:
     - Assets/Assets/Assets For Wizards/Elements/Spells/Earth Spell/Earth Trail.controller.meta
     - Assets/Assets/Assets For Wizards/Elements/Spells/Earth Spell/Earth Trail.png
     - Assets/Assets/Assets For Wizards/Elements/Spells/Earth Spell/Earth Trail.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Spells/Earth Spell/Palette Artur.png
     - Assets/Assets/Assets For Wizards/Elements/Spells/Earth Spell/Palette Artur.png.meta
     - Assets/Assets/Assets For Wizards/Elements/Spells/Fireball.meta
     - Assets/Assets/Assets For Wizards/Elements/Spells/Fireball/Fireball Dust.prefab
     - Assets/Assets/Assets For Wizards/Elements/Spells/Fireball/Fireball Dust.prefab.meta
-    - Assets/Assets/Assets For Wizards/Elements/Spells/Fireball/Fireball Particle.mat
-    - Assets/Assets/Assets For Wizards/Elements/Spells/Fireball/Fireball Particle.mat.meta
-    - Assets/Assets/Assets For Wizards/Elements/Spells/Fireball/Fireball ParticleImage.png
-    - Assets/Assets/Assets For Wizards/Elements/Spells/Fireball/Fireball ParticleImage.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Spells/Fireball/Fireball Particles
-      Effect.prefab
-    - Assets/Assets/Assets For Wizards/Elements/Spells/Fireball/Fireball Particles
-      Effect.prefab.meta
     - Assets/Assets/Assets For Wizards/Elements/Spells/Light Beam.meta
     - Assets/Assets/Assets For Wizards/Elements/Spells/Light Beam/Light Beam Particles
       Effect.prefab
@@ -207,15 +154,23 @@ MonoBehaviour:
     - Assets/Assets/Assets For Wizards/Elements/Spells/Light Beam/Light Material.mat.meta
     - Assets/Assets/Assets For Wizards/Elements/Spells/Light Beam/Light Ray.png
     - Assets/Assets/Assets For Wizards/Elements/Spells/Light Beam/Light Ray.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Spells/WaterBall.meta
-    - Assets/Assets/Assets For Wizards/Elements/Spells/WaterBall/Water Ball Particle.prefab
-    - Assets/Assets/Assets For Wizards/Elements/Spells/WaterBall/Water Ball Particle.prefab.meta
-    - Assets/Assets/Assets For Wizards/Elements/Spells/WaterBall/Water Explosion
-      Particle.png
-    - Assets/Assets/Assets For Wizards/Elements/Spells/WaterBall/Water Explosion
-      Particle.png.meta
-    - Assets/Assets/Assets For Wizards/Elements/Spells/WaterBall/Waterball Material.mat
-    - Assets/Assets/Assets For Wizards/Elements/Spells/WaterBall/Waterball Material.mat.meta
+    - Assets/Assets/Assets For Wizards/Hit Effects.meta
+    - Assets/Assets/Assets For Wizards/Hit Effects/Air Explosion.prefab
+    - Assets/Assets/Assets For Wizards/Hit Effects/Air Explosion.prefab.meta
+    - Assets/Assets/Assets For Wizards/Hit Effects/Circle.png
+    - Assets/Assets/Assets For Wizards/Hit Effects/Circle.png.meta
+    - Assets/Assets/Assets For Wizards/Hit Effects/Earth Explosion.prefab
+    - Assets/Assets/Assets For Wizards/Hit Effects/Earth Explosion.prefab.meta
+    - Assets/Assets/Assets For Wizards/Hit Effects/Fire Explosion.prefab
+    - Assets/Assets/Assets For Wizards/Hit Effects/Fire Explosion.prefab.meta
+    - Assets/Assets/Assets For Wizards/Hit Effects/Hit Bubbles.mat
+    - Assets/Assets/Assets For Wizards/Hit Effects/Hit Bubbles.mat.meta
+    - Assets/Assets/Assets For Wizards/Hit Effects/Hit Stars.mat
+    - Assets/Assets/Assets For Wizards/Hit Effects/Hit Stars.mat.meta
+    - Assets/Assets/Assets For Wizards/Hit Effects/Light Explosion Particle.png
+    - Assets/Assets/Assets For Wizards/Hit Effects/Light Explosion Particle.png.meta
+    - Assets/Assets/Assets For Wizards/Hit Effects/Water Explosion.prefab
+    - Assets/Assets/Assets For Wizards/Hit Effects/Water Explosion.prefab.meta
     - Assets/Assets/Assets For Wizards/New Elements.meta
     - Assets/Assets/Assets For Wizards/New Elements/Area.meta
     - Assets/Assets/Assets For Wizards/New Elements/Area/Air Ground.meta
@@ -302,10 +257,6 @@ MonoBehaviour:
     - Assets/Assets/Assets For Wizards/New Elements/Basic Spells/Earth Projectile/Earth
       Dust 1 1.prefab.meta
     - Assets/Assets/Assets For Wizards/New Elements/Basic Spells/Earth Projectile/Earth
-      Projectile Dust.mat
-    - Assets/Assets/Assets For Wizards/New Elements/Basic Spells/Earth Projectile/Earth
-      Projectile Dust.mat.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Basic Spells/Earth Projectile/Earth
       Projectile.controller
     - Assets/Assets/Assets For Wizards/New Elements/Basic Spells/Earth Projectile/Earth
       Projectile.controller.meta
@@ -345,10 +296,6 @@ MonoBehaviour:
       Ball Particle.prefab
     - Assets/Assets/Assets For Wizards/New Elements/Basic Spells/WaterBall/Water
       Ball Particle.prefab.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Basic Spells/WaterBall/Water
-      Bubble.mat
-    - Assets/Assets/Assets For Wizards/New Elements/Basic Spells/WaterBall/Water
-      Bubble.mat.meta
     - Assets/Assets/Assets For Wizards/New Elements/Basic Spells/WaterBall/Water
       Explosion Particle.png
     - Assets/Assets/Assets For Wizards/New Elements/Basic Spells/WaterBall/Water
@@ -506,94 +453,100 @@ MonoBehaviour:
     - Assets/Assets/Assets For Wizards/New Elements/Combinations/Mud/Plane 1.controller.meta
     - Assets/Assets/Assets For Wizards/New Elements/Combinations/Mud/Plane.controller
     - Assets/Assets/Assets For Wizards/New Elements/Combinations/Mud/Plane.controller.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Air
-      Explosion.prefab
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Air
-      Explosion.prefab.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Circle.png
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Circle.png.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Earth
-      Explosion.prefab
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Earth
-      Explosion.prefab.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Fire
-      Explosion.prefab
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Fire
-      Explosion.prefab.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Hit
-      Bubbles.mat
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Hit
-      Bubbles.mat.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Hit
-      Stars.mat
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Hit
-      Stars.mat.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Light
-      Explosion Particle.png
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Light
-      Explosion Particle.png.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Water
-      Explosion.prefab
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Hit Effects/Water
-      Explosion.prefab.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Air Shooting Effect.prefab
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Air Shooting Effect.prefab.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Air Stars.mat
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Air Stars.mat.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Circle.png
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Circle.png.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Earth Shooting Effect.prefab
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Earth Shooting Effect.prefab.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Fire Shooting Effect.prefab
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Fire Shooting Effect.prefab.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Light Explosion Particle.png
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Light Explosion Particle.png.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/New Material.mat
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/New Material.mat.meta
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Water Shooting Effect .prefab
-    - Assets/Assets/Assets For Wizards/New Elements/Shooting & Hit Effects/Shooting
-      Effects/Water Shooting Effect .prefab.meta
+    - Assets/Assets/Assets For Wizards/New Elements/Shooting Effects.meta
+    - Assets/Assets/Assets For Wizards/New Elements/Shooting Effects/Air Stars.mat
+    - Assets/Assets/Assets For Wizards/New Elements/Shooting Effects/Air Stars.mat.meta
+    - Assets/Assets/Assets For Wizards/New Elements/Shooting Effects/Circle.png
+    - Assets/Assets/Assets For Wizards/New Elements/Shooting Effects/Circle.png.meta
+    - Assets/Assets/Assets For Wizards/New Elements/Shooting Effects/Light Explosion
+      Particle.png
+    - Assets/Assets/Assets For Wizards/New Elements/Shooting Effects/Light Explosion
+      Particle.png.meta
+    - Assets/Assets/Assets For Wizards/New Elements/Shooting Effects/New Material.mat
+    - Assets/Assets/Assets For Wizards/New Elements/Shooting Effects/New Material.mat.meta
+    - Assets/Assets/Assets For Wizards/New Enemies/Grandmaster Animations.fbx
+    - Assets/Assets/Assets For Wizards/New Enemies/Grandmaster Animations.fbx.meta
+    - Assets/Materials & Palettes/Earth_Projectile_Dust.mat
+    - Assets/Materials & Palettes/Earth_Projectile_Dust.mat.meta
+    - Assets/Materials & Palettes/Hit_Stars.mat
+    - Assets/Materials & Palettes/Hit_Stars.mat.meta
+    - Assets/Materials & Palettes/Water_Bubble.mat
+    - Assets/Materials & Palettes/Water_Bubble.mat.meta
     - Assets/Prefabs/Enemies/AirEnemy.prefab
     - Assets/Prefabs/Enemies/DarknessEnemy.prefab
     - Assets/Prefabs/Enemies/EarthEnemy.prefab
     - Assets/Prefabs/Enemies/WaterEnemy.prefab
+    - Assets/Prefabs/Grandmaster Elements.meta
+    - Assets/Prefabs/Grandmaster Elements/Grandmaster Air.prefab
+    - Assets/Prefabs/Grandmaster Elements/Grandmaster Air.prefab.meta
+    - Assets/Prefabs/Grandmaster Elements/Grandmaster Earth.prefab
+    - Assets/Prefabs/Grandmaster Elements/Grandmaster Earth.prefab.meta
+    - Assets/Prefabs/Grandmaster Elements/Grandmaster Fireball.prefab
+    - Assets/Prefabs/Grandmaster Elements/Grandmaster Fireball.prefab.meta
+    - Assets/Prefabs/Grandmaster Elements/Water Ball Particle.prefab
+    - Assets/Prefabs/Grandmaster Elements/Water Ball Particle.prefab.meta
     - Assets/Prefabs/New Elements.meta
     - Assets/Prefabs/New Elements/Areas.meta
     - Assets/Prefabs/New Elements/Areas/AirArea.prefab
     - Assets/Prefabs/New Elements/Areas/AirArea.prefab.meta
+    - Assets/Prefabs/New Elements/Areas/EarthArea.prefab
+    - Assets/Prefabs/New Elements/Areas/EarthArea.prefab.meta
+    - Assets/Prefabs/New Elements/Areas/FireGround.prefab
+    - Assets/Prefabs/New Elements/Areas/FireGround.prefab.meta
+    - Assets/Prefabs/New Elements/Areas/WaterArea.prefab
+    - Assets/Prefabs/New Elements/Areas/WaterArea.prefab.meta
     - Assets/Prefabs/New Elements/Basic Spells.meta
     - Assets/Prefabs/New Elements/Basic Spells/Air Strike.prefab
     - Assets/Prefabs/New Elements/Basic Spells/Air Strike.prefab.meta
-    - Assets/Prefabs/New Elements/Basic Spells/Earth Projectile.prefab
-    - Assets/Prefabs/New Elements/Basic Spells/Earth Projectile.prefab.meta
+    - Assets/Prefabs/New Elements/Basic Spells/Earth.prefab
+    - Assets/Prefabs/New Elements/Basic Spells/Earth.prefab.meta
     - Assets/Prefabs/New Elements/Basic Spells/Fireball.prefab
     - Assets/Prefabs/New Elements/Basic Spells/Fireball.prefab.meta
+    - Assets/Prefabs/New Elements/Basic Spells/Water Ball Particle.prefab
+    - Assets/Prefabs/New Elements/Basic Spells/Water Ball Particle.prefab.meta
     - Assets/Prefabs/New Elements/Combinations.meta
+    - Assets/Prefabs/New Elements/Combinations/Firenado.prefab
+    - Assets/Prefabs/New Elements/Combinations/Firenado.prefab.meta
+    - Assets/Prefabs/New Elements/Combinations/Ice Crystal.prefab
+    - Assets/Prefabs/New Elements/Combinations/Ice Crystal.prefab.meta
+    - Assets/Prefabs/New Elements/Combinations/Magma Floor.prefab
+    - Assets/Prefabs/New Elements/Combinations/Magma Floor.prefab.meta
+    - Assets/Prefabs/New Elements/Combinations/Mud.prefab
+    - Assets/Prefabs/New Elements/Combinations/Mud.prefab.meta
     - Assets/Prefabs/New Elements/Shooting & Hit Effects.meta
+    - Assets/Prefabs/New Elements/Shooting & Hit Effects/Air Explosion.prefab
+    - Assets/Prefabs/New Elements/Shooting & Hit Effects/Air Explosion.prefab.meta
+    - Assets/Prefabs/New Elements/Shooting & Hit Effects/Earth Explosion.prefab
+    - Assets/Prefabs/New Elements/Shooting & Hit Effects/Earth Explosion.prefab.meta
+    - Assets/Prefabs/New Elements/Shooting & Hit Effects/Fire Explosion.prefab
+    - Assets/Prefabs/New Elements/Shooting & Hit Effects/Fire Explosion.prefab.meta
+    - Assets/Prefabs/New Elements/Shooting & Hit Effects/Water Explosion.prefab
+    - Assets/Prefabs/New Elements/Shooting & Hit Effects/Water Explosion.prefab.meta
+    - Assets/Prefabs/Particles.meta
+    - Assets/Prefabs/Particles/Air Shooting Effect.prefab
+    - Assets/Prefabs/Particles/Air Shooting Effect.prefab.meta
+    - Assets/Prefabs/Particles/Earth Shooting Effect.prefab
+    - Assets/Prefabs/Particles/Earth Shooting Effect.prefab.meta
+    - Assets/Prefabs/Particles/Fire Shooting Effect.prefab
+    - Assets/Prefabs/Particles/Fire Shooting Effect.prefab.meta
+    - Assets/Prefabs/Particles/Water Shooting Effect .prefab
+    - Assets/Prefabs/Particles/Water Shooting Effect .prefab.meta
+    - Assets/Prefabs/Players/Blue Character.prefab
+    - Assets/Prefabs/Players/Red Character.prefab
+    - Assets/Scenes/Boss Fight.unity
+    - Assets/Scenes/Boss Fight.unity.meta
     - Assets/Scenes/Julian.unity
     - Assets/Scripts/AiNavDarkEnemy.cs
     - Assets/Scripts/AiNavEnemy.cs
+    - Assets/Scripts/ElementAreaBehavior.cs
+    - Assets/Scripts/ElementControllerLeft.cs
+    - Assets/Scripts/ElementControllerRight.cs
     - Assets/Scripts/ElementMouseLeft.cs
     - Assets/Scripts/ElementMouseRight.cs
+    - Assets/Scripts/GrandmasterBehavior.cs
+    - Assets/Scripts/GrandmasterBehavior.cs.meta
+    - Assets/Scripts/GrandmasterElement.cs
+    - Assets/Scripts/GrandmasterElement.cs.meta
     - Assets/Scripts/PlayerController.cs
     - Assets/UI.meta
     - Assets/UI/health.png
@@ -602,8 +555,9 @@ MonoBehaviour:
     - Assets/UI/test.png.meta
     - Assets/UI/ui_frame.png
     - Assets/UI/ui_frame.png.meta
+    - ProjectSettings/TagManager.asset
     - 
-    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

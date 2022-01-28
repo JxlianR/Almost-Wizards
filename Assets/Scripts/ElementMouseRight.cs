@@ -49,7 +49,7 @@ public class ElementMouseRight : MonoBehaviour
         else if (other.tag == combiningElement2Tag || other.tag == combiningArea2Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
         {
             Destroy(gameObject);
-            Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.7f, 0), combinedElement2.transform.rotation); // Spawns the second combined element
+            Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.83f, 0), combinedElement2.transform.rotation); // Spawns the second combined element
         }
         else if (other.tag == "Enemy") // Checks if the element collides with an enemy or the ground
         {

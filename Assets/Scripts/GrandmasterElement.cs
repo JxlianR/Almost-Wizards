@@ -5,7 +5,7 @@ using UnityEngine;
 public class GrandmasterElement : MonoBehaviour
 {
 
-    public GrandmasterBehavior grandmaster;
+    private GrandmasterBehavior grandmaster;
 
     private Transform redPlayer;
     private Transform bluePlayer;

@@ -230,9 +230,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 890729788712125866}
-  firstElement: {fileID: 3727498663742397429, guid: 80c355331b2caf6489e2289aa87889ed,
+  firstElement: {fileID: 4139741551301649494, guid: af19b49afb106224ca317315daee5f2f,
     type: 3}
-  secondElement: {fileID: 7236121597495379785, guid: 15a0469cd984b9349917e68957e51714,
+  secondElement: {fileID: 1076042325813594011, guid: a339c00d1686aed498d1a56950bad20e,
     type: 3}
   oppositePlayer: {fileID: 3594749148594862200, guid: 465ae005a44afd94f873ab285917d1f2,
     type: 3}
