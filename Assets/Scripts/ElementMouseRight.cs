@@ -44,7 +44,7 @@ public class ElementMouseRight : MonoBehaviour
         {
             Destroy(gameObject);
 
-            Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.71f, 0), combinedElement1.transform.rotation); // Spawns the first combined element
+            Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.31f, 0), combinedElement1.transform.rotation); // Spawns the first combined element
         }
         else if (other.tag == combiningElement2Tag || other.tag == combiningArea2Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
         {

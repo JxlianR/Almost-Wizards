@@ -9,5 +9,5 @@ AnimatorOverrideController:
   m_Name: MudBall 1
   m_Controller: {fileID: 9100000, guid: bef875c0b431c3843bbf7d829747e880, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 7c79aeec2af04ab4d95f18ddda2d5467, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 591d180297c69b8429a17bd171e20f01, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 02843d0b219a11248805b294433f0a44, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: addb632a94518f247819d91482567ca3, type: 2}

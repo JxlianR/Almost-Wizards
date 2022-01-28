@@ -9,5 +9,5 @@ AnimatorOverrideController:
   m_Name: Magma Stone 3
   m_Controller: {fileID: 9100000, guid: bef875c0b431c3843bbf7d829747e880, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 7c79aeec2af04ab4d95f18ddda2d5467, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 800de5dc9f069004aa44a61f5ed9a8fb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 02843d0b219a11248805b294433f0a44, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f3ea7ed94064cc24d91fc15ff35c814a, type: 2}

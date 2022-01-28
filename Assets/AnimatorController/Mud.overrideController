@@ -9,5 +9,5 @@ AnimatorOverrideController:
   m_Name: Mud
   m_Controller: {fileID: 9100000, guid: bef875c0b431c3843bbf7d829747e880, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 7c79aeec2af04ab4d95f18ddda2d5467, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 7985ddf4ce9080c44bc4e235b4c61ddb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 02843d0b219a11248805b294433f0a44, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 70b32c86fea46004894fe3ecb9cda352, type: 2}

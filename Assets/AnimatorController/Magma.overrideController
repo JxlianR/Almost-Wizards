@@ -9,5 +9,5 @@ AnimatorOverrideController:
   m_Name: Magma
   m_Controller: {fileID: 9100000, guid: bef875c0b431c3843bbf7d829747e880, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 7c79aeec2af04ab4d95f18ddda2d5467, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: e4fd3b5fe8fef844096080fa56612a93, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 02843d0b219a11248805b294433f0a44, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 42286d234bc52df42bc14a30d7969e08, type: 2}

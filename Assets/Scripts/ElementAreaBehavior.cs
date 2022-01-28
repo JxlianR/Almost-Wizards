@@ -52,18 +52,16 @@ public class ElementAreaBehavior : MonoBehaviour
         if (other.tag == combiningElement1Tag || other.tag == combiningArea1Tag) // Checks if the other gameobject is an element this element can combine with
         {
             StartCoroutine(Destroy());
-            Instantiate(combinedElement1, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the first combined element
+            //Instantiate(combinedElement1, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the first combined element
         }
         else if (other.tag == combiningElement2Tag || other.tag == combiningArea2Tag)
         {
             StartCoroutine(Destroy());
-            Instantiate(combinedElement2, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the second combined element
+            //Instantiate(combinedElement2, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the second combined element
         }
         else if (other.tag == cancellingElementTag || other.tag == cancellingAreaTag)
         {
-            Destroy(gameObject);
+            StartCoroutine(Destroy());
         }
-
-        //Destroy(gameObject);
     }
 }
