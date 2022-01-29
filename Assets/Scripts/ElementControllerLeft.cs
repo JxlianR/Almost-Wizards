@@ -18,6 +18,7 @@ public class ElementControllerLeft : MonoBehaviour
 
     public string elementTag;
     public string cancellingElementTag; // Tag of the element that cancels this element
+    public string cancellingAreaTag; // Tag of the area that cancels this element
     public string combiningElement1Tag; // Tag of the first element this element can be combined with
     public string combiningElement2Tag; // Tag of the second element this element can be combined with
     public string combiningArea1Tag; // Tag of the first area this elemant ca be combined with
@@ -78,7 +79,6 @@ public class ElementControllerLeft : MonoBehaviour
         RaycastHit hit;
         Vector3 origin = new Vector3(x, 100, y);
         Physics.Raycast(origin, Vector3.down, out hit, Mathf.Infinity);
-        Debug.Log("Terrain location found at" + hit.point);
         return hit.point;
     }
 }

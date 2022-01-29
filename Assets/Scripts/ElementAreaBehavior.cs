@@ -20,7 +20,10 @@ public class ElementAreaBehavior : MonoBehaviour
 
     public float duration; // Duration of the area, after this duration it gets destroyed
 
-    public int Damage;
+    public int Damage; // Damage this area makes
+
+    public Vector3 offsetCombine1;
+    public Vector3 offsetCombine2;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +35,24 @@ public class ElementAreaBehavior : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == combiningArea1Tag) // Checks if the other gameobject is an element this element can combine with
+        {
+            StartCoroutine(Destroy());
+            Instantiate(combinedElement1, DetectGroundHeight(transform.position.x, transform.position.z) - offsetCombine1, transform.rotation); // Spawns the first combined element
+        }
+        else if (other.tag == combiningArea2Tag)
+        {
+            StartCoroutine(Destroy());
+            Instantiate(combinedElement2, DetectGroundHeight(transform.position.x, transform.position.z) - offsetCombine2, Quaternion.identity); // Spawns the second combined element
+        }
+        else if (other.tag == cancellingElementTag || other.tag == cancellingAreaTag || other.tag == combiningElement1Tag || other.tag == combiningElement2Tag)
+        {
+            StartCoroutine(Destroy());
+        }
     }
 
     // Destroying the area after the duration
@@ -47,21 +68,11 @@ public class ElementAreaBehavior : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnTriggerEnter(Collider other)
+    public Vector3 DetectGroundHeight(float x, float y)
     {
-        if (other.tag == combiningElement1Tag || other.tag == combiningArea1Tag) // Checks if the other gameobject is an element this element can combine with
-        {
-            StartCoroutine(Destroy());
-            //Instantiate(combinedElement1, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the first combined element
-        }
-        else if (other.tag == combiningElement2Tag || other.tag == combiningArea2Tag)
-        {
-            StartCoroutine(Destroy());
-            //Instantiate(combinedElement2, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation); // Spawns the second combined element
-        }
-        else if (other.tag == cancellingElementTag || other.tag == cancellingAreaTag)
-        {
-            StartCoroutine(Destroy());
-        }
+        RaycastHit hit;
+        Vector3 origin = new Vector3(x, 100, y);
+        Physics.Raycast(origin, Vector3.down, out hit, Mathf.Infinity);
+        return hit.point;
     }
 }

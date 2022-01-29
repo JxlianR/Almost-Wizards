@@ -296,9 +296,9 @@ MonoBehaviour:
   maxZ: 27
   maxX: 26
   HP: 10
-  timeBetweenSpell: 3
-  timeBetweenArea: 4
-  timeBetweenEnemy: 6
+  timeBetweenSpell: 4
+  timeBetweenArea: 6
+  timeBetweenEnemy: 34
 --- !u!4 &25068563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0e4dd827d26c4ce43a650e2035599d82,
@@ -8384,7 +8384,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1612492156, guid: 0a863d7901204324e9cc8b6f1e923cb0, type: 3}
       propertyPath: lives
-      value: 1000
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 44450882550630578, guid: 0a863d7901204324e9cc8b6f1e923cb0,
         type: 3}
@@ -15675,10 +15675,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 582641598, guid: 465ae005a44afd94f873ab285917d1f2, type: 3}
-      propertyPath: lives
-      value: 1000
-      objectReference: {fileID: 0}
     - target: {fileID: 3594749148594862200, guid: 465ae005a44afd94f873ab285917d1f2,
         type: 3}
       propertyPath: m_Name
@@ -15739,12 +15735,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4405211614917034786, guid: 465ae005a44afd94f873ab285917d1f2,
-        type: 3}
-      propertyPath: firstElement
-      value: 
-      objectReference: {fileID: 5457808597441093095, guid: b844a72f7066fe4478852be5856562fd,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 465ae005a44afd94f873ab285917d1f2, type: 3}
 --- !u!1001 &1868436888

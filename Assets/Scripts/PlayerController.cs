@@ -374,7 +374,7 @@ public class PlayerController : MonoBehaviour
 
             Destroy(other.gameObject);
         }
-        else if (other.tag == "Fire" || other.tag == "Air" || other.tag == "Water" || other.tag == "Earth" || other.tag == "FireArea" || other.tag == "AirArea" || other.tag == "WaterArea" || other.tag == "EarthArea")
+        else if (other.tag == "Fire" || other.tag == "Air" || other.tag == "Water" || other.tag == "Earth" || other.tag == "FireArea" || other.tag == "AirArea" || other.tag == "WaterArea" || other.tag == "EarthArea" || other.tag == "Firenado" || other.tag == "Magma" || other.tag == "Ice" || other.tag == "Mud")
         {
             health.lives -= 1;
         }
@@ -387,7 +387,7 @@ public class PlayerController : MonoBehaviour
         if (GameObject.FindGameObjectsWithTag("Player").Length == 1) // Checks if there is only one character left, which means one died
         {
             Instantiate(oppositePlayer, new Vector3(-3, 5, -3), Quaternion.identity); // Spawns the opposite character of the character that is still alive
-            oppositePlayer.GetComponent<Lives>().lives = 1; // Sets the number of lives of the new spawned character to 1
+            oppositePlayer.GetComponent<Lives>().lives = 2; // Sets the number of lives of the new spawned character to 1
             LevelManager.playerCanSpawn = false; // Sets the boolean to false -> No other character can spawn till it is true again
         }
         else

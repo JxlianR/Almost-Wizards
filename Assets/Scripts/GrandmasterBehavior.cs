@@ -17,6 +17,7 @@ public class GrandmasterBehavior : MonoBehaviour
     private Animator animator;
 
     public static Vector3 playerPosition;
+    private Vector3 enemySpawnPosition;
 
     public float maxZ = 27; // Maximal z-value the grandmaster can spawn at
     public float maxX = 26; // Maximal x-value the grandmaster can spawn at
@@ -98,10 +99,15 @@ public class GrandmasterBehavior : MonoBehaviour
 
     IEnumerator SpawnEnemies()
     {
-        int randomEnemy = Random.Range(0, Enemies.Length);
-        int randomSpawnPoint = Random.Range(0, EnemySpawnPoints.Length);
+        //int randomSpawnPoint = Random.Range(0, EnemySpawnPoints.Length);
 
-        Instantiate(Enemies[randomEnemy], EnemySpawnPoints[randomSpawnPoint].position, transform.rotation);
+        //Instantiate(Enemies[randomEnemy], EnemySpawnPoints[randomSpawnPoint].position, transform.rotation);
+
+        for (int i = 0; i < EnemySpawnPoints.Length; i++)
+        {
+            int randomEnemy = Random.Range(0, Enemies.Length);
+            Instantiate(Enemies[randomEnemy], EnemySpawnPoints[i].position, transform.rotation);
+        }
 
         yield return new WaitForSeconds(timeBetweenEnemy);
 
@@ -125,7 +131,6 @@ public class GrandmasterBehavior : MonoBehaviour
         RaycastHit hit;
         Vector3 origin = new Vector3(x, 100, z); // setting a high number to the v value
         Physics.Raycast(origin, Vector3.down, out hit, Mathf.Infinity); // Send the raycast
-        //Debug.Log("Terrain location found at" + hit.point);
         return hit.point; // returning the position of the ground
     }
 
