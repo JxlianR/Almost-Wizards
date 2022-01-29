@@ -8,6 +8,8 @@ public class ElementAreaDestroy : MonoBehaviour
 
     public int Damage; // Damage this area makes
 
+    public string ownElementTag;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class ElementAreaDestroy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Player" || other.tag != "Enemy" || other.tag != "Ground" || other.tag != "Platform" ) // Checks if the other gameobject is an element this element can combine with
+        if (other.tag != "Player" && other.tag != "Enemy" && other.tag != "Ground" && other.tag != "Platform" && other.tag != ownElementTag) // Checks if the other gameobject is an element this element can combine with
         {
             StartCoroutine(Destroy());
         }

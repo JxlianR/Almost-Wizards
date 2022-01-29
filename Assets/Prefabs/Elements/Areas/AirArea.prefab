@@ -4851,6 +4851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 4
   Damage: 1
+  ownElementTag: Air
 --- !u!1 &8357746609073469614
 GameObject:
   m_ObjectHideFlags: 0

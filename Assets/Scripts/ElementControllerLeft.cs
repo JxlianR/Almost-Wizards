@@ -12,13 +12,15 @@ public class ElementControllerLeft : MonoBehaviour
 
     public GameObject elementArea; // Spell area of this element
 
+    public ParticleSystem explosion; // Particle for explosion
+    public ParticleSystem smokeFailure; // Particle for smoke (when element gets canceled out)
+
     public float speed;
 
     public static int damage = 1;
 
     public string elementTag;
     public string cancellingElementTag; // Tag of the element that cancels this element
-    public string cancellingAreaTag; // Tag of the area that cancels this element
     public string combiningElement1Tag; // Tag of the first element this element can be combined with
     public string combiningElement2Tag; // Tag of the second element this element can be combined with
     public string combiningArea1Tag; // Tag of the first area this elemant ca be combined with
@@ -45,31 +47,43 @@ public class ElementControllerLeft : MonoBehaviour
 
         if (other.tag == combiningElement1Tag || other.tag == combiningArea1Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the first element this element can be combined with
         {
+            Instantiate(explosion, transform.position, transform.rotation); // Instantiates the explosion particle
+
             Destroy(gameObject);
             Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.13f, 0), combinedElement1.transform.rotation); // Spawns the first combined element
         }
         else if (other.tag == combiningElement2Tag || other.tag == combiningArea2Tag) // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
         {
+            Instantiate(explosion, transform.position, transform.rotation); // Instantiates the explosion particle
+
             Destroy(gameObject);
             Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 3.06f, 0), combinedElement2.transform.rotation); // Spawns the second combined element
         }
         else if (other.tag == "Enemy") // Checks if the element collides with an enemy or the ground
         {
+            Instantiate(explosion, transform.position, transform.rotation); // Instantiates the explosion particle
+
             Destroy(gameObject);
             Instantiate(elementArea, DetectGroundHeight(transform.position.x,transform.position.z) - new Vector3(0, 1.86f, 0), elementArea.transform.rotation); // Spawns the element area of this element
         }
         else if (other.tag == "Ground")
         {
+            Instantiate(explosion, transform.position, transform.rotation); // Instantiates the explosion particle
+
             Destroy(gameObject);
             Instantiate(elementArea, transform.position - new Vector3(0, 0.37f, 0) /*DetectGroundHeight(transform.position.x, transform.position.z) - new Vector3(0, 0.8f, 0)*/, elementArea.transform.rotation); // Spawns the element area of this element
         }
         else if (other.tag == "Platform")
         {
+            Instantiate(explosion, transform.position, transform.rotation); // Instantiates the explosion particle
+
             Destroy(gameObject);
             Instantiate(elementArea, transform.position - new Vector3(0, 0.37f, 0), /*DetectGroundHeight(transform.position.x, transform.position.z) - new Vector3(0, 0.79f, 0)*/ elementArea.transform.rotation); // Spawns the element area of this element
         }
         else
         {
+            Instantiate(smokeFailure, transform.position, transform.rotation); // Instantiates the explosion particle
+
             Destroy(gameObject);
         }
     }

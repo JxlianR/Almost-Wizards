@@ -8,7 +8,7 @@ public class GrandmasterBehavior : MonoBehaviour
     public GameObject[] CombinedElements;
     public GameObject[] Enemies;
 
-    private  GameObject[] Players;
+    public GameObject[] Players;
 
     public Transform[] EnemySpawnPoints;
     public Transform[] SpawnPoints;
@@ -33,7 +33,6 @@ public class GrandmasterBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Players = GameObject.FindGameObjectsWithTag("Player");
         animator = GetComponent<Animator>();
 
         StartCoroutine(Grandmaster());
@@ -44,6 +43,7 @@ public class GrandmasterBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Players = GameObject.FindGameObjectsWithTag("Player");
         playerPosition = Players[randomPlayer].transform.position;
         HandleAnimation();
 
@@ -91,7 +91,7 @@ public class GrandmasterBehavior : MonoBehaviour
         float randomZ = Random.Range(maxZ, -maxZ);
         int randomCombinedElement = Random.Range(0, CombinedElements.Length);
 
-        Instantiate(CombinedElements[randomCombinedElement], DetectGroundHeight(randomX, randomZ), transform.rotation);
+        Instantiate(CombinedElements[randomCombinedElement], DetectGroundHeight(randomX, randomZ) + new Vector3(0, 0.5f, 0), transform.rotation);
         yield return new WaitForSeconds(timeBetweenArea);
 
         StartCoroutine(CombinedAreas());
@@ -102,6 +102,7 @@ public class GrandmasterBehavior : MonoBehaviour
         //int randomSpawnPoint = Random.Range(0, EnemySpawnPoints.Length);
 
         //Instantiate(Enemies[randomEnemy], EnemySpawnPoints[randomSpawnPoint].position, transform.rotation);
+        yield return new WaitForSeconds(2);
 
         for (int i = 0; i < EnemySpawnPoints.Length; i++)
         {

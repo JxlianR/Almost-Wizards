@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
     public int enemyMultiplicator; // Multiplicator for the number of enemies in the next wave
     public int addedEnemies;
 
-    private int waveNumber = 1;
+    public int waveNumber = 1;
 
     public static bool playerCanSpawn;
 
@@ -37,21 +37,15 @@ public class LevelManager : MonoBehaviour
 
         if (AllEnemiesDead() && enemySpawner.enemyCount == enemySpawner.enemyAmount) // Checks if all enemies are dead and the number of enemies that should spawn did
         {
-            // Spawns six waves of enemies;
-            if (waveNumber < 7)
-            {
-                playerCanSpawn = true;
+            playerCanSpawn = true;
+            enemySpawner.enemyCount = 0; // Sets the counter for enemies back to 0
+            addedEnemies = addedEnemies * enemyMultiplicator; // Changes the amount of enemies that are getting add to the number of enemies -> Gets higher after every wave
+            enemySpawner.enemyAmount += addedEnemies; // multiplies the amount of enemies that should spawn with an int
+            StartCoroutine(enemySpawner.SpawnEnemies()); // Starts the coroutine to spawn new enemies
 
-                enemySpawner.enemyCount = 0;
-
-                addedEnemies = addedEnemies * enemyMultiplicator;
-                enemySpawner.enemyAmount += addedEnemies; // multiplies the amount of enemies that should spawn with an int
-                StartCoroutine(enemySpawner.SpawnEnemies()); // Starts the coroutine to spawn new enemies
-
-                waveNumber++;
-                waveText.text = "Wave: " + waveNumber;
-                Debug.Log("Wave " + waveNumber + " starts now!");
-            }
+            waveNumber++;
+            waveText.text = "Wave: " + waveNumber;
+            //Debug.Log("Wave " + waveNumber + " starts now!");
         }
 
         // Loads the scene again if all players are dead
@@ -60,9 +54,9 @@ public class LevelManager : MonoBehaviour
             GameOver();
         }
 
-        if (waveNumber == 3)
+        if (waveNumber == 6)
         {
-            Win();
+            SceneManager.LoadScene("Boss Fight"); // Loads the scene for the boss fight
         }
     }
 

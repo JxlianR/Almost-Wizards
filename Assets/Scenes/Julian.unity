@@ -7899,7 +7899,7 @@ PrefabInstance:
     - target: {fileID: 852934578947641864, guid: 0a863d7901204324e9cc8b6f1e923cb0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.3824863
+      value: -17.38
       objectReference: {fileID: 0}
     - target: {fileID: 852934578947641864, guid: 0a863d7901204324e9cc8b6f1e923cb0,
         type: 3}
@@ -14062,6 +14062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMultiplicator: 2
   addedEnemies: 2
+  waveNumber: 5
 --- !u!4 &1719842059
 Transform:
   m_ObjectHideFlags: 0
@@ -15015,18 +15016,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4405211614917034786, guid: 465ae005a44afd94f873ab285917d1f2,
-        type: 3}
-      propertyPath: firstElement
-      value: 
-      objectReference: {fileID: 5457808597441093095, guid: b844a72f7066fe4478852be5856562fd,
-        type: 3}
-    - target: {fileID: 4405211614917034786, guid: 465ae005a44afd94f873ab285917d1f2,
-        type: 3}
-      propertyPath: secondElement
-      value: 
-      objectReference: {fileID: 1076042325813594011, guid: a339c00d1686aed498d1a56950bad20e,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 465ae005a44afd94f873ab285917d1f2, type: 3}
 --- !u!1001 &1868436888
@@ -16188,7 +16177,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032313468}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4361032, y: 1.4361036, z: 2.2386723}

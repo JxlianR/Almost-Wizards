@@ -4839,10 +4839,13 @@ MonoBehaviour:
   combinedElement2Tag: Magma
   elementArea: {fileID: 7546340865860329166, guid: 84d2c6ed600938c4ba0dd919830a0fe7,
     type: 3}
+  explosion: {fileID: 6659718394392077805, guid: 89af6024edfba2840a5093260a1066ea,
+    type: 3}
+  smokeFailure: {fileID: 5540788878122059068, guid: 6a23685a8365c6a4690dcb24c526d865,
+    type: 3}
   speed: 5
   elementTag: Earth
   cancellingElementTag: Air
-  cancellingAreaTag: 
   combiningElement1Tag: Water
   combiningElement2Tag: Fire
   combiningArea1Tag: WaterArea

@@ -4829,10 +4829,13 @@ MonoBehaviour:
   combinedElement2Tag: Ice
   elementArea: {fileID: 4856611679182579650, guid: a32c10ad70115f24ba64c698e671034e,
     type: 3}
+  explosion: {fileID: 3613590831632799307, guid: f53e6055d8af44a4ea654ba63f66dab1,
+    type: 3}
+  smokeFailure: {fileID: 5540788878122059068, guid: 6a23685a8365c6a4690dcb24c526d865,
+    type: 3}
   speed: -5
   elementTag: Air
   cancellingElementTag: Earth
-  cancellingAreaTag: 
   combiningElement1Tag: Fire
   combiningElement2Tag: Water
   combiningArea1Tag: FireArea

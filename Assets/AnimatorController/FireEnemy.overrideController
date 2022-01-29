@@ -8,4 +8,6 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: FireEnemy
   m_Controller: {fileID: 9100000, guid: 0c2a09332771f8f44b05496d43d0ccbd, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ab5d68a270b450a40955ba4f0a085908, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7f9727294bccfdf4ca76d0b9b4cf0ad2, type: 2}

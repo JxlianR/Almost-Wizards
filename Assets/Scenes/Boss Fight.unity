@@ -280,6 +280,7 @@ MonoBehaviour:
   - {fileID: 8309970765949706090, guid: df5dfd3127487484b9e6da3692031225, type: 3}
   - {fileID: 7096239054234501104, guid: ad1a411813f14a5438d025d7803e2065, type: 3}
   - {fileID: 9139028762066863771, guid: 2bfb834ba74c6e04181a378d83001bbc, type: 3}
+  Players: []
   EnemySpawnPoints:
   - {fileID: 1709049318}
   - {fileID: 520684625}
@@ -298,7 +299,7 @@ MonoBehaviour:
   HP: 10
   timeBetweenSpell: 4
   timeBetweenArea: 6
-  timeBetweenEnemy: 34
+  timeBetweenEnemy: 32
 --- !u!4 &25068563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0e4dd827d26c4ce43a650e2035599d82,
@@ -14692,6 +14693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMultiplicator: 2
   addedEnemies: 2
+  waveNumber: 1
 --- !u!4 &1719842059
 Transform:
   m_ObjectHideFlags: 0
