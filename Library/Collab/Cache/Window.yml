@@ -14,36 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Animations/FireEnemyWalk.anim
-    - Assets/Animations/FireEnemyWalk.anim.meta
-    - Assets/AnimatorController/FireEnemy.overrideController
-    - Assets/Assets/Assets For Wizards/New Enemies/FireEnemy.fbx
-    - Assets/Assets/Assets For Wizards/New Enemies/FireEnemy.fbx.meta
-    - Assets/Assets/Assets For Wizards/New Enemies/Fire_ (1).fbx
-    - Assets/Assets/Assets For Wizards/New Enemies/Fire_ (1).fbx.meta
-    - Assets/Prefabs/Elements/Basic Spells/Air Strike.prefab
-    - Assets/Prefabs/Elements/Basic Spells/Earth.prefab
-    - Assets/Prefabs/Elements/Basic Spells/Fireball.prefab
-    - Assets/Prefabs/Elements/Basic Spells/Water Ball Particle.prefab
-    - Assets/Prefabs/Elements/Shooting & Hit Effects/Air Explosion.prefab
-    - Assets/Prefabs/Elements/Shooting & Hit Effects/Earth Explosion.prefab
-    - Assets/Prefabs/Elements/Shooting & Hit Effects/Fire Explosion.prefab
-    - Assets/Prefabs/Elements/Shooting & Hit Effects/Smoke Core.prefab
-    - Assets/Prefabs/Elements/Shooting & Hit Effects/Smoke Core.prefab.meta
-    - Assets/Prefabs/Elements/Shooting & Hit Effects/Water Explosion.prefab
-    - Assets/Prefabs/Enemies/Fire_.fbx
-    - Assets/Prefabs/Enemies/Fire_.fbx.meta
-    - Assets/Scenes/Boss Fight.unity
-    - Assets/Scenes/Julian.unity
-    - Assets/Scripts/ElementControllerLeft.cs
-    - Assets/Scripts/ElementControllerRight.cs
-    - Assets/Scripts/ElementMouseLeft.cs
-    - Assets/Scripts/ElementMouseRight.cs
-    - Assets/Scripts/GrandmasterBehavior.cs
-    - Assets/Scripts/LevelManager.cs
-    - ProjectSettings/EditorBuildSettings.asset
     - 
-    m_Values: 0000000000000000000000000000000000000000000000000000000000
+    m_Values: 01
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
