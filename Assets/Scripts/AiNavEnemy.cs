@@ -25,6 +25,7 @@ public class AiNavEnemy : MonoBehaviour
     public string combinedWeaknessElement1; // Tag of the first element that can be created when combing the weakness with another element
     public string combinedWeaknessElement2; // Tag of the first element that can be created when combing the weakness with another element
     public string ownElement;
+    public string ownArea;
     public string ownElementCombined1;
     public string ownElementCombined2;
 
@@ -57,20 +58,11 @@ public class AiNavEnemy : MonoBehaviour
         }
     }
 
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag == weakness || collision.collider.tag == combinedWeaknessElement1 || collision.collider.tag == combinedWeaknessElement2) // Checks if the tag of the object the enemy collides with is equals the weakness or a combined element of it
-        {
-            healthPoints -= ElementBehaviour.damage; // Substracts the damage the element is doing from the HP
-            Debug.Log("Healtpoints = " + healthPoints + " - " + ElementBehaviour.damage);
-        }
-    }*/
-
     private void OnTriggerEnter(Collider other)
     {
         if ((other.tag == weakness || other.tag == weaknessArea) && gotDamage == false) // Checks if the object is the weakness and if it is able to take damage
         {
-            healthPoints -= ElementControllerLeft.damage * 2; ; // Substracts the damage the element is doing from the HP multiplied with 2
+            healthPoints -= FireElement.damage * 2; ; // Substracts the damage the element is doing from the HP multiplied with 2
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }
@@ -80,7 +72,7 @@ public class AiNavEnemy : MonoBehaviour
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }
-        else if ((other.tag == ownElement || other.tag == ownElementCombined1 || other.tag == ownElementCombined2)) // Checks if the object is its own element or a combined element of it
+        else if (other.tag == ownElement) // Checks if the object is its own element or a combined element of it
         {
             if (healthPoints < maxHealthPoints) // Checks if HP are less than the maximal HP the enemy can have
             {
@@ -89,7 +81,7 @@ public class AiNavEnemy : MonoBehaviour
         }
         else if (gotDamage == false)
         {
-            healthPoints -= ElementControllerLeft.damage; // Substracts the damage the element is doing from the HP
+            healthPoints -= 1; // Substracts 1 HP
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }

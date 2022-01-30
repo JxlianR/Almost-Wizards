@@ -360,10 +360,11 @@ MonoBehaviour:
   maxHealthPoints: 4
   timeTillDeath: 1.5
   weakness: Fire
-  weaknessArea: 
+  weaknessArea: FireArea
   combinedWeaknessElement1: Firenado
   combinedWeaknessElement2: Magma
   ownElement: Water
+  ownArea: WaterArea
   ownElementCombined1: Ice
   ownElementCombined2: Mud
 --- !u!95 &3061903846401326410

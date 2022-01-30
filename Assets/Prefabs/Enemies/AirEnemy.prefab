@@ -173,10 +173,11 @@ MonoBehaviour:
   maxHealthPoints: 4
   timeTillDeath: 1.5
   weakness: Earth
-  weaknessArea: 
+  weaknessArea: EarthArea
   combinedWeaknessElement1: Mud
   combinedWeaknessElement2: Magma
   ownElement: Air
+  ownArea: AirArea
   ownElementCombined1: Firenado
   ownElementCombined2: Ice
 --- !u!95 &8612436980490235919

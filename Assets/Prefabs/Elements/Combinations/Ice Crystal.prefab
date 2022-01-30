@@ -158,7 +158,7 @@ MonoBehaviour:
   combiningElement2Tag: 
   combiningArea1Tag: 
   combiningArea2Tag: 
-  duration: 100
+  duration: 6
   Damage: 4
   offsetCombine1: {x: 0, y: 0, z: 0}
   offsetCombine2: {x: 0, y: 0, z: 0}
