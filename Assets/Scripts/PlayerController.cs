@@ -132,10 +132,10 @@ public class PlayerController : MonoBehaviour
 
 
 
-        if (LevelManager.playerCanSpawn == true) // If this bool is true it means that the wave is over and the dead character can spawn again
+        /*if (ButtonManager.improveEnemies == true) // If this bool is true it means that the wave is over and the dead character can spawn again
         {
             StartCoroutine(Respawn());
-        }
+        }*/
     }
 
     private void HandleAnimations()
@@ -364,11 +364,11 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(oppositePlayer, new Vector3(-3, 5, -3), Quaternion.identity); // Spawns the opposite character of the character that is still alive
             //oppositePlayer.Lives.lives = 2; // Sets the number of lives of the new spawned character to 1
-            LevelManager.playerCanSpawn = false; // Sets the boolean to false -> No other character can spawn till it is true again
+            ButtonManager.improveEnemies = false; // Sets the boolean to false -> No other character can spawn till it is true again
         }
         else
         {
-            LevelManager.playerCanSpawn = false; // Sets the boolean to false -> No other character can spawn till it is true again
+            ButtonManager.improveEnemies = false; // Sets the boolean to false -> No other character can spawn till it is true again
         }
     }
 

@@ -239,6 +239,7 @@ MonoBehaviour:
   movementSpeed: 9
   rotationSpeed: 40000
   waitTime: 0
+  shootCooldown: 1
   firstElementTag: Water
   secondElementTag: Earth
   spawnPoint: {fileID: 1086558658}

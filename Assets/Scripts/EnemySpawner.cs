@@ -41,12 +41,4 @@ public class EnemySpawner : MonoBehaviour
             enemyCount++;
         }
     }
-
-    // Another way to do the spawning
-    /*void SpawnEnemy()
-    {
-        int randomSpawnPoint = Random.Range(0, SpawnPoints.Length); // randomSpawnPoint will be a random number from the SpawnPoints array
-        Instantiate(enemyPrefab, SpawnPoints[randomSpawnPoint].position, SpawnPoints[randomSpawnPoint].rotation); // Instantiating the enemy at a random SpawnPoint
-        enemyCount++;
-    }*/
 }

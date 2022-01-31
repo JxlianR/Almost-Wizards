@@ -84,6 +84,14 @@ public class FireElement : MonoBehaviour
             // Spawns the element area of this element at the position of the element
             Instantiate(elementArea, transform.position, elementArea.transform.rotation); // Spawns the element area of this element
         }
+        else if (other.tag == "Grandmaster")
+        {
+            Instantiate(explosion, transform.position, transform.rotation); // Instantiates the explosion particle
+
+            Destroy(gameObject);
+            // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
+            Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z), elementArea.transform.rotation);
+        }
         else
         {
             Instantiate(smokeFailure, transform.position, transform.rotation); // Instantiates the explosion particle

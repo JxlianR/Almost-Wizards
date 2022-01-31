@@ -70,6 +70,8 @@ public class GrandmasterBehavior : MonoBehaviour
         int randomSpawnPoint = Random.Range(0, SpawnPoints.Length);
         transform.position = SpawnPoints[randomSpawnPoint].position;
 
+        yield return new WaitForSeconds(2);
+
         for (int i = 0; i < 4; i++)
         {
             randomPlayer = Random.Range(0, Players.Length);
@@ -91,6 +93,8 @@ public class GrandmasterBehavior : MonoBehaviour
         float randomZ = Random.Range(maxZ, -maxZ);
         int randomCombinedElement = Random.Range(0, CombinedElements.Length);
 
+        yield return new WaitForSeconds(3);
+
         if (DetectGroundHeight(randomX, randomZ).y <= 1)
         {
             Instantiate(CombinedElements[randomCombinedElement], DetectGroundHeight(randomX, randomZ) + new Vector3(0, 0.5f, 0), transform.rotation);
@@ -105,7 +109,7 @@ public class GrandmasterBehavior : MonoBehaviour
         //int randomSpawnPoint = Random.Range(0, EnemySpawnPoints.Length);
 
         //Instantiate(Enemies[randomEnemy], EnemySpawnPoints[randomSpawnPoint].position, transform.rotation);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
 
         for (int i = 0; i < EnemySpawnPoints.Length; i++)
         {

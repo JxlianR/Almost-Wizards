@@ -622,6 +622,7 @@ MonoBehaviour:
   movementSpeed: 9
   rotationSpeed: 16
   waitTime: 0
+  shootCooldown: 1
   firstElementTag: Fire
   secondElementTag: Air
   spawnPoint: {fileID: 7412174831507030711}

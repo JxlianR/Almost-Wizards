@@ -16,12 +16,10 @@ public class LevelManager : MonoBehaviour
     public int enemyMultiplicator; // Multiplicator for the number of enemies in the next wave
     public int addedEnemies;
 
-    public int waveNumber = 1;
-
-    public static bool playerCanSpawn;
+    public static int waveNumber = 0; // Number of the wave
 
     // Start is called before the first frame update
-    void OnEnable()
+    void Start()
     {
         enemySpawner = GameObject.Find("EnemySpawner").GetComponent<EnemySpawner>();
         waveText = GameObject.Find("WaveText").GetComponent<Text>();
@@ -35,32 +33,33 @@ public class LevelManager : MonoBehaviour
         Players = GameObject.FindGameObjectsWithTag("Player"); // Find all players and put them in the array
 
 
-        if (AllEnemiesDead() && enemySpawner.enemyCount == enemySpawner.enemyAmount) // Checks if all enemies are dead and the number of enemies that should spawn did
+        // Checks if all enemies are dead and the number of enemies that should spawn did
+        if (AllEnemiesDead() && enemySpawner.enemyCount == enemySpawner.enemyAmount)
         {
-            /*playerCanSpawn = true;
-            enemySpawner.enemyCount = 0; // Sets the counter for enemies back to 0
-            addedEnemies = addedEnemies * enemyMultiplicator; // Changes the amount of enemies that are getting add to the number of enemies -> Gets higher after every wave
-            enemySpawner.enemyAmount += addedEnemies; // multiplies the amount of enemies that should spawn with an int
-            StartCoroutine(enemySpawner.SpawnEnemies()); // Starts the coroutine to spawn new enemies
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Loads the next scene
 
-            waveNumber++;
-            waveText.text = "Wave: " + waveNumber;
-            //Debug.Log("Wave " + waveNumber + " starts now!");*/
+            //playerCanSpawn = true;
+            //enemySpawner.enemyCount = 0; // Sets the counter for enemies back to 0
+            //addedEnemies = addedEnemies * enemyMultiplicator; // Changes the amount of enemies that are getting add to the number of enemies -> Gets higher after every wave
+            //enemySpawner.enemyAmount += addedEnemies; // multiplies the amount of enemies that should spawn with an int
+            //StartCoroutine(enemySpawner.SpawnEnemies()); // Starts the coroutine to spawn new enemies
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //waveNumber++;
+            //waveText.text = "Wave: " + waveNumber;
+            //Debug.Log("Wave " + waveNumber + " starts now!");
 
         }
 
-        // Loads the scene again if all players are dead
+        // Loads the scene "Lose" if all players are dead
         if (AllPlayersDead())
         {
-            GameOver();
+            SceneManager.LoadScene("Lose");
         }
 
-        if (waveNumber == 7)
+        /*if (waveNumber == 7)
         {
             SceneManager.LoadScene("Boss Fight"); // Loads the scene for the boss fight
-        }
+        }*/
     }
 
     // Checks if there are any players in the scene
@@ -89,16 +88,5 @@ public class LevelManager : MonoBehaviour
         }
 
         return true;
-    }
-
-    void Win()
-    {
-        Debug.Log("You have won the game! Congratulations, you are now a wizard!");
-    }
-
-    void GameOver()
-    {
-        SceneManager.LoadScene(0);
-        Debug.Log("All player died, try again.");
     }
 }

@@ -51,10 +51,10 @@ public class AiNavEnemy : MonoBehaviour
             StartCoroutine(Die());
         }
 
-        if (LevelManager.playerCanSpawn == true)
+        if (ButtonManager.improveEnemies == true)
         {
             gameObject.GetComponent<AiNavEnemy>().Agent.speed += 0.5f;
-            LevelManager.playerCanSpawn = false;
+            ButtonManager.improveEnemies = false;
         }
     }
 
