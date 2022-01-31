@@ -9760,7 +9760,7 @@ MonoBehaviour:
   - {fileID: 7096239054234501104, guid: ad1a411813f14a5438d025d7803e2065, type: 3}
   - {fileID: 9139028762066863771, guid: 2bfb834ba74c6e04181a378d83001bbc, type: 3}
   - {fileID: 3137979516144679378, guid: ba35474bcab51ab498bcfed57b997add, type: 3}
-  enemyAmount: 1
+  enemyAmount: 72
   minTimeBetweenEnemies: 1
   maxTimeBetweenEnemies: 3
   enemyCount: 0

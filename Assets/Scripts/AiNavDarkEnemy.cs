@@ -59,7 +59,7 @@ public class AiNavDarkEnemy : MonoBehaviour
         }
         else if (other.tag != "Player" && gotDamage == false)
         {
-            healthPoints -= FireElement.damage; // Substracts the damage the element is doing from the HP
+            healthPoints -= 1; // Substracts 1 HP
             Debug.Log("Healtpoints = " + healthPoints + " - " + FireElement.damage);
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());

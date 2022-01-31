@@ -62,7 +62,7 @@ public class AiNavEnemy : MonoBehaviour
     {
         if ((other.tag == weakness || other.tag == weaknessArea) && gotDamage == false) // Checks if the object is the weakness and if it is able to take damage
         {
-            healthPoints -= FireElement.damage * 2; ; // Substracts the damage the element is doing from the HP multiplied with 2
+            healthPoints -= 2; ; // Substracts 2 HP
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }

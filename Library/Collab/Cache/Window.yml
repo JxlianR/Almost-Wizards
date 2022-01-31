@@ -14,77 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/BossFightManager.cs
-    - Assets/BossFightManager.cs.meta
-    - Assets/Scenes/Credits.unity
-    - Assets/Scenes/Lose.unity
-    - Assets/Scenes/Lose.unity.meta
-    - Assets/Scenes/Menu.unity
-    - Assets/Scenes/ScenesAfterWave.meta
-    - Assets/Scenes/ScenesAfterWave/AfterWave 1.unity
-    - Assets/Scenes/ScenesAfterWave/AfterWave 1.unity.meta
-    - Assets/Scenes/ScenesAfterWave/AfterWave 2.unity
-    - Assets/Scenes/ScenesAfterWave/AfterWave 2.unity.meta
-    - Assets/Scenes/ScenesAfterWave/AfterWave 3.unity
-    - Assets/Scenes/ScenesAfterWave/AfterWave 3.unity.meta
-    - Assets/Scenes/ScenesAfterWave/AfterWave 4.unity
-    - Assets/Scenes/ScenesAfterWave/AfterWave 4.unity.meta
-    - Assets/Scenes/ScenesAfterWave/AfterWave 5.unity
-    - Assets/Scenes/ScenesAfterWave/AfterWave 5.unity.meta
-    - Assets/Scenes/ScenesAfterWave/AfterWave 6.1.unity
-    - Assets/Scenes/ScenesAfterWave/AfterWave 6.1.unity.meta
-    - Assets/Scenes/ScenesAfterWave/AfterWave 6.2.unity
-    - Assets/Scenes/ScenesAfterWave/AfterWave 6.2.unity.meta
-    - Assets/Scenes/Tutorial/Tutorial 1.unity
-    - Assets/Scenes/Tutorial/Tutorial 10.unity
-    - Assets/Scenes/Tutorial/Tutorial 2.unity
-    - Assets/Scenes/Tutorial/Tutorial 3.unity
-    - Assets/Scenes/Tutorial/Tutorial 4.unity
-    - Assets/Scenes/Tutorial/Tutorial 5.unity
-    - Assets/Scenes/Tutorial/Tutorial 6.unity
-    - Assets/Scenes/Tutorial/Tutorial 7.unity
-    - Assets/Scenes/Tutorial/Tutorial 8.unity
-    - Assets/Scenes/Tutorial/Tutorial 9.unity
-    - Assets/Scenes/Waves.meta
-    - Assets/Scenes/Waves/Boss Fight.unity
-    - Assets/Scenes/Waves/Boss Fight.unity.meta
     - Assets/Scenes/Waves/Wave1.unity
-    - Assets/Scenes/Waves/Wave1.unity.meta
     - Assets/Scenes/Waves/Wave2.unity
-    - Assets/Scenes/Waves/Wave2.unity.meta
     - Assets/Scenes/Waves/Wave3.unity
-    - Assets/Scenes/Waves/Wave3.unity.meta
     - Assets/Scenes/Waves/Wave4.unity
-    - Assets/Scenes/Waves/Wave4.unity.meta
     - Assets/Scenes/Waves/Wave5.unity
-    - Assets/Scenes/Waves/Wave5.unity.meta
     - Assets/Scenes/Waves/Wave6.unity
-    - Assets/Scenes/Waves/Wave6.unity.meta
-    - Assets/Scenes/Win.meta
-    - Assets/Scenes/Win/Win 1.unity
-    - Assets/Scenes/Win/Win 1.unity.meta
-    - Assets/Scenes/Win/Win 2.unity
-    - Assets/Scenes/Win/Win 2.unity.meta
-    - Assets/Scenes/Win/Win 3.unity
-    - Assets/Scenes/Win/Win 3.unity.meta
     - Assets/Scripts/AiNavDarkEnemy.cs
     - Assets/Scripts/AiNavEnemy.cs
-    - Assets/Scripts/AirElement.cs
-    - Assets/Scripts/ButtonManager.cs
-    - Assets/Scripts/EarthElement.cs
-    - Assets/Scripts/EnemySpawner.cs
-    - Assets/Scripts/FireElement.cs
-    - Assets/Scripts/GrandmasterBehavior.cs
-    - Assets/Scripts/LevelManager.cs
-    - Assets/Scripts/LevelManager.cs.meta
-    - Assets/Scripts/MainMenu.cs
-    - Assets/Scripts/MainMenu.cs.meta
-    - Assets/Scripts/PlayerController.cs
-    - Assets/Scripts/WaterElement.cs
-    - ProjectSettings/EditorBuildSettings.asset
-    - ProjectSettings/TagManager.asset
+    - Assets/Scripts/BossFightManager.cs
+    - Assets/Scripts/BossFightManager.cs.meta
+    - Assets/Scripts/ButtonManager.cs.meta
     - 
-    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

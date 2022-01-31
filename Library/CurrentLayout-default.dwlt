@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 1024
   m_ShowMode: 4
-  m_Title: Collaborate
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1707
     height: 974
-  m_MinSize: {x: 661, y: 492}
+  m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 0
-  controlID: 19
+  controlID: 17
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1166
     height: 974
-  m_MinSize: {x: 403, y: 492}
+  m_MinSize: {x: 401, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 70
+  controlID: 18
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,10 +169,10 @@ MonoBehaviour:
     y: 0
     width: 1166
     height: 575
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 401, y: 221}
+  m_MaxSize: {x: 8001, y: 4021}
   vertical: 0
-  controlID: 71
+  controlID: 19
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,8 +218,8 @@ MonoBehaviour:
     y: 0
     width: 911
     height: 575
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: CollaborateWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -273,15 +273,15 @@ MonoBehaviour:
     y: 0
     width: 541
     height: 974
-  m_MinSize: {x: 258, y: 421}
+  m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 20}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 2
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -401,9 +401,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6a2e0200
-      m_LastClickedID: 142954
-      m_ExpandedIDs: f0e2f3ff5c12f4ff1c45f4ff2274f4ff4ca3f4ffa4d2f4ffbe01f5ffbc30f5ffaa5ff5ffa68ef5ff9ebdf5ffbeecf5ffba1bf6ff324bf6ff7c7af6ff02aaf6ffb0d9f6ffae08f7ffa03af7ffac6cf7fffe9bf7ff58cff7ffecfef7ffcc72f8ff4ca3f8ff2ad5f8ff8a40f9ff9c41fbffce72fbffd4d0fbff589dfdffeeccfdffc4fcfdff6c2dfeff14fbffff7cd60000a64b0100284d01004aac0100ecb401006ebc0100f2c3010074cb0100f6d2010078da0100fae101007ce90100fef0010074f801000200020084070200060f0200881602000a1e02008c250200
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 40c4ffff14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -464,9 +464,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 10.344906, y: 3.5306854, z: -3.0709877}
+    m_Target: {x: 12.213747, y: 4.116178, z: -3.6724434}
     speed: 2
-    m_Value: {x: 10.344906, y: 3.5306854, z: -3.0709877}
+    m_Value: {x: 12.213747, y: 4.116178, z: -3.6724434}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -515,11 +515,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.012920313, y: 0.9461459, z: -0.32123715, w: -0.038054675}
     speed: 2
-    m_Value: {x: -0.012863214, y: 0.94662654, z: -0.31981754, w: -0.03807401}
+    m_Value: {x: -0.01292031, y: 0.94614565, z: -0.32123706, w: -0.038054667}
   m_Size:
-    m_Target: 9.189203
+    m_Target: 10.014519
     speed: 2
-    m_Value: 9.189203
+    m_Value: 10.014519
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -732,22 +732,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Waves
+    - Assets/Assets/Assets For Wizards/Grandmaster Particle/Teleport
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Waves
+  - Assets/Assets/Assets For Wizards/Grandmaster Particle/Teleport
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\kingj\OneDrive\Documents\GitHub\Almost-Wizards
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 318}
-    m_SelectedIDs: 8e510000
-    m_LastClickedID: 20878
-    m_ExpandedIDs: 000000001c5100001e51000020510000225100002451000026510000285100002a5100002c5100002e51000030510000325100003451000036510000385100003a5100003c5100009c51000000ca9a3b
+    scrollPos: {x: 0, y: 119}
+    m_SelectedIDs: ba700000
+    m_LastClickedID: 28858
+    m_ExpandedIDs: 00000000386300003a6300003c6300003e63000040630000426300004463000046630000486300004a6300004c6300004e63000050630000526300005463000056630000586300005a630000a06300009e70000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -775,7 +775,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c5100001e51000020510000225100002451000026510000285100002a5100002c5100002e51000030510000325100003451000036510000385100003a5100003c510000
+    m_ExpandedIDs: 00000000386300003a6300003c6300003e63000040630000426300004463000046630000486300004a6300004c6300004e63000050630000526300005463000056630000586300005a630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
