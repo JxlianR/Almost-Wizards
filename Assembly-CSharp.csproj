@@ -58,6 +58,7 @@
     <Compile Include="Assets\Scripts\WaterElement.cs" />
     <Compile Include="Assets\Scripts\GrandmasterElement.cs" />
     <Compile Include="Assets\Scripts\AirElement.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\ElementAreaDestroy.cs" />
     <Compile Include="Assets\Shared\Scripts\ProximityActivate.cs" />
     <Compile Include="Assets\Shared\Scripts\DecalDestroyer.cs" />
@@ -84,7 +85,6 @@
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\FireElement.cs" />
     <Compile Include="Assets\Shared\Scripts\GunAim.cs" />
-    <Compile Include="Assets\Scripts\MainMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

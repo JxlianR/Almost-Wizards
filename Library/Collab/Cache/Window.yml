@@ -14,10 +14,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/Animations/EarthArea.anim
+    - Assets/Animations/EarthArea.anim.meta
+    - Assets/Animations/FireEnemyDying.anim
+    - Assets/Animations/FireEnemyDying.anim.meta
+    - Assets/AnimatorController/EarthArea.overrideController
+    - Assets/AnimatorController/FireEnemy.overrideController
+    - Assets/Assets/Assets For Wizards/New Elements/Area/Earth_Ground.fbx
+    - Assets/Assets/Assets For Wizards/New Elements/Area/Earth_Ground.fbx.meta
+    - Assets/Prefabs/Elements/Areas/Earth Ground.prefab
+    - Assets/Prefabs/Elements/Areas/Earth Ground.prefab.meta
+    - Assets/Prefabs/Elements/Areas/EarthArea.prefab
+    - Assets/Prefabs/Elements/Areas/EarthArea.prefab.meta
+    - Assets/Prefabs/Elements/Basic Spells/Earth.prefab
+    - Assets/Prefabs/Elements/Combinations/Firenado.prefab
+    - Assets/Prefabs/Elements/Combinations/Ice Crystal.prefab
+    - Assets/Prefabs/Elements/Combinations/Magma Floor.prefab
+    - Assets/Prefabs/Elements/Combinations/Mud.prefab
+    - Assets/Prefabs/Players/Blue Character.prefab
+    - Assets/Prefabs/Players/Red Character.prefab
+    - Assets/Scenes/Boss Fight.unity
     - Assets/Scenes/Credits.unity
+    - Assets/Scenes/Julian.unity
+    - Assets/Scenes/Menu.unity
+    - Assets/Scenes/Wave 2.unity
+    - Assets/Scenes/Wave 2.unity.meta
+    - Assets/Scripts/EarthElement.cs
+    - Assets/Scripts/GrandmasterBehavior.cs
+    - Assets/Scripts/LevelManager.cs
     - Assets/Scripts/MainMenu.cs
+    - Assets/UI/Almost Wizards Woodbar Player1.png
+    - Assets/UI/Almost Wizards Woodbar Player1.png.meta
+    - Assets/UI/Almost Wizards Woodbar Player2.png
+    - Assets/UI/Almost Wizards Woodbar Player2.png.meta
+    - Assets/UI/Player Blue.png
+    - Assets/UI/Player Blue.png.meta
+    - Assets/UI/Player Red.png
+    - Assets/UI/Player Red.png.meta
+    - Assets/UI/health.png.meta
+    - Assets/UI/ui_frame.png
+    - Assets/UI/ui_frame.png.meta
     - 
-    m_Values: 010101
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

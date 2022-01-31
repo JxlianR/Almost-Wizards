@@ -37,7 +37,7 @@ public class LevelManager : MonoBehaviour
 
         if (AllEnemiesDead() && enemySpawner.enemyCount == enemySpawner.enemyAmount) // Checks if all enemies are dead and the number of enemies that should spawn did
         {
-            playerCanSpawn = true;
+            /*playerCanSpawn = true;
             enemySpawner.enemyCount = 0; // Sets the counter for enemies back to 0
             addedEnemies = addedEnemies * enemyMultiplicator; // Changes the amount of enemies that are getting add to the number of enemies -> Gets higher after every wave
             enemySpawner.enemyAmount += addedEnemies; // multiplies the amount of enemies that should spawn with an int
@@ -45,7 +45,10 @@ public class LevelManager : MonoBehaviour
 
             waveNumber++;
             waveText.text = "Wave: " + waveNumber;
-            //Debug.Log("Wave " + waveNumber + " starts now!");
+            //Debug.Log("Wave " + waveNumber + " starts now!");*/
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
         }
 
         // Loads the scene again if all players are dead
@@ -54,7 +57,7 @@ public class LevelManager : MonoBehaviour
             GameOver();
         }
 
-        if (waveNumber == 6)
+        if (waveNumber == 7)
         {
             SceneManager.LoadScene("Boss Fight"); // Loads the scene for the boss fight
         }

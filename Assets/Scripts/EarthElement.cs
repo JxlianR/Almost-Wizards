@@ -51,7 +51,7 @@ public class EarthElement : MonoBehaviour
 
             Destroy(gameObject);
             // Spawns the first combined element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.44f, 0), combinedElement1.transform.rotation);
+            Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.24f, 0), combinedElement1.transform.rotation);
         }
         // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
         else if (other.tag == combiningElement2Tag || other.tag == combiningArea2Tag)

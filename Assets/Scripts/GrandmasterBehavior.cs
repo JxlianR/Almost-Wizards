@@ -91,8 +91,11 @@ public class GrandmasterBehavior : MonoBehaviour
         float randomZ = Random.Range(maxZ, -maxZ);
         int randomCombinedElement = Random.Range(0, CombinedElements.Length);
 
-        Instantiate(CombinedElements[randomCombinedElement], DetectGroundHeight(randomX, randomZ) + new Vector3(0, 0.5f, 0), transform.rotation);
-        yield return new WaitForSeconds(timeBetweenArea);
+        if (DetectGroundHeight(randomX, randomZ).y <= 1)
+        {
+            Instantiate(CombinedElements[randomCombinedElement], DetectGroundHeight(randomX, randomZ) + new Vector3(0, 0.5f, 0), transform.rotation);
+            yield return new WaitForSeconds(timeBetweenArea);
+        }
 
         StartCoroutine(CombinedAreas());
     }

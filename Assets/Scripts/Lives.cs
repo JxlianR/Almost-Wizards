@@ -21,6 +21,11 @@ public class Lives : MonoBehaviour
     {
         //lives = 3;
 
+        if (lives == 0)
+        {
+            lives = 3;
+        }
+
         heart1 = GameObject.Find(heart1Name);
         heart2 = GameObject.Find(heart2Name);
         heart3 = GameObject.Find(heart3Name);

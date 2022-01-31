@@ -538,7 +538,6 @@ GameObject:
   - component: {fileID: 8272115817586357411}
   - component: {fileID: 8272115817586357420}
   - component: {fileID: 8272115817586357409}
-  - component: {fileID: 8700110428540088036}
   m_Layer: 12
   m_Name: Magma Floor
   m_TagString: Magma
@@ -638,28 +637,6 @@ MonoBehaviour:
   Damage: 4
   offsetCombine1: {x: 0, y: 0, z: 0}
   offsetCombine2: {x: 0, y: 0, z: 0}
---- !u!195 &8700110428540088036
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9082947169918597691}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 0
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1 &9179620867607301542
 GameObject:
   m_ObjectHideFlags: 0

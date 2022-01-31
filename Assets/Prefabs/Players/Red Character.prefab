@@ -619,8 +619,8 @@ MonoBehaviour:
     type: 3}
   oppositePlayer: {fileID: 44450882550630578, guid: 0a863d7901204324e9cc8b6f1e923cb0,
     type: 3}
-  movementSpeed: 7
-  rotationSpeed: 15
+  movementSpeed: 9
+  rotationSpeed: 16
   waitTime: 0
   firstElementTag: Fire
   secondElementTag: Air
