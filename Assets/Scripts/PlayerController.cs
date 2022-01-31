@@ -17,20 +17,22 @@ public class PlayerController : MonoBehaviour
     public GameObject secondElement; // Second projectile character can shoot
     public GameObject oppositePlayer; // GameObject of the other player -> will spawn this gameObject if the other player is dead ans the next wave starts
 
+    private Vector2 movementInput;
+    private Vector2 mouseRotationInput;
+    private Vector2 controllerRotationInput;
+
+    private Vector3 moveVector;
+
     public float movementSpeed; // Speed of movement
     public float rotationSpeed; // Speed of rotation
     public float waitTime;
 
     private float controllerDeadzone = 0.1f;
 
+    public int shootCooldown;
+
     public string firstElementTag; // Tag of the first element the player can shoot
     public string secondElementTag; // Tag of the second element the player can shoot
-
-    private Vector2 movementInput;
-    private Vector2 mouseRotationInput;
-    private Vector2 controllerRotationInput;
-
-    private Vector3 moveVector;
 
     public static Vector3 mousePositionLeft;
     public static Vector3 mousePositionRight;
@@ -286,17 +288,6 @@ public class PlayerController : MonoBehaviour
             if (mouseCanShoot == true) // Checks if the player can shoot
             {
                 GameObject.Instantiate(firstElement, spawnPoint.position, spawnPoint.rotation); // Spawning the element
-
-                // Getting the mouse position the momement the player left-clicks and assign it to a variable
-                Ray ray = cam.ScreenPointToRay(mouseRotationInput);
-                Plane groundPlane = new Plane(Vector3.up, transform.position);
-                float rayLength;
-
-                if (groundPlane.Raycast(ray, out rayLength))
-                {
-                    mousePositionLeft = ray.GetPoint(rayLength);
-                }
-
                 StartCoroutine(MouseCooldown());
             }
         }
@@ -309,17 +300,6 @@ public class PlayerController : MonoBehaviour
             if (mouseCanShoot == true) // Checks if the player can shoot
             {
                 GameObject.Instantiate(secondElement, spawnPoint.position, spawnPoint.rotation ); // Spawning the element
-
-                // Getting the mouse position the momement the player right-clicks and assign it to a variable
-                Ray ray = cam.ScreenPointToRay(mouseRotationInput);
-                Plane groundPlane = new Plane(Vector3.up, transform.position);
-                float rayLength;
-
-                if (groundPlane.Raycast(ray, out rayLength))
-                {
-                    mousePositionRight = ray.GetPoint(rayLength);
-                }
-
                 StartCoroutine(MouseCooldown());
             }
         }
@@ -332,8 +312,6 @@ public class PlayerController : MonoBehaviour
             if (controllerCanShoot == true) // Checks if the player can shoot
             {
                 GameObject.Instantiate(firstElement, spawnPoint.position, transform.rotation); // Spawning the element
-
-                aimPositionOne = GameObject.Find("AimingPoint").transform.position; // Setting the position of the aiming point to the variable aimPositionOne
                 StartCoroutine(ControllerCooldown());
             }
         }
@@ -346,8 +324,6 @@ public class PlayerController : MonoBehaviour
             if (controllerCanShoot == true) // Checks if the player can shoot
             {
                 GameObject.Instantiate(secondElement, spawnPoint.position, spawnPoint.rotation); // Spawning the element
-
-                aimPositionTwo = GameObject.Find("AimingPoint").transform.position; // Setting the position of the aiming point to the variable aimPositionTwo
                 StartCoroutine(ControllerCooldown());
             }
         }
@@ -407,14 +383,14 @@ public class PlayerController : MonoBehaviour
     IEnumerator MouseCooldown()
     {
         mouseCanShoot = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(shootCooldown);
         mouseCanShoot = true;
     }
 
     IEnumerator ControllerCooldown()
     {
         controllerCanShoot = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(shootCooldown);
         controllerCanShoot = true;
     }
 }
