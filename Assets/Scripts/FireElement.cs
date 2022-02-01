@@ -49,7 +49,7 @@ public class FireElement : MonoBehaviour
 
             Destroy(gameObject);
             // Spawns the first combined element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.6f, 0), combinedElement1.transform.rotation);
+            Instantiate(combinedElement1, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.6f, 0), combinedElement1.transform.rotation); //combinedElement1 is Fire Tornado
         }
         // Checks if the tag of the GameObject the element is colliding with equals the string for the second element this element can be combined with
         else if (other.tag == combiningElement2Tag || other.tag == combiningArea2Tag)
@@ -58,7 +58,7 @@ public class FireElement : MonoBehaviour
 
             Destroy(gameObject);
             // Spawns the second combined element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.3f, 0), combinedElement2.transform.rotation);
+            Instantiate(combinedElement2, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.3f, 0), combinedElement2.transform.rotation); //combinedElement2 is Magma
         }
         else if (other.tag == "Enemy") // Checks if the element collides with an enemy or the ground
         {
@@ -66,7 +66,7 @@ public class FireElement : MonoBehaviour
 
             Destroy(gameObject);
             // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.1f, 0), elementArea.transform.rotation);
+            Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 1.1f, 0), elementArea.transform.rotation); //elementArea is the Fire Impact Area
         }
         else if (other.tag == "Ground")
         {

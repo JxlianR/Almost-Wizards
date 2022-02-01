@@ -14,66 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Animations/PlayerBlueDamage.anim
-    - Assets/Animations/PlayerBlueDamage.anim.meta
-    - Assets/Animations/PlayerRedDamage.anim
-    - Assets/Animations/PlayerRedDamage.anim.meta
-    - Assets/AnimatorController/PlayerRed.controller
-    - Assets/Assets/Assets For Wizards/Grandmaster Particle.meta
-    - Assets/Assets/Assets For Wizards/Grandmaster Particle/Teleport.meta
-    - Assets/Assets/Assets For Wizards/Grandmaster Particle/Teleport/Teleport Particle.png
-    - Assets/Assets/Assets For Wizards/Grandmaster Particle/Teleport/Teleport Particle.png.meta
-    - Assets/Assets/Assets For Wizards/Grandmaster Particle/Teleport/Teleport.prefab
-    - Assets/Assets/Assets For Wizards/Grandmaster Particle/Teleport/Teleport.prefab.meta
-    - Assets/Assets/Assets For Wizards/Grandmaster Particle/Teleport/TeleportMaterial.mat
-    - Assets/Assets/Assets For Wizards/Grandmaster Particle/Teleport/TeleportMaterial.mat.meta
-    - Assets/Fonts/INKFREE.TTF
-    - Assets/Fonts/INKFREE.TTF.meta
-    - Assets/Fonts/ink-free.ttf
-    - Assets/Fonts/ink-free.ttf.meta
-    - Assets/Materials & Palettes/TeleportMaterial.mat
-    - Assets/Materials & Palettes/TeleportMaterial.mat.meta
     - Assets/Prefabs/Elements/Areas/AirArea.prefab
     - Assets/Prefabs/Elements/Areas/Earth Ground.prefab
     - Assets/Prefabs/Elements/Areas/WaterArea.prefab
-    - Assets/Prefabs/Elements/Basic Spells/Earth.prefab
-    - Assets/Prefabs/Particles/Teleport.prefab
-    - Assets/Prefabs/Particles/Teleport.prefab.meta
-    - Assets/Scenes/Credits.unity
-    - Assets/Scenes/ScenesAfterWave/AfterWave 1.unity
-    - Assets/Scenes/ScenesAfterWave/AfterWave 3.unity
-    - Assets/Scenes/Tutorial/Tutorial 5.unity
+    - Assets/Scenes/MainMenu.meta
+    - Assets/Scenes/MainMenu/Credits.unity
+    - Assets/Scenes/MainMenu/Credits.unity.meta
+    - Assets/Scenes/MainMenu/Menu.unity
+    - Assets/Scenes/MainMenu/Menu.unity.meta
     - Assets/Scenes/Waves/Boss Fight.unity
     - Assets/Scenes/Waves/Wave1.unity
-    - Assets/Scenes/Waves/Wave2.unity
-    - Assets/Scenes/Waves/Wave3.unity
-    - Assets/Scenes/Waves/Wave4.unity
-    - Assets/Scenes/Waves/Wave5.unity
-    - Assets/Scenes/Waves/Wave6.unity
-    - Assets/Scripts/AiNavDarkEnemy.cs
-    - Assets/Scripts/AiNavEnemy.cs
-    - Assets/Scripts/AirElement.cs
-    - Assets/Scripts/BossFightManager.cs
-    - Assets/Scripts/BossFightManager.cs.meta
-    - Assets/Scripts/ButtonManager.cs.meta
-    - Assets/Scripts/EarthElement.cs
-    - Assets/Scripts/ElementAreaDestroy.cs
-    - Assets/Scripts/FireElement.cs
-    - Assets/Scripts/GrandmasterBehavior.cs
-    - Assets/Scripts/LevelManager.cs
-    - Assets/Scripts/PlayerController.cs
-    - Assets/Scripts/SpawnCombinedAreas.cs
-    - Assets/Scripts/SpawnCombinedAreas.cs.meta
-    - Assets/Scripts/WaterElement.cs
-    - Assets/UI/Pages/aw_afterwave3_newagain.png
-    - Assets/UI/Pages/aw_afterwave3_newagain.png.meta
-    - Assets/UI/Pages/aw_tutorial_p4_cast.png
-    - Assets/UI/Pages/aw_tutorial_p4_cast.png.meta
+    - Assets/Scenes/Win&Lose.meta
+    - Assets/Scenes/Win&Lose/Win 1.unity
+    - Assets/Scenes/Win&Lose/Win 1.unity.meta
+    - Assets/Scenes/Win&Lose/Win 2.unity
+    - Assets/Scenes/Win&Lose/Win 2.unity.meta
+    - Assets/Scenes/Win&Lose/Win 3.unity
+    - Assets/Scenes/Win&Lose/Win 3.unity.meta
     - ProjectSettings/EditorBuildSettings.asset
     - 
-    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 01010101010101010101010101010101010101
   RevisionSummary: 
-  ChangesSearchValue: fire
+  ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
   TabIndex: 0

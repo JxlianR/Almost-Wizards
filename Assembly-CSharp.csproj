@@ -70,6 +70,7 @@
     <Compile Include="Assets\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\Shared\Scripts\ParticleMenu.cs" />
+    <Compile Include="Assets\Scripts\SpawnCombinedElements.cs" />
     <Compile Include="Assets\Scripts\BossFightManager.cs" />
     <Compile Include="Assets\Scripts\GrandmasterBehavior.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
@@ -86,7 +87,8 @@
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\FireElement.cs" />
     <Compile Include="Assets\Shared\Scripts\GunAim.cs" />
-    <Compile Include="Assets\Scripts\SpawnCombinedElements.cs" />
+    <Compile Include="Assets\Scripts\Sound.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
