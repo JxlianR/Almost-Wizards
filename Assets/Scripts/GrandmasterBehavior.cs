@@ -65,7 +65,7 @@ public class GrandmasterBehavior : MonoBehaviour
 
     IEnumerator Grandmaster()
     {
-        int randomSpawnPoint = Random.Range(0, SpawnPoints.Length);
+        int randomSpawnPoint = Random.Range(0, SpawnPoints.Length); // Gets a random number between 0 and the length of the array and assign it to the variable
         Instantiate(teleport, transform.position, transform.rotation); // Spawns the particle effect for teleporting
         transform.position = SpawnPoints[randomSpawnPoint].position; // Teleports the grandmaster to a random spawnposition
 
@@ -73,17 +73,17 @@ public class GrandmasterBehavior : MonoBehaviour
 
         for (int i = 0; i < 4; i++) // Does the following loop 4 times
         {
-            randomPlayer = Random.Range(0, Players.Length);
+            randomPlayer = Random.Range(0, Players.Length); // Gets a random number between 0 and the length of the array and assign it to the variable
 
-            int randomElement = Random.Range(0, Elements.Length);
-            animator.SetBool("CastingSpell", true);
-            Instantiate(Elements[randomElement], spawnPoint.position, spawnPoint.rotation);
-            StartCoroutine(EndAnimation());
+            int randomElement = Random.Range(0, Elements.Length); // Gets a random number between 0 and the length of the array and assign it to the variable
+            animator.SetBool("CastingSpell", true); // Starts the animation for casting a spell
+            Instantiate(Elements[randomElement], spawnPoint.position, spawnPoint.rotation); // Spawns a random element at a random spawnpoint
+            StartCoroutine(EndAnimation()); // Starts Coroutine to end the animation
 
-            yield return new WaitForSeconds(timeBetweenSpell);
+            yield return new WaitForSeconds(timeBetweenSpell); // Waits a set time before repeating the loop
         }
 
-        StartCoroutine(Grandmaster());
+        StartCoroutine(Grandmaster()); // Starts this Coroutine again
     }
 
     IEnumerator CombinedAreas()
@@ -98,46 +98,44 @@ public class GrandmasterBehavior : MonoBehaviour
             yield return new WaitForSeconds(timeBetweenArea); // Waits a set time
         }
 
-        StartCoroutine(CombinedAreas()); // Starts the coroutine again
+        StartCoroutine(CombinedAreas()); // Starts this coroutine again
     }
 
     IEnumerator SpawnEnemies()
     {
-        //int randomSpawnPoint = Random.Range(0, EnemySpawnPoints.Length);
+        yield return new WaitForSeconds(4); 
 
-        //Instantiate(Enemies[randomEnemy], EnemySpawnPoints[randomSpawnPoint].position, transform.rotation);
-        yield return new WaitForSeconds(4);
-
-        for (int i = 0; i < EnemySpawnPoints.Length; i++)
+        for (int i = 0; i < EnemySpawnPoints.Length; i++) // Spawns 4 Enemys at every spawnposition around the grandmaster
         {
-            int randomEnemy = Random.Range(0, Enemies.Length);
-            Instantiate(Enemies[randomEnemy], EnemySpawnPoints[i].position, transform.rotation);
+            int randomEnemy = Random.Range(0, Enemies.Length); //// Gets a random number between 0 and the length of the array and assign it to the variable
+            Instantiate(Enemies[randomEnemy], EnemySpawnPoints[i].position, transform.rotation); // Instantiates a random enemy at one of the spawnpoint
         }
 
         yield return new WaitForSeconds(timeBetweenEnemy);
 
-        StartCoroutine(SpawnEnemies());
+        StartCoroutine(SpawnEnemies()); // Starts this coroutine again
     }
 
     IEnumerator EndAnimation()
     {
-        yield return new WaitForSeconds(1.5f);
-        animator.SetBool("CastingSpell", false);
+        yield return new WaitForSeconds(1.5f); // Waits 1.5 seconds
+        animator.SetBool("CastingSpell", false); // Ends the animation for casting a spell
     }
 
     IEnumerator CanGetDamage()
     {
-        yield return new WaitForSeconds(4.3f);
+        yield return new WaitForSeconds(4.3f); // Waits 4.3 seconds
         gotDamage = false; // Enemy can get damage again
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        // Checks if the grandmaster got damage before and if the other collision object is a player or enemy
         if (gotDamage == false && (other.tag != "Player" || other.tag != "Enemy"))
         {
-            HP -= 1;
+            HP -= 1; // Subtracts 1 HP
             gotDamage = true;
-            StartCoroutine(CanGetDamage());
+            StartCoroutine(CanGetDamage()); // Starts Coroutine to set gotDamage to false
         }
     }
 }

@@ -14,28 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Prefabs/Elements/Areas/AirArea.prefab
-    - Assets/Prefabs/Elements/Areas/Earth Ground.prefab
-    - Assets/Prefabs/Elements/Areas/WaterArea.prefab
-    - Assets/Scenes/MainMenu.meta
-    - Assets/Scenes/MainMenu/Credits.unity
-    - Assets/Scenes/MainMenu/Credits.unity.meta
-    - Assets/Scenes/MainMenu/Menu.unity
-    - Assets/Scenes/MainMenu/Menu.unity.meta
-    - Assets/Scenes/Waves/Boss Fight.unity
-    - Assets/Scenes/Waves/Wave1.unity
-    - Assets/Scenes/Win&Lose.meta
-    - Assets/Scenes/Win&Lose/Win 1.unity
-    - Assets/Scenes/Win&Lose/Win 1.unity.meta
-    - Assets/Scenes/Win&Lose/Win 2.unity
-    - Assets/Scenes/Win&Lose/Win 2.unity.meta
+    - Assets/Assets/Assets For Wizards/Audio/SFX_Ice.wav
+    - Assets/Assets/Assets For Wizards/Audio/SFX_Ice.wav.meta
+    - Assets/Assets/Assets For Wizards/Audio/SFX_Mud.wav
+    - Assets/Materials & Palettes/Altar_Globe_Material.mat
+    - Assets/Materials & Palettes/DarknessEnemy.mat
+    - Assets/Materials & Palettes/EarthEnemy.mat
+    - Assets/Materials & Palettes/FireEnemy.mat
+    - Assets/Materials & Palettes/LightEnemy.mat
+    - Assets/Materials & Palettes/WaterEnemy.mat
+    - Assets/PostProcessing  Profile.asset
+    - Assets/PostProcessing  Profile.asset.meta
+    - Assets/Prefabs/Elements/Combinations/Ice Crystal.prefab
+    - Assets/Prefabs/Enemies/WaterEnemy.prefab
+    - Assets/Scenes/Sample Ilkiz.unity
     - Assets/Scenes/Win&Lose/Win 3.unity
-    - Assets/Scenes/Win&Lose/Win 3.unity.meta
-    - ProjectSettings/EditorBuildSettings.asset
+    - Assets/UI/Pages/awcert_doug_heroes.png
+    - Assets/UI/Pages/awcert_doug_heroes.png.meta
     - 
-    m_Values: 01010101010101010101010101010101010101
+    m_Values: 010101010101010101010101010101010101
   RevisionSummary: 
   ChangesSearchValue: 
-  SelectedHistoryRevision: 
+  SelectedHistoryRevision: a3ab405865160ed61a5151ca8e31ab4cb8ca0344
   HistoryPageNumber: 0
   TabIndex: 0

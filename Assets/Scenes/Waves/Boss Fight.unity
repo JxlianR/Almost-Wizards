@@ -8125,7 +8125,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -17132,7 +17132,7 @@ PrefabInstance:
     - target: {fileID: 4847563600529345896, guid: 6f781ab40c1e1fc42ac7d77b11c2643c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -24.32
       objectReference: {fileID: 0}
     - target: {fileID: 4847563600529345896, guid: 6f781ab40c1e1fc42ac7d77b11c2643c,
         type: 3}
@@ -17142,7 +17142,7 @@ PrefabInstance:
     - target: {fileID: 4847563600529345896, guid: 6f781ab40c1e1fc42ac7d77b11c2643c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20
+      value: -28.52
       objectReference: {fileID: 0}
     - target: {fileID: 4847563600529345896, guid: 6f781ab40c1e1fc42ac7d77b11c2643c,
         type: 3}

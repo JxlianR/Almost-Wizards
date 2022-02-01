@@ -152,8 +152,9 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if(isWPressed && rotationMinus45To45)
+        if(isWPressed && rotationMinus45To45) // Checks if W is pressed and the player is rotated between -45 and 45 (y-value)
         {
+            // Starts animation for walking forward and sets everything else to false
             animator.SetBool("WalkLeft", false);
             animator.SetBool("WalkBackward", false);
             animator.SetBool("WalkRight", false);
