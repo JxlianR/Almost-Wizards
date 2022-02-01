@@ -5991,6 +5991,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1503459656}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &719334541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 719334543}
+  - component: {fileID: 719334542}
+  m_Layer: 0
+  m_Name: CombinedElementSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &719334542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719334541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f393c522f2b4dd4881c3b329cd652cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CombinedElements:
+  - {fileID: 6022737817909869199, guid: 9ff031a62a0fdfa4eb770d02db2335e8, type: 3}
+  - {fileID: 2328111271993077787, guid: 6ebf02b09c8c1d948ac139ec0f8bd603, type: 3}
+  - {fileID: 4873852408734358685, guid: 3273d3b6888f5994ca3e980053224ebd, type: 3}
+  - {fileID: 9082947169918597691, guid: 4876c62e5ffef634686a7d24b41eb0d4, type: 3}
+  timeBetweenArea: 15
+--- !u!4 &719334543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719334541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &723494387 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 74561d0f1d3fa594096a2d444e427427,
@@ -8109,7 +8158,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &991758590
 PrefabInstance:
@@ -14843,7 +14892,7 @@ RectTransform:
   - {fileID: 1931069410}
   - {fileID: 1087051663}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

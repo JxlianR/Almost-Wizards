@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\FireElement.cs" />
     <Compile Include="Assets\Shared\Scripts\GunAim.cs" />
+    <Compile Include="Assets\Scripts\SpawnCombinedElements.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

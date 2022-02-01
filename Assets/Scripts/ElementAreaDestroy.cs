@@ -24,7 +24,7 @@ public class ElementAreaDestroy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Player" && other.tag != "Enemy" && other.tag != "Ground" && other.tag != "Platform" && other.tag != ownElementTag) // Checks if the other gameobject is an element this element can combine with
+        if (other.tag != "Player" && other.tag != "Enemy" && other.tag != "Ground" && other.tag != "Platform" && other.tag != ownElementTag && other.tag != "Grandmaster") // Checks if the other gameobject is an element this element can combine with
         {
             StartCoroutine(Destroy());
         }

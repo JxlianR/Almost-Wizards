@@ -4860,7 +4860,7 @@ MonoBehaviour:
   combiningElement2Tag: Air
   combiningArea1Tag: EarthArea
   combiningArea2Tag: AirArea
-  duration: 4
+  duration: 100
   Damage: 1
   offsetCombine1: {x: 0, y: 2.46, z: 0}
   offsetCombine2: {x: 0, y: 2.79, z: 0}

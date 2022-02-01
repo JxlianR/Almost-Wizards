@@ -72,14 +72,14 @@ public class AiNavEnemy : MonoBehaviour
             gotDamage = true; // true means the enemy got damage a short time ago
             StartCoroutine(CanGetDamage());
         }
-        else if (other.tag == ownElement) // Checks if the object is its own element or a combined element of it
+        else if (other.tag == ownElement || other.tag == ownArea) // Checks if the object is its own element or a combined element of it
         {
             if (healthPoints < maxHealthPoints) // Checks if HP are less than the maximal HP the enemy can have
             {
                 healthPoints++; // Adds 1 hP
             }
         }
-        else if (gotDamage == false)
+        else if (gotDamage == false && other.tag != "Grandmaster")
         {
             healthPoints -= 1; // Substracts 1 HP
             gotDamage = true; // true means the enemy got damage a short time ago

@@ -39,7 +39,7 @@ public class EarthElement : MonoBehaviour
     {
         //transform.Translate(Vector3.forward * speed * Time.deltaTime);
         //transform.position = Vector3.MoveTowards(transform.position, new Vector3(PlayerController.aimPositionTwo.x, PlayerController.aimPositionOne.y, PlayerController.aimPositionTwo.z), speed * Time.deltaTime);
-        transform.Translate(new Vector3(0, -0.4f, -1) * speed * Time.deltaTime);
+        transform.Translate(new Vector3(-1, -0.4f, 0) * speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -92,7 +92,7 @@ public class EarthElement : MonoBehaviour
 
             Destroy(gameObject);
             // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z), elementArea.transform.rotation);
+            Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 2.53f, 0), elementArea.transform.rotation);
         }
         else
         {

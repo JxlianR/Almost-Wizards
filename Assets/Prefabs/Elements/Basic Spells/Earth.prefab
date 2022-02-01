@@ -4843,7 +4843,7 @@ MonoBehaviour:
     type: 3}
   smokeFailure: {fileID: 5540788878122059068, guid: 6a23685a8365c6a4690dcb24c526d865,
     type: 3}
-  speed: 5
+  speed: -5
   elementTag: Earth
   cancellingElementTag: Air
   combiningElement1Tag: Water

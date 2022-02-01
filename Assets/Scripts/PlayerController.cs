@@ -334,12 +334,16 @@ public class PlayerController : MonoBehaviour
         if (other.tag == "Enemy") // Checks if the gameObject the player is colliding with is an enemy
         {
             health.lives -= 1; // Subtracting 1 life
-           
+            animator.SetBool("Damage", true);
+            StartCoroutine(EndAnimation());
+
             Destroy(other.gameObject); // Destroys the enemy
         }
         else if (other.tag == "Element")
         {
             health.lives -= 1;
+            animator.SetBool("Damage", true);
+            StartCoroutine(EndAnimation());
         }
         else if (other.tag == "Heart")
         {
@@ -353,6 +357,8 @@ public class PlayerController : MonoBehaviour
         else if (other.tag == "Fire" || other.tag == "Air" || other.tag == "Water" || other.tag == "Earth" || other.tag == "FireArea" || other.tag == "AirArea" || other.tag == "WaterArea" || other.tag == "EarthArea" || other.tag == "Firenado" || other.tag == "Magma" || other.tag == "Ice" || other.tag == "Mud")
         {
             health.lives -= 1;
+            animator.SetBool("Damage", true);
+            StartCoroutine(EndAnimation());
         }
     }
 
@@ -378,6 +384,12 @@ public class PlayerController : MonoBehaviour
         gameObject.GetComponent<PlayerInput>().enabled = false; // Enables the PlayerInput to make the player unable to move or rotate the character
         yield return new WaitForSeconds(1.2f); // Waits for 1.2 seconds
         Destroy(gameObject); // Destroys the dead player
+    }
+
+    IEnumerator EndAnimation()
+    {
+        yield return new WaitForSeconds(0.1f);
+        animator.SetBool("Damage", false);
     }
 
     IEnumerator MouseCooldown()

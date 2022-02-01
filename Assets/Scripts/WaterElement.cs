@@ -91,7 +91,7 @@ public class WaterElement : MonoBehaviour
 
             Destroy(gameObject);
             // Spawns the element area of this element at the position I get from DetectGroundHeigh minus the Vector3
-            Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z), elementArea.transform.rotation);
+            Instantiate(elementArea, DetectGroundHeight(other.transform.position.x, other.transform.position.z) - new Vector3(0, 3.28f, 0), elementArea.transform.rotation);
         }
         else
         {

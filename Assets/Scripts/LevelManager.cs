@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
     {
         enemySpawner = GameObject.Find("EnemySpawner").GetComponent<EnemySpawner>();
         waveText = GameObject.Find("WaveText").GetComponent<Text>();
-        waveText.text = "Wave: " + waveNumber;
+        waveText.text = "Wave " + waveNumber;
     }
 
     // Update is called once per frame
