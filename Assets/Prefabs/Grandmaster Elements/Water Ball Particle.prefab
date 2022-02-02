@@ -9678,9 +9678,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11dd710e5892a644bfc245ad9b3762f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grandmaster: {fileID: 0}
+  combinedElement1: {fileID: 6022737817909869199, guid: 9ff031a62a0fdfa4eb770d02db2335e8,
+    type: 3}
+  combinedElement2: {fileID: 4873852408734358685, guid: 3273d3b6888f5994ca3e980053224ebd,
+    type: 3}
   speed: 5
   elementTag: Water
+  elementAreaTag: WaterArea
+  combiningArea1: EarthArea
+  combiningArea2: AirArea
 --- !u!1001 &4387110979244148129
 PrefabInstance:
   m_ObjectHideFlags: 0

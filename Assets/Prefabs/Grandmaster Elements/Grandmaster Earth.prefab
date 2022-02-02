@@ -4861,9 +4861,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11dd710e5892a644bfc245ad9b3762f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grandmaster: {fileID: 0}
+  combinedElement1: {fileID: 6022737817909869199, guid: 9ff031a62a0fdfa4eb770d02db2335e8,
+    type: 3}
+  combinedElement2: {fileID: 9082947169918597691, guid: 4876c62e5ffef634686a7d24b41eb0d4,
+    type: 3}
   speed: 5
   elementTag: Earth
+  elementAreaTag: EartArea
+  combiningArea1: WaterArea
+  combiningArea2: FireArea
 --- !u!95 &2439957923390279766
 Animator:
   serializedVersion: 3

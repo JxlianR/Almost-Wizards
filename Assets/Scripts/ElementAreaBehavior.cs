@@ -41,17 +41,17 @@ public class ElementAreaBehavior : MonoBehaviour
     {
         if (other.tag == combiningArea1Tag) // Checks if the other gameobject is an element this element can combine with
         {
-            StartCoroutine(Destroy());
+            Destroy(gameObject);
             Instantiate(combinedElement1, DetectGroundHeight(transform.position.x, transform.position.z) - offsetCombine1, combinedElement1.transform.rotation); // Spawns the first combined element
         }
         else if (other.tag == combiningArea2Tag)
         {
-            StartCoroutine(Destroy());
+            Destroy(gameObject);
             Instantiate(combinedElement2, DetectGroundHeight(transform.position.x, transform.position.z) - offsetCombine2, combinedElement2.transform.rotation); // Spawns the second combined element
         }
         else if (other.tag == cancellingElementTag || other.tag == cancellingAreaTag || other.tag == combiningElement1Tag || other.tag == combiningElement2Tag)
         {
-            StartCoroutine(Destroy());
+            Destroy(gameObject);
         }
     }
 
@@ -59,12 +59,6 @@ public class ElementAreaBehavior : MonoBehaviour
     IEnumerator DestroyElement()
     {
         yield return new WaitForSeconds(duration);
-        Destroy(gameObject);
-    }
-
-    IEnumerator Destroy()
-    {
-        yield return new WaitForSeconds(0.2f);
         Destroy(gameObject);
     }
 

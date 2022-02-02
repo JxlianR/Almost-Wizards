@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class GrandmasterElement : MonoBehaviour
 {
-
     private GrandmasterBehavior grandmaster;
+
+    public GameObject combinedElement1;
+    public GameObject combinedElement2;
 
     private Transform redPlayer;
     private Transform bluePlayer;
@@ -18,6 +20,9 @@ public class GrandmasterElement : MonoBehaviour
     private bool followRed;
 
     public string elementTag;
+    public string elementAreaTag;
+    public string combiningArea1;
+    public string combiningArea2;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +70,17 @@ public class GrandmasterElement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != elementTag)
+        if (other.tag == combiningArea1)
+        {
+            Destroy(gameObject);
+            Instantiate(combinedElement1, other.transform.position, combinedElement1.transform.rotation);
+        }
+        else if (other.tag == combiningArea2)
+        {
+            Destroy(gameObject);
+            Instantiate(combinedElement2, other.transform.position, combinedElement2.transform.rotation);
+        }
+        else if (other.tag != elementTag && other.tag == elementAreaTag)
         {
             Destroy(gameObject);
         }

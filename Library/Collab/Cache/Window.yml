@@ -14,27 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Assets/Assets For Wizards/Audio/SFX_Ice.wav
-    - Assets/Assets/Assets For Wizards/Audio/SFX_Ice.wav.meta
-    - Assets/Assets/Assets For Wizards/Audio/SFX_Mud.wav
-    - Assets/Materials & Palettes/Altar_Globe_Material.mat
     - Assets/Materials & Palettes/DarknessEnemy.mat
     - Assets/Materials & Palettes/EarthEnemy.mat
     - Assets/Materials & Palettes/FireEnemy.mat
     - Assets/Materials & Palettes/LightEnemy.mat
     - Assets/Materials & Palettes/WaterEnemy.mat
-    - Assets/PostProcessing  Profile.asset
-    - Assets/PostProcessing  Profile.asset.meta
-    - Assets/Prefabs/Elements/Combinations/Ice Crystal.prefab
-    - Assets/Prefabs/Enemies/WaterEnemy.prefab
-    - Assets/Scenes/Sample Ilkiz.unity
-    - Assets/Scenes/Win&Lose/Win 3.unity
-    - Assets/UI/Pages/awcert_doug_heroes.png
-    - Assets/UI/Pages/awcert_doug_heroes.png.meta
+    - Assets/Prefabs/Grandmaster Elements/Grandmaster Air.prefab
+    - Assets/Prefabs/Grandmaster Elements/Grandmaster Earth.prefab
+    - Assets/Prefabs/Grandmaster Elements/Grandmaster Fireball.prefab
+    - Assets/Prefabs/Grandmaster Elements/Water Ball Particle.prefab
+    - Assets/Scenes/Tutorial/Tutorial 10.unity
+    - Assets/Scripts/AirElement.cs
+    - Assets/Scripts/EarthElement.cs
+    - Assets/Scripts/FireElement.cs
+    - Assets/Scripts/GrandmasterBehavior.cs
+    - Assets/Scripts/GrandmasterElement.cs
+    - Assets/Scripts/WaterElement.cs
+    - Assets/UI/Pages/aw_tutorial_p9finaaaal.png
+    - Assets/UI/Pages/aw_tutorial_p9finaaaal.png.meta
     - 
-    m_Values: 010101010101010101010101010101010101
+    m_Values: 00000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
-  SelectedHistoryRevision: a3ab405865160ed61a5151ca8e31ab4cb8ca0344
+  SelectedHistoryRevision: 
   HistoryPageNumber: 0
   TabIndex: 0

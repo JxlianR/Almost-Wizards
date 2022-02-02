@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Waves/Wave6.unity
+- path: Assets/Scenes/Waves/Boss Fight.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -17214,5 +17214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grandmaster
       objectReference: {fileID: 0}
+    - target: {fileID: 5192036593109178322, guid: 6f781ab40c1e1fc42ac7d77b11c2643c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f781ab40c1e1fc42ac7d77b11c2643c, type: 3}

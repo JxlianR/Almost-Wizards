@@ -5,11 +5,7 @@ using UnityEngine;
 public class FireElement : MonoBehaviour
 {
     public GameObject combinedElement1; // Prefab of the first combined area
-    public string combinedElement1Tag; // Tag of the first combined area
-
     public GameObject combinedElement2; // Prefab of the second combined area
-    public string combinedElement2Tag; // Tag of the second combined area
-
     public GameObject elementArea; // Spell area of this element
 
     public ParticleSystem explosion; // Particle for explosion

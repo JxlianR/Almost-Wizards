@@ -4871,11 +4871,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11dd710e5892a644bfc245ad9b3762f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grandmaster: {fileID: 0}
-  Players: []
-  playerPosition: {x: 0, y: 0, z: 0}
+  combinedElement1: {fileID: 2328111271993077787, guid: 6ebf02b09c8c1d948ac139ec0f8bd603,
+    type: 3}
+  combinedElement2: {fileID: 9082947169918597691, guid: 4876c62e5ffef634686a7d24b41eb0d4,
+    type: 3}
   speed: 5
   elementTag: Fire
+  elementAreaTag: FireArea
+  combiningArea1: AirArea
+  combiningArea2: EarthArea
 --- !u!1001 &812144202886425025
 PrefabInstance:
   m_ObjectHideFlags: 0
