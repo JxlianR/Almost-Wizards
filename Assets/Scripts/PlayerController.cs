@@ -340,6 +340,12 @@ public class PlayerController : MonoBehaviour
 
             Destroy(other.gameObject); // Destroys the enemy
         }
+        else if (other.tag == "Grandmaster") // Checks if the gameObject the player is colliding with is an enemy
+        {
+            health.lives -= 1; // Subtracting 1 life
+            animator.SetBool("Damage", true);
+            StartCoroutine(EndAnimation());
+        }
         else if (other.tag == "Element")
         {
             health.lives -= 1;

@@ -80,7 +80,7 @@ public class GrandmasterElement : MonoBehaviour
             Destroy(gameObject);
             Instantiate(combinedElement2, other.transform.position, combinedElement2.transform.rotation);
         }
-        else if (other.tag != elementTag && other.tag == elementAreaTag)
+        else if (other.tag != elementTag && other.tag != elementAreaTag)
         {
             Destroy(gameObject);
         }

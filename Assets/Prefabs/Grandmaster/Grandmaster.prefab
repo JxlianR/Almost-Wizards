@@ -952,7 +952,7 @@ MonoBehaviour:
   HP: 10
   timeBetweenSpell: 4
   timeBetweenArea: 6
-  timeBetweenEnemy: 30
+  timeBetweenEnemy: 32
 --- !u!1 &5263234609059436212
 GameObject:
   m_ObjectHideFlags: 0

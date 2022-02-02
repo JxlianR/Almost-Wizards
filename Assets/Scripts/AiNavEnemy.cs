@@ -53,7 +53,7 @@ public class AiNavEnemy : MonoBehaviour
 
         if (ButtonManager.improveEnemies == true)
         {
-            gameObject.GetComponent<AiNavEnemy>().Agent.speed += 0.5f;
+            gameObject.GetComponent<AiNavEnemy>().Agent.speed += 0.6f;
             ButtonManager.improveEnemies = false;
         }
     }

@@ -14,26 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Materials & Palettes/DarknessEnemy.mat
-    - Assets/Materials & Palettes/EarthEnemy.mat
-    - Assets/Materials & Palettes/FireEnemy.mat
-    - Assets/Materials & Palettes/LightEnemy.mat
-    - Assets/Materials & Palettes/WaterEnemy.mat
-    - Assets/Prefabs/Grandmaster Elements/Grandmaster Air.prefab
-    - Assets/Prefabs/Grandmaster Elements/Grandmaster Earth.prefab
-    - Assets/Prefabs/Grandmaster Elements/Grandmaster Fireball.prefab
-    - Assets/Prefabs/Grandmaster Elements/Water Ball Particle.prefab
-    - Assets/Scenes/Tutorial/Tutorial 10.unity
-    - Assets/Scripts/AirElement.cs
-    - Assets/Scripts/EarthElement.cs
-    - Assets/Scripts/FireElement.cs
-    - Assets/Scripts/GrandmasterBehavior.cs
-    - Assets/Scripts/GrandmasterElement.cs
-    - Assets/Scripts/WaterElement.cs
-    - Assets/UI/Pages/aw_tutorial_p9finaaaal.png
-    - Assets/UI/Pages/aw_tutorial_p9finaaaal.png.meta
     - 
-    m_Values: 00000000000000000000000000000000000000
+    m_Values: 01
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
