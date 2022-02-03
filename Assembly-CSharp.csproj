@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{696545D9-D49C-3441-2338-73FC785E8F09}</ProjectGuid>
+    <ProjectGuid>{05D63937-95B6-B2FF-0E17-5872312B9683}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,61 +54,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AiNavEnemy.cs" />
-    <Compile Include="Assets\Scripts\AimingPointController.cs" />
     <Compile Include="Assets\Scripts\WaterElement.cs" />
     <Compile Include="Assets\Scripts\GrandmasterElement.cs" />
     <Compile Include="Assets\Scripts\AirElement.cs" />
     <Compile Include="Assets\Scripts\ElementAreaDestroy.cs" />
-    <Compile Include="Assets\Shared\Scripts\ProximityActivate.cs" />
-    <Compile Include="Assets\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\Scripts\EarthElement.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\AiNavDarkEnemy.cs" />
     <Compile Include="Assets\Scripts\HeartBehavior.cs" />
-    <Compile Include="Assets\Scripts\MiddlePoint.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\Shared\Ramps\Runtime\RampAsset.cs" />
-    <Compile Include="Assets\Shared\Scripts\ExtinguishableFire.cs" />
-    <Compile Include="Assets\Shared\Scripts\ParticleMenu.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\SpawnCombinedElements.cs" />
     <Compile Include="Assets\Scripts\BossFightManager.cs" />
     <Compile Include="Assets\Scripts\GrandmasterBehavior.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\Lives.cs" />
     <Compile Include="Assets\Scripts\ElementAreaBehavior.cs" />
-    <Compile Include="Assets\Shared\Scripts\ParticleExamples.cs" />
-    <Compile Include="Assets\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\Scripts\MultipleTargetCamera.cs" />
-    <Compile Include="Assets\Shared\Scripts\ParticleCollision.cs" />
-    <Compile Include="Assets\Shared\Scripts\GunShoot.cs" />
-    <Compile Include="Assets\Scripts\LookAtAimingPoint.cs" />
+    <Compile Include="Assets\Scripts\Sound.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\FireElement.cs" />
-    <Compile Include="Assets\Shared\Scripts\GunAim.cs" />
-    <Compile Include="Assets\Scripts\Sound.cs" />
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Hovl Studio\Procedural fire\Shaders\FireSphere.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\Shared\Shaders\SurfaceShader_VC.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Hovl Studio\Procedural fire\Demo scene\Readme.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
